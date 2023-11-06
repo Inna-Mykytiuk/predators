@@ -4,8 +4,8 @@ import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroTex";
 import {
   ContentWrapper,
   HeroTextMain,
-  HeroTextSecond,
-  // HeroTextSecondary,
+  // HeroTextSecond,
+  HeroTextSecondary,
   // SpanText,
   // TitleBlock,
   TextShadow,
@@ -19,13 +19,11 @@ const HeroSection = () => {
         <div>
           <ColoredHeroText color='#a40007'>Predators</ColoredHeroText>
           <h1 class='text-shadow'> -- of the Earth -- </h1>
+          <HeroTextSecondary>
+            Welcome to Car Rental Service! Our app is your gateway to unlocking
+            the road to adventure with hassle-free car rentals.
+          </HeroTextSecondary>
         </div>
-
-        {/* <HeroTextSecondary>
-          Welcome to Car Rental Service! Our app is your gateway to unlocking
-          the road to adventure with hassle-free car rentals. Whether you're
-          planning a weekend getaway or a long road trip, we've got you covered.
-        </HeroTextSecondary> */}
         <Navigation />
       </ContentWrapper>
     </Container>
