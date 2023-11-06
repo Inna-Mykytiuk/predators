@@ -13,6 +13,7 @@ const Bear = lazy(() => import("./pages/Bear"));
 const Shark = lazy(() => import("./pages/Shark"));
 const Human = lazy(() => import("./pages/Human"));
 const Virus = lazy(() => import("./pages/Virus"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function App() {
   return (
@@ -29,14 +30,14 @@ function App() {
           <Route path='/human' element={<Human />} />
           <Route path='/virus' element={<Virus />} />
         </Route>
-        {/* <Route
+        <Route
           path='*'
           element={
-            
+            <Suspense fallback={<Loader />}>
               <NotFoundPage />
             </Suspense>
           }
-        /> */}
+        />
       </Routes>
     </>
   );

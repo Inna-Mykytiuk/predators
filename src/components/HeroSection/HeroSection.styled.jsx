@@ -65,24 +65,6 @@ export const HeroTextMain = styled.h1`
   }
 `;
 
-export const TextShadow = styled.div`
-  font-style: bold;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: #fff;
-  -webkit-text-stroke-width: 1px;
-  text-shadow: 2px 2px 10px $blue;
-  transition: all 0.5s ease-in-out;
-  text-align: center;
-  letter-spacing: 0.2em;
-  animation: flicker 0.5s ease-in-out infinite alternate;
-
-  &:hover {
-    color: #fff;
-  }
-`;
-
 export const HeroTextSecondary = styled.h2`
   color: #770409;
   font-weight: 400;

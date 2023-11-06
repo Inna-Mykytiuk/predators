@@ -6,9 +6,10 @@ import {
   HeroTextMain,
   // HeroTextSecond,
   HeroTextSecondary,
+
   // SpanText,
   // TitleBlock,
-  TextShadow,
+  // TextShadow,
 } from "./HeroSection.styled";
 import { Navigation } from "../Navigation/Navigation";
 
@@ -18,7 +19,8 @@ const HeroSection = () => {
       <ContentWrapper>
         <div>
           <ColoredHeroText color='#a40007'>Predators</ColoredHeroText>
-          <h1 class='text-shadow'> -- of the Earth -- </h1>
+          <h1 className='text-shadow'> -- of the Earth -- </h1>
+
           <HeroTextSecondary>
             Welcome to Car Rental Service! Our app is your gateway to unlocking
             the road to adventure with hassle-free car rentals.
