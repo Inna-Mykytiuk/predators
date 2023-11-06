@@ -22,8 +22,9 @@ const HeroSection = () => {
           {/* <h1 className='text-shadow'> -- of the Earth -- </h1> */}
 
           <HeroTextSecondary>
-            Welcome to Car Rental Service! Our app is your gateway to unlocking
-            the road to adventure with hassle-free car rentals.
+            Welcome to the captivating realm of Earth&apos;s most formidable and
+            fascinating predators. In a world where each species unveils its
+            unique prowess.
           </HeroTextSecondary>
         </div>
         <Navigation />
