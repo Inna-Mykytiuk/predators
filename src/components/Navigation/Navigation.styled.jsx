@@ -1,6 +1,15 @@
 import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
-import { BsFillCarFrontFill } from "react-icons/bs";
+import {
+  GiWaspSting,
+  GiHawkEmblem,
+  GiSnake,
+  GiWolfHead,
+  GiBearHead,
+  GiSharkFin,
+  GiBowman,
+} from "react-icons/gi";
+import { RiVirusLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa";
 
 export const Nav = styled.nav`
@@ -18,10 +27,15 @@ export const NavList = styled.div`
 `;
 
 export const NavBlock = styled.ul`
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 10px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
   @media (min-width: 768px) {
     gap: 30px;
@@ -56,18 +70,18 @@ export const GoBackLink = styled(NavLink)`
     margin-left: 30px;
   }
   svg {
-    fill: #7b9ed9;
+    fill: #770409;
   }
 
-  &.active,
+  /* &.active, */
   &:hover,
   &:focus {
-    color: #fff;
+    color: #a40007;
 
     svg {
-      fill: white;
-      border: 3px solid #fff;
-      box-shadow: rgb(188 221 244) 0px 0px 15px;
+      fill: #a40007;
+      border: 3px solid #a40007;
+      box-shadow: rgb(169 70 53) 10px 10px 15px;
     }
   }
 `;
@@ -80,12 +94,12 @@ export const ButtonFilters = styled.button`
   font-size: 20px;
   line-height: 1.2;
 
-  color: #fff;
+  color: #000;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-shadow: 2px 2px 5px #000000;
   &:hover {
-    color: #ffffff;
+    color: #a40007;
   }
 `;
 
@@ -96,7 +110,7 @@ export const Link = styled(NavLink)`
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #7b9ed9;
+  color: #770409;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -107,18 +121,18 @@ export const Link = styled(NavLink)`
   text-shadow: 2px 2px 5px #1d1e26;
 
   svg {
-    fill: #7b9ed9;
+    fill: #770409;
   }
 
-  &.active,
+  /* &.active, */
   &:hover,
   &:focus {
-    color: #fff;
+    color: #a40007;
 
     svg {
-      fill: white;
-      border: 3px solid #fff;
-      box-shadow: rgb(188 221 244) 0px 0px 15px;
+      fill: #a40007;
+      border: 3px solid #a40007;
+      box-shadow: rgb(225 85 91) 0px 0px 15px;
     }
   }
 
@@ -130,20 +144,150 @@ export const Link = styled(NavLink)`
   }
 `;
 
-export const HomeIcon = styled(BsFillCarFrontFill)`
-  width: 20px;
-  height: 20px;
+// export const ServicesImg = styled.img`
+//   display: block;
+//   margin: 0 auto;
+//   padding: 0;
+//   fill: red;
+//   color: red;
+
+//   svg {
+//     fill: #770409;
+//   }
+
+//   /* max-width: 50%; */
+
+//   @media (min-width: 768px) {
+//     display: block;
+//     /* width: 40%; */
+//   }
+//   @media (min-width: 1440px) {
+//     display: block;
+//     /* width: 30%; */
+//   }
+// `;
+
+//Icons------------------------------------------
+
+export const WaspIcon = styled(GiWaspSting)`
+  width: 50px;
+  height: 50px;
   margin: 0;
   padding: 10px;
 
-  color: #7b9ed9;
+  color: #770409;
   border-radius: 50%;
-  border: 3px solid #7b9ed9;
+  border: 3px solid #770409;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: rgb(188 221 244) 0px 0px 15px;
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const HawkIcon = styled(GiHawkEmblem)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const SnakeIcon = styled(GiSnake)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const WolfIcon = styled(GiWolfHead)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const BearIcon = styled(GiBearHead)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const SharkIcon = styled(GiSharkFin)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const HumanIcon = styled(GiBowman)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+`;
+export const VirusIcon = styled(RiVirusLine)`
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
 `;
 
 export const GoBackIcon = styled(FaArrowLeft)`
@@ -153,71 +297,19 @@ export const GoBackIcon = styled(FaArrowLeft)`
 
   padding: 10px;
 
-  color: #7b9ed9;
+  color: #770409;
   border-radius: 50%;
-  border: 3px solid #7b9ed9;
+  border: 3px solid #770409;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: rgb(188 221 244) 0px 0px 15px;
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
 
   @media (min-width: 768px) {
     margin: 0;
   }
   @media (min-width: 1440px) {
     margin: 0;
-  }
-`;
-
-export const LogoWrapper = styled.div`
-  width: 110px;
-  height: 40px;
-  display: none;
-  position: relative;
-  @media (min-width: 1440px) {
-    display: flex;
-  }
-`;
-
-export const LogoLink = styled(NavLink)`
-  display: flex;
-
-  color: #7b9ed9;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
-    rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #1d1e26;
-  margin-left: auto;
-
-  &.active,
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
-`;
-
-export const LogoText = styled.p`
-  display: none;
-  font-family: "Montserrat", sans-serif;
-
-  font-size: 14px;
-  line-height: 1.2;
-  font-weight: 600;
-
-  @media (min-width: 768px) {
-    display: block;
-    top: -6px;
-    right: -100px;
-  }
-  @media (min-width: 1440px) {
-    display: block;
-    position: absolute;
-    top: -6px;
-    right: -20px;
   }
 `;

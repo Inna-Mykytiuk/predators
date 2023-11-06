@@ -34,12 +34,12 @@ export const ContentWrapper = styled.div`
   @media (min-width: 768px) {
     gap: 20px;
     width: 500px;
-    align-items: flex-start;
+    align-items: center;
   }
   @media (min-width: 1440px) {
     gap: 30px;
     width: 800px;
-    align-items: flex-start;
+    align-items: center;
   }
 `;
 
@@ -75,6 +75,7 @@ export const HeroTextSecondary = styled.h2`
   text-align: center;
   margin: 0 auto;
   text-shadow: 1px 1px 2px #181717;
+  margin-top: 20px;
 
   /* @media (min-width: 768px) {
     font-size: 18px;

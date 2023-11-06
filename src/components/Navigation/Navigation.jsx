@@ -2,56 +2,65 @@ import {
   Nav,
   NavList,
   Link,
-  HomeIcon,
+  WaspIcon,
+  HawkIcon,
   NavListItem,
-  GoBackLink,
-  GoBackIcon,
+  SnakeIcon,
+  WolfIcon,
+  BearIcon,
+  SharkIcon,
+  HumanIcon,
+  VirusIcon,
+  // GoBackLink,
+  // GoBackIcon,
   NavBlock,
-  LogoWrapper,
-  LogoLink,
-  LogoText,
 } from "./Navigation.styled";
-// import { useLocation } from "react-router-dom";
-import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-// import bearLogo from "../../assets/animalLogo/bear.png";
-
-const links = [
-  // { to: "/", label: "Home", imgSrc: bearLogo },
-  // { to: "/home", label: "Home", imgSrc: bearLogo },
-  { to: "/wasp", label: "Wasp", imgSrc: bearLogo },
-  { to: "/hawk", label: "Hawk", imgSrc: bearLogo },
-  { to: "/snake", label: "Snake", imgSrc: bearLogo },
-  { to: "/wolf", label: "Wolf", imgSrc: bearLogo },
-  { to: "/bear", label: "Bear", imgSrc: bearLogo },
-  { to: "/shark", label: "Shark", imgSrc: bearLogo },
-  { to: "/human", label: "WHuman", imgSrc: bearLogo },
-  { to: "/virus", label: "Virus", imgSrc: bearLogo },
-];
 
 export const Navigation = () => {
   return (
     <Nav>
       <NavList>
         <NavBlock>
-          {links.map((link, index) => (
-            <NavListItem key={index}>
-              <Link to={link.to}>
-                <img
-                  src={link.imgSrc}
-                  alt={`${link.label} Logo`}
-                  width={100}
-                  height={100}
-                />
-              </Link>
-            </NavListItem>
-          ))}
+          <NavListItem>
+            <Link to='/'>
+              <WaspIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/hawk'>
+              <HawkIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/snake'>
+              <SnakeIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/wolf'>
+              <WolfIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/bear'>
+              <BearIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/shark'>
+              <SharkIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/human'>
+              <HumanIcon />
+            </Link>
+          </NavListItem>
+          <NavListItem>
+            <Link to='/virus'>
+              <VirusIcon />
+            </Link>
+          </NavListItem>
         </NavBlock>
         {/* <LogoLink to='/'>
           <LogoWrapper>
