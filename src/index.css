@@ -67,32 +67,3 @@ img {
 svg {
   display: block;
 }
-
-/* .text-shadow {
-  font-style: bold;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: #df8080;
-  -webkit-text-stroke-width: 1px;
-  text-shadow: 2px 2px 10px $blue;
-  transition: all 0.5s ease-in-out;
-  text-align: center;
-  letter-spacing: 0.2em;
-  animation: flicker 0.5s ease-in-out infinite alternate;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
-@keyframes flicker {
-  0% {
-    opacity: 0.5;
-    text-shadow: 2px 2px 10px #a40007;
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 2px 2px 20px #a40007;
-  }
-} */

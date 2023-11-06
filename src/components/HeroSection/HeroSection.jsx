@@ -19,7 +19,6 @@ export const HeroSection = () => {
       <ContentWrapper>
         <div>
           <ColoredHeroText color='#a40007'>Predators</ColoredHeroText>
-          {/* <h1 className='text-shadow'> -- of the Earth -- </h1> */}
           <TextShadow>-- of the Earth --</TextShadow>
 
           <HeroTextSecondary>

@@ -1,12 +1,12 @@
-// import { lazy } from "react";
+import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import { Suspense } from "react";
 // import { Outlet } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
 
-// const Home = lazy(() => import("./pages/Home"));
+const Home = lazy(() => import("./pages/Home"));
 // const Home = lazy(() => import("./pages/Home"));
 // const Wasp = lazy(() => import("./pages/Wasp"));
 // const Hawk = lazy(() => import("./pages/Hawk"));
