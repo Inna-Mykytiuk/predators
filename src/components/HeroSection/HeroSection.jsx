@@ -9,17 +9,18 @@ import {
 
   // SpanText,
   // TitleBlock,
-  // TextShadow,
+  TextShadow,
 } from "./HeroSection.styled";
 import { Navigation } from "../Navigation/Navigation";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
     <Container>
       <ContentWrapper>
         <div>
           <ColoredHeroText color='#a40007'>Predators</ColoredHeroText>
           {/* <h1 className='text-shadow'> -- of the Earth -- </h1> */}
+          <TextShadow>-- of the Earth --</TextShadow>
 
           <HeroTextSecondary>
             Welcome to the captivating realm of Earth&apos;s most formidable and
@@ -32,5 +33,3 @@ const HeroSection = () => {
     </Container>
   );
 };
-
-export default HeroSection;

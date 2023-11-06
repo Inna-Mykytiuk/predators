@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
 import hero from "../../assets/pagesImg/predatorHero.png";
 
@@ -83,4 +84,33 @@ export const HeroTextSecondary = styled.h2`
     font-size: 14px;
     line-height: 1.6;
   } */
+`;
+
+export const flicker = keyframes`
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px #a40007;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #a40007;
+  }
+`;
+
+export const TextShadow = styled.div`
+  font-style: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: #df8080;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 2px 10px $blue;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  letter-spacing: 0.2em;
+  animation: ${flicker} 0.5s ease-in-out infinite alternate;
+
+  &:hover {
+    color: #fff;
+  }
 `;
