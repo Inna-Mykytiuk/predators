@@ -1,7 +1,7 @@
-import React from "react";
+import { WaspSection } from "../components/WaspSection/WaspSection";
 
 const Wasp = () => {
-  return <div>Wasp</div>;
+  return <WaspSection />;
 };
 
 export default Wasp;

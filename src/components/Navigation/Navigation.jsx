@@ -22,7 +22,7 @@ export const Navigation = () => {
       <NavList>
         <NavBlock>
           <NavListItem>
-            <Link to='/'>
+            <Link to='/wasp'>
               <WaspIcon />
             </Link>
           </NavListItem>
