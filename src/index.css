@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   margin: 0 auto;
   transition: 1.5s;
+  overflow-y: auto; /* Додайте цей рядок */
 
   -ms-overflow-style: none;
   scrollbar-width: none;

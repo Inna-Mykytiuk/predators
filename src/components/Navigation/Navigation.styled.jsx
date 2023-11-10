@@ -172,8 +172,8 @@ export const Link = styled(NavLink)`
 //Icons------------------------------------------
 
 export const WaspIcon = styled(GiWaspSting)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -185,10 +185,18 @@ export const WaspIcon = styled(GiWaspSting)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const HawkIcon = styled(GiHawkEmblem)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -200,10 +208,18 @@ export const HawkIcon = styled(GiHawkEmblem)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const SnakeIcon = styled(GiSnake)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -215,10 +231,18 @@ export const SnakeIcon = styled(GiSnake)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const WolfIcon = styled(GiWolfHead)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -230,10 +254,18 @@ export const WolfIcon = styled(GiWolfHead)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const BearIcon = styled(GiBearHead)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -245,10 +277,18 @@ export const BearIcon = styled(GiBearHead)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const SharkIcon = styled(GiSharkFin)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -260,10 +300,18 @@ export const SharkIcon = styled(GiSharkFin)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const HumanIcon = styled(GiBowman)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -275,10 +323,18 @@ export const HumanIcon = styled(GiBowman)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 export const VirusIcon = styled(RiVirusLine)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 10px;
 
@@ -290,6 +346,14 @@ export const VirusIcon = styled(RiVirusLine)`
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 1440px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const GoBackIcon = styled(FaArrowLeft)`
