@@ -9,7 +9,7 @@ export const WaspSection = () => {
       <Container>
         <WaspWrapper>
           <TextWrapper>
-            <ColoredHeroText color='#a40007'>Wasp</ColoredHeroText>
+            <ColoredHeroText color='#E26A2C'>Wasp</ColoredHeroText>
             {/* <p>-- of the Earth --</p> */}
 
             <p>

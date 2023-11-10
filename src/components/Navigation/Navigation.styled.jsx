@@ -32,13 +32,15 @@ export const NavBlock = styled.ul`
   align-items: center;
   gap: 10px; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 
   @media (min-width: 768px) {
     gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
   }
   @media (min-width: 1440px) {
     gap: 30px;
