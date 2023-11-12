@@ -3,12 +3,7 @@ import Container from "../container/Container";
 import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroTex";
 import {
   ContentWrapper,
-  // HeroTextMain,
-  // HeroTextSecond,
   HeroTextSecondary,
-
-  // SpanText,
-  // TitleBlock,
   TextShadow,
 } from "./HeroSection.styled";
 import { Navigation } from "../Navigation/Navigation";
