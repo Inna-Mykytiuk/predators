@@ -1,4 +1,4 @@
-// import React from "react";
+
 import Container from "../container/Container";
 import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroTex";
 import {
