@@ -40,7 +40,7 @@ export const WaspWrapper = styled.div`
 `;
 
 export const HeroTextSecondary = styled.h2`
-  color: #770409;
+  color: #99360f;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -48,7 +48,10 @@ export const HeroTextSecondary = styled.h2`
   text-align: center;
   margin: 0 auto;
   text-shadow: 1px 1px 2px #181717;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  text-align: end;
+  max-width: 600px;
+  margin: 0;
 
   @media (min-width: 768px) {
     font-size: 18px;
