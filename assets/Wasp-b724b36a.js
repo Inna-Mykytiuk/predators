@@ -1,4 +1,4 @@
-import{n as t,j as e}from"./index-633297cf.js";import{C as i,b as n}from"./ColoredHeroTex-faf9ad15.js";const a="/predators/assets/waspHero-bd929eaa.png",r=t.div`
+import{n as t,j as e}from"./index-be614cba.js";import{C as i,b as n}from"./ColoredHeroTex-fe956067.js";const a="/predators/assets/waspHero-bd929eaa.png",r=t.div`
   display: flex;
   background:
   /* linear-gradient(
@@ -31,7 +31,7 @@ import{n as t,j as e}from"./index-633297cf.js";import{C as i,b as n}from"./Color
     width: 100%;
   } */
 `,s=t.h2`
-  color: #770409;
+  color: #99360f;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -39,7 +39,10 @@ import{n as t,j as e}from"./index-633297cf.js";import{C as i,b as n}from"./Color
   text-align: center;
   margin: 0 auto;
   text-shadow: 1px 1px 2px #181717;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  text-align: end;
+  max-width: 600px;
+  margin: 0;
 
   @media (min-width: 768px) {
     font-size: 18px;
