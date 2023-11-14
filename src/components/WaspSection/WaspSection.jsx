@@ -1,25 +1,29 @@
 import { WaspHero } from "./WaspSection.styled";
 import Container from "../container/Container";
-import { WaspWrapper, TextWrapper } from "./WaspSection.styled";
+import {
+  WaspWrapper,
+  TextWrapper,
+  HeroTextSecondary,
+} from "./WaspSection.styled";
 import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroTex";
 
 export const WaspSection = () => {
   return (
     <WaspHero>
-      <Container>
-        <WaspWrapper>
+      <WaspWrapper>
+        <Container>
           <TextWrapper>
-            <ColoredHeroText color='#E26A2C'>Wasp</ColoredHeroText>
+            <ColoredHeroText color='#ff6000'>Wasp</ColoredHeroText>
             {/* <p>-- of the Earth --</p> */}
 
-            <p>
+            <HeroTextSecondary>
               Welcome to the captivating realm of Earth&apos;s most formidable
               and fascinating predators. In a world where each species unveils
               its unique prowess.
-            </p>
+            </HeroTextSecondary>
           </TextWrapper>
-        </WaspWrapper>
-      </Container>
+        </Container>
+      </WaspWrapper>
     </WaspHero>
   );
 };
