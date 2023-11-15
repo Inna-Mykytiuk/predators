@@ -1,11 +1,11 @@
-import { WaspHero } from "./WaspSection.styled";
 import Container from "../container/Container";
 import {
+  WaspHero,
   WaspWrapper,
   TextWrapper,
   HeroTextSecondary,
 } from "./WaspSection.styled";
-import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroTex";
+import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroText";
 
 export const WaspSection = () => {
   return (

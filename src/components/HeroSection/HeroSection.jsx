@@ -1,6 +1,5 @@
-
 import Container from "../container/Container";
-import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroTex";
+import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroText";
 import {
   ContentWrapper,
   HeroTextSecondary,
@@ -15,7 +14,6 @@ export const HeroSection = () => {
         <div>
           <ColoredHeroText color='#a40007'>Predators</ColoredHeroText>
           <TextShadow>-- of the Earth --</TextShadow>
-
           <HeroTextSecondary>
             Welcome to the captivating realm of Earth&apos;s most formidable and
             fascinating predators. In a world where each species unveils its
