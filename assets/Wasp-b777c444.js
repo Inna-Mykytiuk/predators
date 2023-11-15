@@ -1,4 +1,4 @@
-import{n as t,j as e}from"./index-be614cba.js";import{C as i,b as n}from"./ColoredHeroTex-fe956067.js";const a="/predators/assets/waspHero-bd929eaa.png",r=t.div`
+import{n as t,j as e}from"./index-5c82dd9a.js";import{C as i,b as n}from"./ColoredHeroText-0d5d93fe.js";const a="/predators/assets/waspHero-bd929eaa.png",r=t.div`
   display: flex;
   background:
   /* linear-gradient(
