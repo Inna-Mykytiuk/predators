@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroTextMain } from "../HeroSection/HeroSection.styled";
 
 export const ColoredHeroText = ({ color, children }) => (
