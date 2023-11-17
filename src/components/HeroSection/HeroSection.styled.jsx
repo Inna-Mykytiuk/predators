@@ -123,3 +123,12 @@ export const TextShadow = styled.div`
     line-height: 1.6;
   }
 `;
+
+// @media (min-width: 768px) {
+//   font-size: 32px;
+//   line-height: 1.6;
+// }
+// @media (min-width: 1440px) {
+//   font-size: 40px;
+//   line-height: 1.6;
+// }
