@@ -1,4 +1,4 @@
-import{s as z,n as a,j as w}from"./index-5c82dd9a.js";var S={exports:{}},t={};/** @license React v16.13.1
+import{s as z,n as a,j as w}from"./index-84afe50c.js";var S={exports:{}},t={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -121,12 +121,12 @@ import{s as z,n as a,j as w}from"./index-5c82dd9a.js";var S={exports:{}},t={};/*
     color: #fff;
   }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     font-size: 32px;
     line-height: 1.6;
   }
   @media (min-width: 1440px) {
     font-size: 40px;
     line-height: 1.6;
-  }
+  } */
 `,G=({color:e,children:n})=>w.jsx(O,{style:{color:e},children:n});export{q as C,Y as H,B as T,V as a,G as b,D as c};
