@@ -1,11 +1,11 @@
-import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as t,h as r,i as s}from"./Navigation.styled-9e548ae9.js";const d="/predators/assets/waspHero-bd929eaa.png",p=i.div`
+import{n as i,j as e}from"./index-b52be80b.js";import{k as n,C as a,g as s,G as t,h as o,i as r}from"./Navigation.styled-78e5660f.js";const l="/predators/assets/waspHero-bd929eaa.png",d=i.div`
   display: flex;
   background:
   /* linear-gradient(
       to right,
       rgba(47, 48, 58, 0.1),
       rgba(47, 48, 58, 0.5)
-    ), */ url(${d});
+    ), */ url(${l});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,7 +13,7 @@ import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as 
   background-position: center;
   width: 100%;
   height: 100vh;
-`,x=i.div`
+`,c=i.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,7 +29,7 @@ import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as 
     gap: 30px;
     width: 100%;
   } */
-`,c=i.h1`
+`,p=i.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,l=n`
+`,x=n`
   0% {
     background-position: -500%;
   }
@@ -61,8 +61,9 @@ import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as 
 `,h=i.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 12px;
   letter-spacing: 4px;
+  line-height: 1.2;
   overflow: hidden;
   background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
@@ -70,39 +71,36 @@ import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as 
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${l} 4s linear infinite;
+  animation: ${x} 4s linear infinite;
 
   @media (min-width: 768px) {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 18px;
   }
-`,g=i.p`
+`,f=i.p`
   color: #99360f;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
-  /* width: 450px; */
+  max-width: 350px;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
-  /* margin-top: 20px; */
   text-align: end;
-  max-width: 600px;
-  margin: 0;
 
   @media (min-width: 768px) {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    max-width: 450px;
+    line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 18px;
+    max-width: 500px;
   }
-`,f=i.div`
+`,g=i.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -112,4 +110,4 @@ import{n as i,j as e}from"./index-a0aa074d.js";import{k as n,C as a,g as o,G as 
   width: 100%;
   height: 100%;
   margin-left: auto;
-`,m=()=>e.jsx(p,{children:e.jsx(x,{children:e.jsx(a,{children:e.jsxs(f,{children:[e.jsx(c,{children:"Wasp"}),e.jsx(h,{children:"Nature's Architects and Stingers"}),e.jsx(g,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),e.jsxs(o,{children:[e.jsx(t,{to:"/",children:e.jsx(r,{})}),e.jsx(t,{to:"/",children:e.jsx(s,{})})]})]})})})}),b=()=>e.jsx(m,{});export{b as default};
+`,m=()=>e.jsx(d,{children:e.jsx(c,{children:e.jsx(a,{children:e.jsxs(g,{children:[e.jsx(p,{children:"Wasp"}),e.jsx(h,{children:"Nature's Architects and Stingers"}),e.jsx(f,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),e.jsxs("div",{children:[e.jsx("p",{children:"Raiting 2/5"}),e.jsxs("ul",{children:[e.jsx("li",{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),e.jsx("li",{children:"Wasps play a crucial role in controlling insect populations through predation."}),e.jsx("li",{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),e.jsx("li",{children:"Wasps possess a venomous sting used for hunting and defense against predators."})]})]}),e.jsxs(s,{children:[e.jsx(t,{to:"/",children:e.jsx(o,{})}),e.jsx(t,{to:"/",children:e.jsx(r,{})})]})]})})})}),j=()=>e.jsx(m,{});export{j as default};
