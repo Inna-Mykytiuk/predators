@@ -74,8 +74,9 @@ export const flicker = keyframes`
 export const HeroTextSubtitle = styled.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 12px;
   letter-spacing: 4px;
+  line-height: 1.2;
   overflow: hidden;
   background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
@@ -86,36 +87,33 @@ export const HeroTextSubtitle = styled.h2`
   animation: ${flicker} 4s linear infinite;
 
   @media (min-width: 768px) {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 18px;
   }
 `;
 
 export const HeroTextSecondary = styled.p`
   color: #99360f;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
-  /* width: 450px; */
+  max-width: 350px;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
-  /* margin-top: 20px; */
   text-align: end;
-  max-width: 600px;
-  margin: 0;
 
   @media (min-width: 768px) {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    max-width: 450px;
+    line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 18px;
+    max-width: 500px;
   }
 `;
 
