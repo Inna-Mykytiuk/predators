@@ -38,16 +38,28 @@ export const WaspSection = () => {
                   specialized roles for individuals.
                 </li>
                 <li>
-                  Wasps play a crucial role in controlling insect populations
-                  through predation.
-                </li>
-                <li>
                   Social wasps, like yellow jackets, can form large colonies
                   with hierarchical structures.
                 </li>
                 <li>
                   Wasps possess a venomous sting used for hunting and defense
                   against predators.
+                </li>
+                <li>
+                  Certain wasp species exhibit parasitic behavior, laying eggs
+                  on or inside other insects.
+                </li>
+                <li>
+                  Pollination is another essential role of certain wasp species,
+                  contributing to plant diversity.
+                </li>
+                <li>
+                  Wasps communicate through chemical signals, coordinating
+                  activities within their colonies.
+                </li>
+                <li>
+                  Mimicry is a common defense mechanism among wasps, imitating
+                  the appearance of more dangerous species.
                 </li>
               </ul>
             </div>
