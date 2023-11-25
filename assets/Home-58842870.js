@@ -1,4 +1,4 @@
-import{n,j as e}from"./index-b52be80b.js";import{k as s,N as a,a as r,b as o,c as t,L as i,W as x,H as h,S as d,d as c,B as p,e as l,f as m,V as f,C as g}from"./Navigation.styled-78e5660f.js";const j="/predators/assets/predatorHero-abfa1583.png",w=n.div`
+import{n,j as e}from"./index-4726f458.js";import{k as s,N as a,a as r,b as o,c as t,L as i,W as x,H as h,S as d,d as c,B as p,e as l,f as m,V as f,C as g}from"./Navigation.styled-6b9ed6e6.js";const j="/predators/assets/predatorHero-abfa1583.png",w=n.div`
   display: flex;
   background:
   /* linear-gradient(
