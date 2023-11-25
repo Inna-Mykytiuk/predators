@@ -47,6 +47,8 @@ export const HeroTextMain = styled.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  color: #a40007;
+  font-family: "Arvo", sans-serif;
 
   font-weight: bold;
   font-size: 42px;

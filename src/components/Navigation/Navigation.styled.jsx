@@ -11,6 +11,7 @@ import {
 } from "react-icons/gi";
 import { RiVirusLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 export const Nav = styled.nav`
   display: flex;
@@ -27,10 +28,6 @@ export const NavList = styled.div`
 `;
 
 export const NavBlock = styled.ul`
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; */
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
@@ -55,22 +52,31 @@ export const NavListItem = styled.li`
   align-items: center;
 `;
 
-export const GoBackLink = styled(NavLink)`
-  margin: 0;
-  padding: 0;
+export const BtnBlock = styled.div`
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 0;
-  margin-right: 10px;
+  margin-top: auto;
+`;
 
-  @media (min-width: 768px) {
-    margin-left: 0;
-  }
-  @media (min-width: 1440px) {
-    margin-left: 30px;
-  }
+export const GoBackLink = styled(NavLink)`
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #770409;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: 2px 2px 5px #1d1e26;
+
   svg {
     fill: #770409;
   }
@@ -83,8 +89,15 @@ export const GoBackLink = styled(NavLink)`
     svg {
       fill: #a40007;
       border: 3px solid #a40007;
-      box-shadow: rgb(169 70 53) 10px 10px 15px;
+      box-shadow: rgb(225 85 91) 0px 0px 15px;
     }
+  }
+
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 20px;
   }
 `;
 
@@ -357,6 +370,29 @@ export const VirusIcon = styled(RiVirusLine)`
 `;
 
 export const GoBackIcon = styled(FaArrowLeft)`
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+export const GoNextIcon = styled(FaArrowRight)`
   width: 20px;
   height: 20px;
   margin-left: 10px;

@@ -3,9 +3,17 @@ import {
   WaspHero,
   WaspWrapper,
   TextWrapper,
+  HeroTextMain,
+  HeroTextSubtitle,
   HeroTextSecondary,
 } from "./WaspSection.styled";
-import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroText";
+import {
+  GoBackIcon,
+  GoBackLink,
+  GoNextIcon,
+  BtnBlock,
+} from "../Navigation/Navigation.styled";
+// import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroText";
 
 export const WaspSection = () => {
   return (
@@ -13,14 +21,25 @@ export const WaspSection = () => {
       <WaspWrapper>
         <Container>
           <TextWrapper>
-            <ColoredHeroText color='#ff6000'>Wasp</ColoredHeroText>
-            {/* <p>-- of the Earth --</p> */}
+            <HeroTextMain>Wasp</HeroTextMain>
+            <HeroTextSubtitle>
+              Nature&apos;s Architects and Stingers
+            </HeroTextSubtitle>
 
             <HeroTextSecondary>
-              Welcome to the captivating realm of Earth&apos;s most formidable
-              and fascinating predators. In a world where each species unveils
-              its unique prowess.
+              Enter the intricate world of wasps, where social structures,
+              stingers, and vital ecological roles converge in a dance of
+              precision and purpose.
             </HeroTextSecondary>
+
+            <BtnBlock>
+              <GoBackLink to='/'>
+                <GoBackIcon />
+              </GoBackLink>
+              <GoBackLink to='/'>
+                <GoNextIcon />
+              </GoBackLink>
+            </BtnBlock>
           </TextWrapper>
         </Container>
       </WaspWrapper>
