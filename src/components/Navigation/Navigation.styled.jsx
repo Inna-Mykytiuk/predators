@@ -12,6 +12,9 @@ import {
 import { RiVirusLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
+import { SiGooglehome } from "react-icons/si";
+import { FaArrowUp } from "react-icons/fa";
 
 export const Nav = styled.nav`
   display: flex;
@@ -370,8 +373,8 @@ export const VirusIcon = styled(RiVirusLine)`
 `;
 
 export const GoBackIcon = styled(FaArrowLeft)`
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   margin-left: 10px;
 
   padding: 10px;
@@ -386,6 +389,33 @@ export const GoBackIcon = styled(FaArrowLeft)`
   box-shadow: rgb(169 70 53) 0px 0px 15px;
 
   @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+export const GoHomeIcon = styled(SiGooglehome)`
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+
+  padding: 10px;
+
+  color: #770409;
+  border-radius: 50%;
+  border: 3px solid #770409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
     margin: 0;
   }
   @media (min-width: 1440px) {
@@ -393,8 +423,8 @@ export const GoBackIcon = styled(FaArrowLeft)`
   }
 `;
 export const GoNextIcon = styled(FaArrowRight)`
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   margin-left: 10px;
 
   padding: 10px;
@@ -409,9 +439,104 @@ export const GoNextIcon = styled(FaArrowRight)`
   box-shadow: rgb(169 70 53) 0px 0px 15px;
 
   @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
     margin: 0;
   }
   @media (min-width: 1440px) {
     margin: 0;
+  }
+`;
+
+export const RaitingIconDown = styled(FaArrowDown)`
+  width: 12px;
+  height: 12px;
+
+  padding: 5px;
+
+  color: #ff6000;
+  border-radius: 50%;
+  border: 3px solid #ff6000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+export const RaitingIconUp = styled(FaArrowUp)`
+  width: 12px;
+  height: 12px;
+
+  padding: 5px;
+
+  color: #ff6000;
+  border-radius: 50%;
+  border: 3px solid #ff6000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgb(169 70 53) 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+
+export const RaitingBtn = styled.button`
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  outline: 0;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ff6000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: 2px 2px 5px #1d1e26;
+
+  svg {
+    fill: #ff6000;
+  }
+
+  /* &.active, */
+  &:hover {
+    color: #770409;
+
+    svg {
+      fill: #770409;
+      border: 3px solid #770409;
+      box-shadow: rgb(225 85 91) 0px 0px 15px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 20px;
   }
 `;

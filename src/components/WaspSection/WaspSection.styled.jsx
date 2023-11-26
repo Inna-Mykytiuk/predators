@@ -25,17 +25,40 @@ export const WaspWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 50px 0 70px;
+  padding: 20px 0 30px;
   width: 100%;
   align-items: center;
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
+    /* align-items: flex-end; */
+    padding: 30px 0 40px;
     gap: 20px;
   }
   @media (min-width: 1440px) {
+    /* align-items: flex-end; */
+    padding: 50px 0 70px;
     gap: 30px;
     width: 100%;
-  } */
+  }
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    align-items: flex-end;
+  }
+  @media (min-width: 1440px) {
+    align-items: flex-end;
+  }
 `;
 
 export const HeroTextMain = styled.h1`
@@ -46,7 +69,7 @@ export const HeroTextMain = styled.h1`
   font-family: "Antonio", sans-serif;
 
   font-weight: bold;
-  font-size: 42px;
+  font-size: 48px;
   line-height: 1.6;
   text-shadow: 1px 1px 2px #181717;
 
@@ -74,7 +97,7 @@ export const flicker = keyframes`
 export const HeroTextSubtitle = styled.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
   overflow: hidden;
@@ -104,9 +127,10 @@ export const HeroTextSecondary = styled.p`
   text-align: center;
   margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
-  text-align: end;
+  text-align: start;
 
   @media (min-width: 768px) {
+    text-align: end;
     font-size: 16px;
     max-width: 450px;
     line-height: 1.5;
@@ -117,14 +141,72 @@ export const HeroTextSecondary = styled.p`
   }
 `;
 
-export const TextWrapper = styled.div`
+export const RaitingWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
+  /* gap: 10px; */
+  margin-top: 10px;
 
+  @media (min-width: 768px) {
+    align-items: flex-end;
+    margin-top: 20px;
+    /* font-size: 16px;
+    line-height: 1.5; */
+  }
+  /* @media (min-width: 1440px) {
+    font-size: 18px;
+  } */
+`;
+export const RaitingWrapperBtn = styled.div`
+  display: flex;
+  /* flex-direction: column;
+  align-items: flex-start; */
   gap: 10px;
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
+`;
+
+export const RaitingTitle = styled.h3`
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6000;
+  font-family: "Antonio", sans-serif;
+`;
+
+export const RaitingList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  gap: 10px;
+  padding: 10px;
+  max-width: 400px;
+
+  color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    text-align: end;
+  }
+`;
+
+export const RaitingListItem = styled.li`
+  color: #99360f;
+  font-family: "Antonio", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: start;
+
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: 2px 2px 5px #1d1e26;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    text-align: end;
+  }
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
 `;
