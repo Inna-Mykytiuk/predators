@@ -5,12 +5,12 @@ import waspHero from "../../assets/pagesImg/waspHero.png";
 
 export const WaspHero = styled.div`
   display: flex;
-  background:
+  background: url(${waspHero});
   /* linear-gradient(
       to right,
       rgba(47, 48, 58, 0.1),
       rgba(47, 48, 58, 0.5)
-    ), */ url(${waspHero});
+    ), */
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -48,7 +48,6 @@ export const TextWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
-  gap: 10px;
   width: 100%;
   height: 100%;
   margin-left: auto;
@@ -72,12 +71,15 @@ export const HeroTextMain = styled.h1`
   font-size: 48px;
   line-height: 1.6;
   text-shadow: 1px 1px 2px #181717;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    font-size: 58px;
+    margin-bottom: 30px;
+    font-size: 80px;
     line-height: 1.4;
   }
   @media (min-width: 1440px) {
+    margin-bottom: 40px;
     font-size: 120px;
     text-transform: uppercase;
     font-weight: bold;
@@ -108,6 +110,7 @@ export const HeroTextSubtitle = styled.h2`
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   animation: ${flicker} 4s linear infinite;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     font-size: 16px;
