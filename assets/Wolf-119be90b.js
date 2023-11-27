@@ -1,14 +1,14 @@
-import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b as h,F as m,S as g,a as f,C as b}from"./index.esm-468959d7.js";const w="/predators/assets/hawkHero-859879e1.png",u=e.div`
+import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as o,c,b as h,F as m,S as g,a as f,C as b}from"./index.esm-15eabcf0.js";const w="/predators/assets/wolfHero-3c13ba6d.png",u=e.div`
   display: flex;
   background: url(${w});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   width: 100%;
   min-height: 100vh;
-`,k=e.div`
+`,y=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -34,16 +34,16 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
 
   width: 100%;
   height: 100%;
-  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 768px) {
-    justify-content: flex-end;
+  /* @media (min-width: 768px) {
+
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
     align-items: flex-end;
-  }
-`,y=e.h1`
+  } */
+`,k=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -68,7 +68,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
     font-weight: bold;
     line-height: 1.2;
   }
-`,v=r`
+`,v=o`
   0% {
     background-position: -500%;
   }
@@ -98,7 +98,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,H=e.p`
+`,R=e.p`
   color: #4c7e9b;
   font-weight: 400;
   font-family: "Kaushan Script", cursive;
@@ -106,13 +106,12 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-left: auto;
+  margin-right: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
   backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    text-align: end;
     font-size: 16px;
     max-width: 400px;
     line-height: 1.5;
@@ -128,10 +127,10 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   margin-top: 10px;
 
   @media (min-width: 768px) {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     margin-top: 20px;
   }
-`,R=e.div`
+`,W=e.div`
   display: flex;
   padding: 10px;
   gap: 10px;
@@ -140,7 +139,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   font-weight: bold;
   color: #2da4e9;
   font-family: "Kaushan Script", cursive;
-`,I=r`
+`,T=o`
   0% {
     opacity: 0;
     transform: translateY(0);
@@ -152,7 +151,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
     transform: translateY(0);
   }
 
-`,T=r`
+`,H=o`
   0% {
     opacity: 1;
     transform: translateY(0);
@@ -164,7 +163,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
     opacity: 0;
     transform: translateY(-20px);
   }
-`,A=e.ul`
+`,I=e.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -176,19 +175,19 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
-  animation: ${({isVisible:a})=>a?I:T} 2s ease;
+  animation: ${({isVisible:n})=>n?T:H} 2s ease;
 
   @media (min-width: 768px) {
     max-width: 700px;
     font-size: 28px;
-    text-align: end;
+    /* text-align: end; */
   }
 `,t=e.li`
   color: #4c7e9b;
   font-family: "Kaushan Script", cursive;
   font-size: 12px;
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -196,7 +195,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
 
   @media (min-width: 768px) {
     font-size: 16px;
-    text-align: end;
+    /* text-align: end; */
   }
   @media (min-width: 1440px) {
     font-size: 16px;
@@ -208,9 +207,9 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   align-items: center;
   margin-top: auto;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     margin-top: 30px;
-  }
+  } */
 `,F=e(c)`
   width: 12px;
   height: 12px;
@@ -235,7 +234,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,C=e(h)`
+`,G=e(h)`
   width: 12px;
   height: 12px;
 
@@ -259,7 +258,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,G=e.button`
+`,A=e.button`
   display: flex;
   font-family: "Montserrat", sans-serif;
   background-color: transparent;
@@ -301,7 +300,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,K=e(m)`
+`,C=e(m)`
   width: 12px;
   height: 12px;
 
@@ -324,7 +323,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,N=e(g)`
+`,K=e(g)`
   width: 12px;
   height: 12px;
 
@@ -347,7 +346,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,V=e(f)`
+`,N=e(f)`
   width: 12px;
   height: 12px;
 
@@ -370,7 +369,7 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,n=e(l)`
+`,a=e(l)`
   display: flex;
   font-family: "Montserrat", sans-serif;
 
@@ -409,4 +408,4 @@ import{n as e,N as l,r as s,j as i}from"./index-f99c2efe.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,W=()=>{const[a,d]=s.useState(!1),[o,p]=s.useState(!1),x=()=>{d(!a),p(!o)};return i.jsx(u,{children:i.jsx(k,{children:i.jsx(b,{children:i.jsxs(j,{children:[i.jsx(z,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Hawk"}),i.jsx(H,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(S,{children:[i.jsxs(R,{children:[i.jsx(L,{children:"Danger rating 4/10"}),i.jsx(G,{onClick:x,children:o?i.jsx(F,{}):i.jsx(C,{})})]}),a&&i.jsxs(A,{isVisible:a,children:[i.jsx(t,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(t,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(t,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(t,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(t,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(t,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(t,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]}),i.jsxs(B,{children:[i.jsx(n,{to:"/wasp",children:i.jsx(K,{})}),i.jsx(n,{to:"/",children:i.jsx(N,{})}),i.jsx(n,{to:"/wolf",children:i.jsx(V,{})})]})]})})})})},M=()=>i.jsx(i.Fragment,{children:i.jsx(W,{})});export{M as default};
+`,Y=()=>{const[n,d]=s.useState(!1),[r,p]=s.useState(!1),x=()=>{d(!n),p(!r)};return i.jsx(u,{children:i.jsx(y,{children:i.jsx(b,{children:i.jsxs(j,{children:[i.jsx(z,{children:"Nature's Architects and Stingers"}),i.jsx(k,{children:"Wolf"}),i.jsx(R,{children:"Join the packs and explore the untamed landscapes where wolves, with their intricate social structures and haunting howls, command the wilderness."}),i.jsxs(S,{children:[i.jsxs(W,{children:[i.jsx(L,{children:"Danger rating 5/10"}),i.jsx(A,{onClick:x,children:r?i.jsx(F,{}):i.jsx(G,{})})]}),n&&i.jsxs(I,{isVisible:n,children:[i.jsx(t,{children:"Wolves are skilled hunters, often targeting large ungulates such as deer and elk."}),i.jsx(t,{children:"Pack hierarchy is established through a combination of dominance displays and submission."}),i.jsx(t,{children:"Communication within a wolf pack involves vocalizations, body language, and scent marking."}),i.jsx(t,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(t,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(t,{children:"Wolf territories can cover vast areas, depending on prey availability and pack size."}),i.jsx(t,{children:"The gestation period for wolf pups is around two months, with the entire pack participating in their care."}),i.jsx(t,{children:"Gray wolves, the most widespread species, exhibit a wide range of coat colors, from white to black."})]})]}),i.jsxs(B,{children:[i.jsx(a,{to:"/hawk",children:i.jsx(C,{})}),i.jsx(a,{to:"/",children:i.jsx(K,{})}),i.jsx(a,{to:"/",children:i.jsx(N,{})})]})]})})})})},O=()=>i.jsx(i.Fragment,{children:i.jsx(Y,{})});export{O as default};
