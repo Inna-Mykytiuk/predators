@@ -25,7 +25,6 @@ import {
   GoHomeIcon,
   RaitingIconDown,
 } from "../Navigation/Navigation.styled";
-// import { ColoredHeroText } from "../ColoredHeroText/ColoredHeroText";
 
 export const WaspSection = () => {
   const [isRaitingListVisible, setRaitingListVisible] = useState(false);
@@ -58,7 +57,7 @@ export const WaspSection = () => {
                 </RaitingBtn>
               </RaitingWrapperBtn>
               {isRaitingListVisible && (
-                <RaitingList>
+                <RaitingList isVisible={isRaitingListVisible}>
                   <RaitingListItem>
                     Some wasps are social, forming intricate colonies with
                     specialized roles for individuals.
