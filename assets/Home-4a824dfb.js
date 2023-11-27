@@ -1,4 +1,4 @@
-import{n,j as e}from"./index-d86bf14c.js";import{k as s,C as a}from"./index.esm-3a4a4253.js";import{N as r,a as o,b as x,c as t,L as i,W as h,H as d,d as c,S as p,T as l,e as m,f,V as g}from"./Navigation.styled-228f9274.js";const j="/predators/assets/predatorHero-abfa1583.png",w=n.div`
+import{n,j as e}from"./index-f99c2efe.js";import{k as s,C as a}from"./index.esm-468959d7.js";import{N as r,a as o,b as x,c as t,L as i,W as h,H as d,d as c,S as p,T as l,e as m,f,V as g}from"./Navigation.styled-9ba894bd.js";const j="/predators/assets/predatorHero-abfa1583.png",w=n.div`
   display: flex;
   background:
   /* linear-gradient(
@@ -61,18 +61,19 @@ import{n,j as e}from"./index-d86bf14c.js";import{k as s,C as a}from"./index.esm-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  /* width: 450px; */
+  max-width: 450px;
   text-align: center;
   margin: 0 auto;
   text-shadow: 1px 1px 2px #181717;
   margin-top: 20px;
 
   @media (min-width: 768px) {
+    max-width: 550px;
     font-size: 18px;
     line-height: 1.6;
   }
   @media (min-width: 1440px) {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
   }
 `,b=s`

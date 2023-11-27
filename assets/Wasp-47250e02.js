@@ -1,4 +1,4 @@
-import{n as t,r,j as i}from"./index-d86bf14c.js";import{k as s,C as c}from"./index.esm-3a4a4253.js";import{R as d,g,h as f,B as h,G as a,i as m,j as w,k as u}from"./Navigation.styled-228f9274.js";const b="/predators/assets/waspHero-bd929eaa.png",j=t.div`
+import{n as t,r,j as i}from"./index-f99c2efe.js";import{k as s,C as c}from"./index.esm-468959d7.js";import{R as d,g,h as f,B as h,G as a,i as m,j as w,k as u}from"./Navigation.styled-9ba894bd.js";const b="/predators/assets/waspHero-bd929eaa.png",j=t.div`
   display: flex;
   background: url(${b});
   /* linear-gradient(
@@ -23,11 +23,11 @@ import{n as t,r,j as i}from"./index-d86bf14c.js";import{k as s,C as c}from"./ind
   align-items: center;
 
   @media (min-width: 768px) {
-    padding: 30px 0 40px;
+    padding: 30px 0 30px;
     gap: 20px;
   }
   @media (min-width: 1440px) {
-    padding: 50px 0 70px;
+    padding: 50px 0 50px;
     gap: 30px;
     width: 100%;
   }
@@ -202,4 +202,4 @@ import{n as t,r,j as i}from"./index-d86bf14c.js";import{k as s,C as c}from"./ind
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,T=()=>{const[n,p]=r.useState(!1),[o,l]=r.useState(!1),x=()=>{p(!n),l(!o)};return i.jsx(j,{children:i.jsx(k,{children:i.jsx(c,{children:i.jsxs(y,{children:[i.jsx(z,{children:"Wasp"}),i.jsx(R,{children:"Nature's Architects and Stingers"}),i.jsx(W,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(S,{children:[i.jsxs(B,{children:[i.jsx(H,{children:"Raiting 5/10"}),i.jsx(d,{onClick:x,children:o?i.jsx(g,{}):i.jsx(f,{})})]}),n&&i.jsxs(G,{isVisible:n,children:[i.jsx(e,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(e,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(e,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(e,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(e,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(e,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(e,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(h,{children:[i.jsx(a,{to:"/",children:i.jsx(m,{})}),i.jsx(a,{to:"/",children:i.jsx(w,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(u,{})})]})]})})})})},E=()=>i.jsx(T,{});export{E as default};
+`,T=()=>{const[n,p]=r.useState(!1),[o,l]=r.useState(!1),x=()=>{p(!n),l(!o)};return i.jsx(j,{children:i.jsx(k,{children:i.jsx(c,{children:i.jsxs(y,{children:[i.jsx(z,{children:"Wasp"}),i.jsx(R,{children:"Nature's Architects and Stingers"}),i.jsx(W,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(S,{children:[i.jsxs(B,{children:[i.jsx(H,{children:"Danger rating 5/10"}),i.jsx(d,{onClick:x,children:o?i.jsx(g,{}):i.jsx(f,{})})]}),n&&i.jsxs(G,{isVisible:n,children:[i.jsx(e,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(e,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(e,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(e,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(e,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(e,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(e,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(h,{children:[i.jsx(a,{to:"/",children:i.jsx(m,{})}),i.jsx(a,{to:"/",children:i.jsx(w,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(u,{})})]})]})})})})},E=()=>i.jsx(T,{});export{E as default};
