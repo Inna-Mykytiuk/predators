@@ -1,7 +1,11 @@
-import React from "react";
+import { HawkSection } from "../components/HawkSection/HawkSection";
 
 const Hawk = () => {
-  return <div>Hawk</div>;
+  return (
+    <>
+      <HawkSection />
+    </>
+  );
 };
 
 export default Hawk;

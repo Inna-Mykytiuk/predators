@@ -3,8 +3,8 @@ import { useState } from "react";
 
 import Container from "../container/Container";
 import {
-  WaspHero,
-  WaspWrapper,
+  HawkHero,
+  HawkWrapper,
   TextWrapper,
   HeroTextMain,
   HeroTextSubtitle,
@@ -14,19 +14,19 @@ import {
   RaitingList,
   RaitingListItem,
   RaitingWrapperBtn,
-} from "./WaspSection.styled";
+  HawkBtnBlock,
+  RaitingIconUp,
+  RaitingIconDown,
+  RaitingBtn,
+} from "./HawkSection.styled";
 import {
   GoBackIcon,
   GoBackLink,
   GoNextIcon,
-  BtnBlock,
-  RaitingBtn,
-  RaitingIconUp,
   GoHomeIcon,
-  RaitingIconDown,
 } from "../Navigation/Navigation.styled";
 
-export const WaspSection = () => {
+const HawkSection = () => {
   const [isRaitingListVisible, setRaitingListVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,22 +36,22 @@ export const WaspSection = () => {
   };
 
   return (
-    <WaspHero>
-      <WaspWrapper>
+    <HawkHero>
+      <HawkWrapper>
         <Container>
           <TextWrapper>
-            <HeroTextMain>Wasp</HeroTextMain>
+            <HeroTextMain>Hawk</HeroTextMain>
             <HeroTextSubtitle>
               Nature&apos;s Architects and Stingers
             </HeroTextSubtitle>
             <HeroTextSecondary>
-              Enter the intricate world of wasps, where social structures,
-              stingers, and vital ecological roles converge in a dance of
-              precision and purpose.
+              Take flight with the majestic hawks, rulers of the skies, as we
+              explore their keen eyesight, breathtaking aerial maneuvers, and
+              vital role in maintaining ecological balance.
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
-                <RaitingTitle>Raiting 1/5</RaitingTitle>
+                <RaitingTitle>Raiting 2/5</RaitingTitle>
                 <RaitingBtn onClick={toggleRaitingList}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>
@@ -59,50 +59,52 @@ export const WaspSection = () => {
               {isRaitingListVisible && (
                 <RaitingList isVisible={isRaitingListVisible}>
                   <RaitingListItem>
-                    Some wasps are social, forming intricate colonies with
-                    specialized roles for individuals.
+                    Their powerful talons and beaks are designed for capturing
+                    and consuming various prey.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Social wasps, like yellow jackets, can form large colonies
-                    with hierarchical structures.
+                    Some hawk species migrate over long distances, demonstrating
+                    remarkable navigation skills.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Wasps possess a venomous sting used for hunting and defense
-                    against predators.
+                    Various species of hawks exhibit diverse hunting strategies,
+                    from ambush tactics to cooperative hunting.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Certain wasp species exhibit parasitic behavior, laying eggs
-                    on or inside other insects.
+                    Courtship displays and rituals are common among hawks,
+                    emphasizing social behaviors.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Pollination is another essential role of certain wasp
-                    species, contributing to plant diversity.
+                    Hawks are known for their impressive aerial acrobatics and
+                    soaring flight patterns.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Wasps communicate through chemical signals, coordinating
-                    activities within their colonies.
+                    Adaptability to various habitats, from forests to open
+                    fields, contributes to their widespread distribution.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Mimicry is a common defense mechanism among wasps, imitating
-                    the appearance of more dangerous species.
+                    Conservation efforts are crucial to protecting certain hawk
+                    species facing habitat loss and other threats.
                   </RaitingListItem>
                 </RaitingList>
               )}
             </RaitingWrapper>
-            <BtnBlock>
-              <GoBackLink to='/'>
+            <HawkBtnBlock>
+              <GoBackLink to='/wasp'>
                 <GoBackIcon />
               </GoBackLink>
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/hawk'>
+              <GoBackLink to='/'>
                 <GoNextIcon />
               </GoBackLink>
-            </BtnBlock>
+            </HawkBtnBlock>
           </TextWrapper>
         </Container>
-      </WaspWrapper>
-    </WaspHero>
+      </HawkWrapper>
+    </HawkHero>
   );
 };
+
+export { HawkSection };

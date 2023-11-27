@@ -1,16 +1,13 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
+import { FaArrowUp } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
-import waspHero from "../../assets/pagesImg/waspHero.png";
+import hawkHero from "../../assets/pagesImg/hawkHero.png";
 
-export const WaspHero = styled.div`
+export const HawkHero = styled.div`
   display: flex;
-  background: url(${waspHero});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
+  background: url(${hawkHero});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +17,7 @@ export const WaspHero = styled.div`
   height: 100vh;
 `;
 
-export const WaspWrapper = styled.div`
+export const HawkWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -43,7 +40,7 @@ export const WaspWrapper = styled.div`
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
 
   width: 100%;
@@ -62,8 +59,9 @@ export const HeroTextMain = styled.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #ff6000;
-  font-family: "Antonio", sans-serif;
+  color: #2da4e9;
+  /* font-family: "Playfair Display", sans-serif; */
+  font-family: "Kaushan Script", cursive;
 
   font-weight: bold;
   font-size: 48px;
@@ -101,7 +99,7 @@ export const HeroTextSubtitle = styled.h2`
   letter-spacing: 4px;
   line-height: 1.2;
   overflow: hidden;
-  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
+  background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
@@ -120,8 +118,9 @@ export const HeroTextSubtitle = styled.h2`
 `;
 
 export const HeroTextSecondary = styled.p`
-  color: #99360f;
+  color: #4c7e9b;
   font-weight: 400;
+  font-family: "Antonio", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
@@ -148,31 +147,25 @@ export const RaitingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   margin-top: 10px;
 
   @media (min-width: 768px) {
     align-items: flex-end;
     margin-top: 20px;
-    /* font-size: 16px;
-    line-height: 1.5; */
   }
-  /* @media (min-width: 1440px) {
-    font-size: 18px;
-  } */
 `;
+
 export const RaitingWrapperBtn = styled.div`
   display: flex;
-  /* flex-direction: column;
-  align-items: flex-start; */
+  padding: 10px;
   gap: 10px;
 `;
 
 export const RaitingTitle = styled.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #ff6000;
-  font-family: "Antonio", sans-serif;
+  color: #2da4e9;
+  font-family: "Kaushan Script", cursive;
 `;
 
 export const dropdown = keyframes`
@@ -204,11 +197,9 @@ export const fadeOut = keyframes`
 `;
 
 export const RaitingList = styled.ul`
-  /* position: absolute; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   gap: 10px;
   padding: 10px;
   max-width: 400px;
@@ -227,8 +218,8 @@ export const RaitingList = styled.ul`
 `;
 
 export const RaitingListItem = styled.li`
-  color: #99360f;
-  font-family: "Antonio", sans-serif;
+  color: #4c7e9b;
+  font-family: "Kaushan Script", cursive;
   font-size: 12px;
   font-weight: normal;
   text-align: start;
@@ -243,5 +234,109 @@ export const RaitingListItem = styled.li`
   }
   @media (min-width: 1440px) {
     font-size: 16px;
+  }
+`;
+
+export const HawkBtnBlock = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+`;
+
+export const RaitingIconUp = styled(FaArrowUp)`
+  width: 12px;
+  height: 12px;
+
+  padding: 5px;
+
+  color: #2da4e9;
+  border-radius: 50%;
+  border: 3px solid #2da4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: #355da9 0px 0px 15px;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+
+export const RaitingIconDown = styled(FaArrowDown)`
+  width: 12px;
+  height: 12px;
+
+  padding: 5px;
+
+  color: #2da4e9;
+  border-radius: 50%;
+  border: 3px solid #2da4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: #355da9 0px 0px 15px;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+
+export const RaitingBtn = styled.button`
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  outline: 0;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #2da4e9;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: 2px 2px 5px #1d1e26;
+
+  svg {
+    fill: #2da4e9;
+  }
+
+  /* &.active, */
+  &:hover {
+    color: #4c7e9b;
+
+    svg {
+      fill: #4c7e9b;
+      border: 3px solid #4c7e9b;
+      box-shadow: #4c7e9b 0px 0px 15px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 20px;
   }
 `;

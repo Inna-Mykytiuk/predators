@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Antonio:wght@400;700&family=Arvo:wght@400;700&family=Black+Ops+One&family=Caveat:wght@400;700&family=Cinzel:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Ephesis&family=Great+Vibes&family=Indie+Flower&family=Kaushan+Script&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Potta+One&family=Shadows+Into+Light&family=Special+Elite&family=Zeyada&display=swap");
 @import-normalize;
 /* bring in normalize.css styles */
 
 html,
 body {
   margin: 0;
-  font-family: "Arvo", "Antonio", sans-serif;
+  /* font-family: "Arvo", "Antonio", "Playfair Display", "Amatic", "Black Ops One",
+    "Caveat", "Cinzel", "Dancing Script", "Ephesis", "Great+Vibes",
+    "Indie Flower", "Kaushan Script", "Pacifico", "Permanent Marker",
+    "Potta One", "Shadows Into Light", "Special+Elite", "Zeyada", sans-serif,
+    cursive, serif; */
+
+  font-family: "Antonio", sans-serif;
   background-color: #000;
 
   width: 100%;
