@@ -1,4 +1,4 @@
-import{n as e,N as l,r as s,j as i}from"./index-6bc4c68e.js";import{k as r,c,b as h,F as m,S as g,a as f,C as b}from"./index.esm-c7be3a6b.js";const w="/predators/assets/hawkHero-859879e1.png",u=e.div`
+import{n as e,N as l,r as s,j as i}from"./index-d86bf14c.js";import{k as r,c,b as h,F as m,S as g,a as f,C as b}from"./index.esm-3a4a4253.js";const w="/predators/assets/hawkHero-859879e1.png",u=e.div`
   display: flex;
   background: url(${w});
 
@@ -13,7 +13,7 @@ import{n as e,N as l,r as s,j as i}from"./index-6bc4c68e.js";import{k as r,c,b a
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 40px 0 30px;
+  padding: 60px 0 30px;
   width: 100%;
   align-items: center;
 
@@ -53,7 +53,7 @@ import{n as e,N as l,r as s,j as i}from"./index-6bc4c68e.js";import{k as r,c,b a
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #181717;
+  text-shadow: 1px 1px 8px #419bcf;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
@@ -179,6 +179,7 @@ import{n as e,N as l,r as s,j as i}from"./index-6bc4c68e.js";import{k as r,c,b a
   animation: ${({isVisible:a})=>a?I:T} 2s ease;
 
   @media (min-width: 768px) {
+    max-width: 700px;
     font-size: 28px;
     text-align: end;
   }
@@ -408,4 +409,4 @@ import{n as e,N as l,r as s,j as i}from"./index-6bc4c68e.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,W=()=>{const[a,d]=s.useState(!1),[o,p]=s.useState(!1),x=()=>{d(!a),p(!o)};return i.jsx(u,{children:i.jsx(k,{children:i.jsx(b,{children:i.jsxs(j,{children:[i.jsx(z,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Hawk"}),i.jsx(H,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(R,{children:[i.jsxs(S,{children:[i.jsx(L,{children:"Raiting 2/5"}),i.jsx(G,{onClick:x,children:o?i.jsx(F,{}):i.jsx(C,{})})]}),a&&i.jsxs(A,{isVisible:a,children:[i.jsx(t,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(t,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(t,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(t,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(t,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(t,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(t,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]}),i.jsxs(B,{children:[i.jsx(n,{to:"/wasp",children:i.jsx(K,{})}),i.jsx(n,{to:"/",children:i.jsx(N,{})}),i.jsx(n,{to:"/",children:i.jsx(V,{})})]})]})})})})},O=()=>i.jsx(i.Fragment,{children:i.jsx(W,{})});export{O as default};
+`,W=()=>{const[a,d]=s.useState(!1),[o,p]=s.useState(!1),x=()=>{d(!a),p(!o)};return i.jsx(u,{children:i.jsx(k,{children:i.jsx(b,{children:i.jsxs(j,{children:[i.jsx(z,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Hawk"}),i.jsx(H,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(R,{children:[i.jsxs(S,{children:[i.jsx(L,{children:"Raiting 4/10"}),i.jsx(G,{onClick:x,children:o?i.jsx(F,{}):i.jsx(C,{})})]}),a&&i.jsxs(A,{isVisible:a,children:[i.jsx(t,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(t,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(t,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(t,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(t,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(t,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(t,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]}),i.jsxs(B,{children:[i.jsx(n,{to:"/wasp",children:i.jsx(K,{})}),i.jsx(n,{to:"/",children:i.jsx(N,{})}),i.jsx(n,{to:"/",children:i.jsx(V,{})})]})]})})})})},O=()=>i.jsx(i.Fragment,{children:i.jsx(W,{})});export{O as default};
