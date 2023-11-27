@@ -30,11 +30,11 @@ export const WaspWrapper = styled.div`
   align-items: center;
 
   @media (min-width: 768px) {
-    padding: 30px 0 40px;
+    padding: 30px 0 30px;
     gap: 20px;
   }
   @media (min-width: 1440px) {
-    padding: 50px 0 70px;
+    padding: 50px 0 50px;
     gap: 30px;
     width: 100%;
   }

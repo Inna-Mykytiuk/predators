@@ -72,18 +72,19 @@ export const HeroTextSecondary = styled.h2`
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  /* width: 450px; */
+  max-width: 450px;
   text-align: center;
   margin: 0 auto;
   text-shadow: 1px 1px 2px #181717;
   margin-top: 20px;
 
   @media (min-width: 768px) {
+    max-width: 550px;
     font-size: 18px;
     line-height: 1.6;
   }
   @media (min-width: 1440px) {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
   }
 `;

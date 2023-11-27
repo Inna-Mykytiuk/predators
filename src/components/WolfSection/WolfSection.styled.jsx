@@ -7,21 +7,21 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import hawkHero from "../../assets/pagesImg/hawkHero.png";
+import wolfHero from "../../assets/pagesImg/wolfHero.png";
 
-export const HawkHero = styled.div`
+export const WolfHero = styled.div`
   display: flex;
-  background: url(${hawkHero});
+  background: url(${wolfHero});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   width: 100%;
   min-height: 100vh;
 `;
 
-export const HawkWrapper = styled.div`
+export const WolfWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -49,15 +49,15 @@ export const TextWrapper = styled.div`
 
   width: 100%;
   height: 100%;
-  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 768px) {
-    justify-content: flex-end;
+  /* @media (min-width: 768px) {
+
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
     align-items: flex-end;
-  }
+  } */
 `;
 
 export const HeroTextMain = styled.h1`
@@ -129,13 +129,12 @@ export const HeroTextSecondary = styled.p`
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-left: auto;
+  margin-right: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
   backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    text-align: end;
     font-size: 16px;
     max-width: 400px;
     line-height: 1.5;
@@ -153,7 +152,7 @@ export const RaitingWrapper = styled.div`
   margin-top: 10px;
 
   @media (min-width: 768px) {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     margin-top: 20px;
   }
 `;
@@ -216,7 +215,7 @@ export const RaitingList = styled.ul`
   @media (min-width: 768px) {
     max-width: 700px;
     font-size: 28px;
-    text-align: end;
+    /* text-align: end; */
   }
 `;
 
@@ -225,7 +224,7 @@ export const RaitingListItem = styled.li`
   font-family: "Kaushan Script", cursive;
   font-size: 12px;
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -233,23 +232,23 @@ export const RaitingListItem = styled.li`
 
   @media (min-width: 768px) {
     font-size: 16px;
-    text-align: end;
+    /* text-align: end; */
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
 `;
 
-export const HawkBtnBlock = styled.div`
+export const WolfBtnBlock = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     margin-top: 30px;
-  }
+  } */
 `;
 
 export const RaitingIconUp = styled(FaArrowUp)`

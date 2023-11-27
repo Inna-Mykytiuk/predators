@@ -42,7 +42,6 @@ const HawkSection = () => {
               Nature&apos;s Architects and Stingers
             </HeroTextSubtitle>
             <HeroTextMain>Hawk</HeroTextMain>
-
             <HeroTextSecondary>
               Take flight with the majestic hawks, rulers of the skies, as we
               explore their keen eyesight, breathtaking aerial maneuvers, and
@@ -50,7 +49,7 @@ const HawkSection = () => {
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
-                <RaitingTitle>Raiting 4/10</RaitingTitle>
+                <RaitingTitle>Danger rating 4/10</RaitingTitle>
                 <RaitingBtn onClick={toggleRaitingList}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>
@@ -95,7 +94,7 @@ const HawkSection = () => {
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/'>
+              <GoBackLink to='/wolf'>
                 <GoNextIcon />
               </GoBackLink>
             </HawkBtnBlock>

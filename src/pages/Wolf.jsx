@@ -1,7 +1,11 @@
-import React from "react";
+import { WolfSection } from "../components/WolfSection/WolfSection";
 
 const Wolf = () => {
-  return <div>Wolf</div>;
+  return (
+    <>
+      <WolfSection />
+    </>
+  );
 };
 
 export default Wolf;

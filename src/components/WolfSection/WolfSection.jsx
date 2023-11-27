@@ -3,8 +3,8 @@ import { useState } from "react";
 
 import Container from "../container/Container";
 import {
-  WaspHero,
-  WaspWrapper,
+  WolfHero,
+  WolfWrapper,
   TextWrapper,
   HeroTextMain,
   HeroTextSubtitle,
@@ -14,19 +14,17 @@ import {
   RaitingList,
   RaitingListItem,
   RaitingWrapperBtn,
-} from "./WaspSection.styled";
-import {
-  GoBackIcon,
-  GoBackLink,
-  GoNextIcon,
-  BtnBlock,
-  RaitingBtn,
+  WolfBtnBlock,
   RaitingIconUp,
-  GoHomeIcon,
   RaitingIconDown,
-} from "../Navigation/Navigation.styled";
+  RaitingBtn,
+  GoBackIcon,
+  GoNextIcon,
+  GoHomeIcon,
+  GoBackLink,
+} from "./WolfSection.styled";
 
-export const WaspSection = () => {
+const WolfSection = () => {
   const [isRaitingListVisible, setRaitingListVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,18 +34,18 @@ export const WaspSection = () => {
   };
 
   return (
-    <WaspHero>
-      <WaspWrapper>
+    <WolfHero>
+      <WolfWrapper>
         <Container>
           <TextWrapper>
-            <HeroTextMain>Wasp</HeroTextMain>
             <HeroTextSubtitle>
               Nature&apos;s Architects and Stingers
             </HeroTextSubtitle>
+            <HeroTextMain>Wolf</HeroTextMain>
             <HeroTextSecondary>
-              Enter the intricate world of wasps, where social structures,
-              stingers, and vital ecological roles converge in a dance of
-              precision and purpose.
+              Join the packs and explore the untamed landscapes where wolves,
+              with their intricate social structures and haunting howls, command
+              the wilderness.
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
@@ -59,50 +57,56 @@ export const WaspSection = () => {
               {isRaitingListVisible && (
                 <RaitingList isVisible={isRaitingListVisible}>
                   <RaitingListItem>
-                    Some wasps are social, forming intricate colonies with
-                    specialized roles for individuals.
+                    Wolves are skilled hunters, often targeting large ungulates
+                    such as deer and elk.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Social wasps, like yellow jackets, can form large colonies
-                    with hierarchical structures.
+                    Pack hierarchy is established through a combination of
+                    dominance displays and submission.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Wasps possess a venomous sting used for hunting and defense
-                    against predators.
+                    Communication within a wolf pack involves vocalizations,
+                    body language, and scent marking.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Certain wasp species exhibit parasitic behavior, laying eggs
-                    on or inside other insects.
+                    The iconic howl of a wolf serves various purposes, including
+                    signaling location and maintaining pack cohesion.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Pollination is another essential role of certain wasp
-                    species, contributing to plant diversity.
+                    The iconic howl of a wolf serves various purposes, including
+                    signaling location and maintaining pack cohesion.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Wasps communicate through chemical signals, coordinating
-                    activities within their colonies.
+                    Wolf territories can cover vast areas, depending on prey
+                    availability and pack size.
                   </RaitingListItem>
                   <RaitingListItem>
-                    Mimicry is a common defense mechanism among wasps, imitating
-                    the appearance of more dangerous species.
+                    The gestation period for wolf pups is around two months,
+                    with the entire pack participating in their care.
+                  </RaitingListItem>
+                  <RaitingListItem>
+                    Gray wolves, the most widespread species, exhibit a wide
+                    range of coat colors, from white to black.
                   </RaitingListItem>
                 </RaitingList>
               )}
             </RaitingWrapper>
-            <BtnBlock>
-              <GoBackLink to='/'>
+            <WolfBtnBlock>
+              <GoBackLink to='/hawk'>
                 <GoBackIcon />
               </GoBackLink>
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/hawk'>
+              <GoBackLink to='/'>
                 <GoNextIcon />
               </GoBackLink>
-            </BtnBlock>
+            </WolfBtnBlock>
           </TextWrapper>
         </Container>
-      </WaspWrapper>
-    </WaspHero>
+      </WolfWrapper>
+    </WolfHero>
   );
 };
+
+export { WolfSection };
