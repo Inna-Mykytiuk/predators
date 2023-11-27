@@ -27,13 +27,7 @@ import {
 } from "../Navigation/Navigation.styled";
 
 export const WaspSection = () => {
-  const [isRaitingListVisible, setRaitingListVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleRaitingList = () => {
-    setRaitingListVisible(!isRaitingListVisible);
-    setIsOpen(!isOpen);
-  };
 
   return (
     <WaspHero>
@@ -52,42 +46,41 @@ export const WaspSection = () => {
             <RaitingWrapper>
               <RaitingWrapperBtn>
                 <RaitingTitle>Danger rating 5/10</RaitingTitle>
-                <RaitingBtn onClick={toggleRaitingList}>
+                <RaitingBtn onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>
               </RaitingWrapperBtn>
-              {isRaitingListVisible && (
-                <RaitingList isVisible={isRaitingListVisible}>
-                  <RaitingListItem>
-                    Some wasps are social, forming intricate colonies with
-                    specialized roles for individuals.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Social wasps, like yellow jackets, can form large colonies
-                    with hierarchical structures.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Wasps possess a venomous sting used for hunting and defense
-                    against predators.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Certain wasp species exhibit parasitic behavior, laying eggs
-                    on or inside other insects.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Pollination is another essential role of certain wasp
-                    species, contributing to plant diversity.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Wasps communicate through chemical signals, coordinating
-                    activities within their colonies.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Mimicry is a common defense mechanism among wasps, imitating
-                    the appearance of more dangerous species.
-                  </RaitingListItem>
-                </RaitingList>
-              )}
+
+              <RaitingList isVisible={isOpen}>
+                <RaitingListItem>
+                  Some wasps are social, forming intricate colonies with
+                  specialized roles for individuals.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Social wasps, like yellow jackets, can form large colonies
+                  with hierarchical structures.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Wasps possess a venomous sting used for hunting and defense
+                  against predators.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Certain wasp species exhibit parasitic behavior, laying eggs
+                  on or inside other insects.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Pollination is another essential role of certain wasp species,
+                  contributing to plant diversity.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Wasps communicate through chemical signals, coordinating
+                  activities within their colonies.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Mimicry is a common defense mechanism among wasps, imitating
+                  the appearance of more dangerous species.
+                </RaitingListItem>
+              </RaitingList>
             </RaitingWrapper>
             <BtnBlock>
               <GoBackLink to='/'>

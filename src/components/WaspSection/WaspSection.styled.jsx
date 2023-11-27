@@ -166,47 +166,23 @@ export const RaitingTitle = styled.h3`
   font-family: "Antonio", sans-serif;
 `;
 
-export const dropdown = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-  }
-
-`;
-
-export const fadeOut = keyframes`
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-`;
-
 export const RaitingList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
   max-width: 400px;
+  opacity: 0;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
-  animation: ${({ isVisible }) => (isVisible ? dropdown : fadeOut)} 2s ease;
+  transform: translateY(-20px);
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transform: ${({ isVisible }) =>
+    isVisible ? "translateY(0)" : "translateY(-20px)"};
+  transition: all 0.5s;
 
   @media (min-width: 768px) {
     font-size: 28px;
