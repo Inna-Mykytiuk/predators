@@ -5,7 +5,7 @@ import {
   GiHawkEmblem,
   GiSnake,
   GiWolfHead,
-  GiBearHead,
+  GiTigerHead,
   GiSharkFin,
   GiBowman,
 } from "react-icons/gi";
@@ -279,7 +279,7 @@ export const WolfIcon = styled(GiWolfHead)`
     height: 50px;
   }
 `;
-export const BearIcon = styled(GiBearHead)`
+export const TigerIcon = styled(GiTigerHead)`
   width: 40px;
   height: 40px;
   margin: 0;

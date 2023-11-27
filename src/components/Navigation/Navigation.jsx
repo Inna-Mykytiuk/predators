@@ -7,7 +7,7 @@ import {
   NavListItem,
   SnakeIcon,
   WolfIcon,
-  BearIcon,
+  TigerIcon,
   SharkIcon,
   HumanIcon,
   VirusIcon,
@@ -32,18 +32,19 @@ export const Navigation = () => {
             </Link>
           </NavListItem>
           <NavListItem>
-            <Link to='/snake'>
-              <SnakeIcon />
-            </Link>
-          </NavListItem>
-          <NavListItem>
             <Link to='/wolf'>
               <WolfIcon />
             </Link>
           </NavListItem>
           <NavListItem>
-            <Link to='/bear'>
-              <BearIcon />
+            <Link to='/snake'>
+              <SnakeIcon />
+            </Link>
+          </NavListItem>
+
+          <NavListItem>
+            <Link to='/tiger'>
+              <TigerIcon />
             </Link>
           </NavListItem>
           <NavListItem>

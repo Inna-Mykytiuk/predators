@@ -26,7 +26,7 @@ export const HawkWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 40px 0 30px;
+  padding: 60px 0 30px;
   width: 100%;
   align-items: center;
 
@@ -70,7 +70,7 @@ export const HeroTextMain = styled.h1`
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #181717;
+  text-shadow: 1px 1px 8px #419bcf;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
@@ -214,6 +214,7 @@ export const RaitingList = styled.ul`
   animation: ${({ isVisible }) => (isVisible ? dropdown : fadeOut)} 2s ease;
 
   @media (min-width: 768px) {
+    max-width: 700px;
     font-size: 28px;
     text-align: end;
   }

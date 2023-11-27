@@ -50,7 +50,7 @@ const HawkSection = () => {
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
-                <RaitingTitle>Raiting 2/5</RaitingTitle>
+                <RaitingTitle>Raiting 4/10</RaitingTitle>
                 <RaitingBtn onClick={toggleRaitingList}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>

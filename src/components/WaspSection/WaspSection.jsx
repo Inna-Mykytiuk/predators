@@ -51,7 +51,7 @@ export const WaspSection = () => {
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
-                <RaitingTitle>Raiting 1/5</RaitingTitle>
+                <RaitingTitle>Raiting 5/10</RaitingTitle>
                 <RaitingBtn onClick={toggleRaitingList}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>
