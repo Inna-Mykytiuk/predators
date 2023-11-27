@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 import { keyframes } from "@emotion/react";
 import { FaArrowUp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
+import { SiGooglehome } from "react-icons/si";
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 import hawkHero from "../../assets/pagesImg/hawkHero.png";
 
@@ -12,9 +16,9 @@ export const HawkHero = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 export const HawkWrapper = styled.div`
@@ -22,7 +26,7 @@ export const HawkWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 20px 0 30px;
+  padding: 40px 0 30px;
   width: 100%;
   align-items: center;
 
@@ -40,7 +44,7 @@ export const HawkWrapper = styled.div`
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 
   width: 100%;
@@ -48,6 +52,7 @@ export const TextWrapper = styled.div`
   margin-left: auto;
 
   @media (min-width: 768px) {
+    justify-content: flex-end;
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
@@ -60,14 +65,13 @@ export const HeroTextMain = styled.h1`
   text-align: center;
   text-transform: uppercase;
   color: #2da4e9;
-  /* font-family: "Playfair Display", sans-serif; */
   font-family: "Kaushan Script", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
   text-shadow: 1px 1px 2px #181717;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
@@ -98,7 +102,6 @@ export const HeroTextSubtitle = styled.h2`
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  overflow: hidden;
   background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
   background-repeat: no-repeat;
   background-size: 80%;
@@ -106,9 +109,10 @@ export const HeroTextSubtitle = styled.h2`
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   animation: ${flicker} 4s linear infinite;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -120,7 +124,7 @@ export const HeroTextSubtitle = styled.h2`
 export const HeroTextSecondary = styled.p`
   color: #4c7e9b;
   font-weight: 400;
-  font-family: "Antonio", sans-serif;
+  font-family: "Kaushan Script", cursive;
   font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
@@ -128,22 +132,21 @@ export const HeroTextSecondary = styled.p`
   margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     text-align: end;
     font-size: 16px;
-    max-width: 450px;
+    max-width: 400px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
-    max-width: 500px;
   }
 `;
 
 export const RaitingWrapper = styled.div`
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -197,7 +200,6 @@ export const fadeOut = keyframes`
 `;
 
 export const RaitingList = styled.ul`
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -242,7 +244,11 @@ export const HawkBtnBlock = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: auto;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
 `;
 
 export const RaitingIconUp = styled(FaArrowUp)`
@@ -330,6 +336,120 @@ export const RaitingBtn = styled.button`
       fill: #4c7e9b;
       border: 3px solid #4c7e9b;
       box-shadow: #4c7e9b 0px 0px 15px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 20px;
+  }
+`;
+
+export const GoBackIcon = styled(FaArrowLeft)`
+  width: 12px;
+  height: 12px;
+
+  padding: 10px;
+
+  color: #2da4e9;
+  border-radius: 50%;
+  border: 3px solid #2da4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: #355da9 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+export const GoHomeIcon = styled(SiGooglehome)`
+  width: 12px;
+  height: 12px;
+
+  padding: 10px;
+
+  color: #2da4e9;
+  border-radius: 50%;
+  border: 3px solid #2da4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: #355da9 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+export const GoNextIcon = styled(FaArrowRight)`
+  width: 12px;
+  height: 12px;
+
+  padding: 10px;
+
+  color: #2da4e9;
+  border-radius: 50%;
+  border: 3px solid #2da4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: #355da9 0px 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+`;
+
+export const GoBackLink = styled(NavLink)`
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #2da4e9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  text-shadow: 2px 2px 5px #4c7e9b;
+
+  svg {
+    fill: #2da4e9;
+  }
+
+  /* &.active, */
+  &:hover,
+  &:focus {
+    color: #a40007;
+
+    svg {
+      fill: #4c7e9b;
+      border: 3px solid #4c7e9b;
+      box-shadow: #355da9 0px 0px 15px;
     }
   }
 

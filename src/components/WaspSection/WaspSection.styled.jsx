@@ -17,7 +17,7 @@ export const WaspHero = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 export const WaspWrapper = styled.div`
@@ -100,7 +100,6 @@ export const HeroTextSubtitle = styled.h2`
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  overflow: hidden;
   background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
   background-size: 80%;
@@ -144,7 +143,6 @@ export const HeroTextSecondary = styled.p`
 
 export const RaitingWrapper = styled.div`
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -154,17 +152,10 @@ export const RaitingWrapper = styled.div`
   @media (min-width: 768px) {
     align-items: flex-end;
     margin-top: 20px;
-    /* font-size: 16px;
-    line-height: 1.5; */
   }
-  /* @media (min-width: 1440px) {
-    font-size: 18px;
-  } */
 `;
 export const RaitingWrapperBtn = styled.div`
   display: flex;
-  /* flex-direction: column;
-  align-items: flex-start; */
   gap: 10px;
 `;
 
@@ -204,11 +195,8 @@ export const fadeOut = keyframes`
 `;
 
 export const RaitingList = styled.ul`
-  /* position: absolute; */
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   gap: 10px;
   padding: 10px;
   max-width: 400px;

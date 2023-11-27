@@ -18,13 +18,11 @@ import {
   RaitingIconUp,
   RaitingIconDown,
   RaitingBtn,
-} from "./HawkSection.styled";
-import {
   GoBackIcon,
-  GoBackLink,
   GoNextIcon,
   GoHomeIcon,
-} from "../Navigation/Navigation.styled";
+  GoBackLink,
+} from "./HawkSection.styled";
 
 const HawkSection = () => {
   const [isRaitingListVisible, setRaitingListVisible] = useState(false);
@@ -40,10 +38,11 @@ const HawkSection = () => {
       <HawkWrapper>
         <Container>
           <TextWrapper>
-            <HeroTextMain>Hawk</HeroTextMain>
             <HeroTextSubtitle>
               Nature&apos;s Architects and Stingers
             </HeroTextSubtitle>
+            <HeroTextMain>Hawk</HeroTextMain>
+
             <HeroTextSecondary>
               Take flight with the majestic hawks, rulers of the skies, as we
               explore their keen eyesight, breathtaking aerial maneuvers, and
