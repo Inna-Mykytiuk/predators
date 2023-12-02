@@ -157,7 +157,7 @@ export const RaitingWrapper = styled.div`
 
 export const RaitingWrapperBtn = styled.div`
   display: flex;
-  padding: 10px;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
 `;
@@ -180,7 +180,7 @@ export const RaitingList = styled.ul`
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(-20px);
+  transform: translateY(0);
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
@@ -211,11 +211,11 @@ export const RaitingListItem = styled.li`
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    /* font-size: 18px; */
     /* text-align: end; */
   }
   @media (min-width: 1440px) {
-    /* font-size: 16px; */
+    font-size: 18px;
   }
 `;
 

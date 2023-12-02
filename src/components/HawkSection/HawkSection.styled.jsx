@@ -159,7 +159,7 @@ export const RaitingWrapper = styled.div`
 
 export const RaitingWrapperBtn = styled.div`
   display: flex;
-  padding: 10px;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
 `;
@@ -175,7 +175,7 @@ export const RaitingList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding: 0 10px;
   max-width: 400px;
 
   color: #fff;
@@ -183,7 +183,7 @@ export const RaitingList = styled.ul`
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
-  transform: translateY(-20px);
+  transform: translateY(0);
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};

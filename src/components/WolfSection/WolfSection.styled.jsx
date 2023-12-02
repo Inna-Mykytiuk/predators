@@ -158,7 +158,7 @@ export const RaitingWrapper = styled.div`
 
 export const RaitingWrapperBtn = styled.div`
   display: flex;
-  padding: 10px;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
 `;
@@ -174,7 +174,7 @@ export const RaitingList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding: 0 10px;
   max-width: 400px;
 
   color: #fff;
@@ -210,7 +210,7 @@ export const RaitingListItem = styled.li`
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
