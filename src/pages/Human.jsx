@@ -1,7 +1,11 @@
-import React from "react";
+import { HumanSection } from "../components/HumanSection/HumanSection";
 
 const Human = () => {
-  return <div>Human</div>;
+  return (
+    <>
+      <HumanSection />
+    </>
+  );
 };
 
 export default Human;

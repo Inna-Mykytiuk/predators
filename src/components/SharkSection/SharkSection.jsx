@@ -88,7 +88,7 @@ const SharkSection = () => {
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/'>
+              <GoBackLink to='/human'>
                 <GoNextIcon />
               </GoBackLink>
             </SharkBtnBlock>
