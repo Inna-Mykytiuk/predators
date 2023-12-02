@@ -1,11 +1,6 @@
-import{N as o,r as s,j as i}from"./index-b1936e5e.js";import{n as e,k as x,c as d,b as p,F as l,S as h,a as c,C as f}from"./index.esm-79284b10.js";const g="/predators/assets/tigerHero-d327fef5.png",m=e.div`
+import{N as o,r as s,j as i}from"./index-afe9cb55.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-69fb96cb.js";const g="/predators/assets/tigerHero-d327fef5.png",m=e.div`
   display: flex;
   background: url(${g});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,7 +13,7 @@ import{N as o,r as s,j as i}from"./index-b1936e5e.js";import{n as e,k as x,c as 
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 60px 0 60px;
+  padding: 30px 0 60px;
   width: 100%;
   align-items: center;
 
@@ -302,7 +297,7 @@ import{N as o,r as s,j as i}from"./index-b1936e5e.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,$=e(h)`
+`,$=e(c)`
   width: 12px;
   height: 12px;
   padding: 10px;
@@ -324,7 +319,7 @@ import{N as o,r as s,j as i}from"./index-b1936e5e.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=e(c)`
+`,A=e(h)`
   width: 12px;
   height: 12px;
 

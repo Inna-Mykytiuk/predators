@@ -1,11 +1,6 @@
-import{r as o,j as i}from"./index-b1936e5e.js";import{n as t,k as r,C as p}from"./index.esm-79284b10.js";import{R as l,g as x,h as d,B as c,G as a,i as f,j as h}from"./Navigation.styled-dfb9f8e1.js";const g="/predators/assets/waspHero-bd929eaa.png",m=t.div`
+import{r as o,j as i}from"./index-afe9cb55.js";import{n as t,k as r,C as p}from"./index.esm-69fb96cb.js";import{R as l,g as x,h as d,B as c,G as a,i as h,j as m}from"./Navigation.styled-9da0a40e.js";const f="/predators/assets/waspHero-bd929eaa.png",g=t.div`
   display: flex;
-  background: url(${g});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
+  background: url(${f});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,15 +13,12 @@ import{r as o,j as i}from"./index-b1936e5e.js";import{n as t,k as r,C as p}from"
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 60px 0 60px;
+  padding: 30px 0 60px;
   width: 100%;
   align-items: center;
-  color: #fff;
-  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     gap: 20px;
-    backdrop-filter: blur(0);
   }
   @media (min-width: 1440px) {
     padding: 50px 0 50px;
@@ -187,4 +179,4 @@ import{r as o,j as i}from"./index-b1936e5e.js";import{n as t,k as r,C as p}from"
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,S=()=>{const[e,s]=o.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(p,{children:i.jsxs(u,{children:[i.jsx(b,{children:"Wasp"}),i.jsx(k,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(W,{children:"Danger rating 5/10"}),i.jsx(l,{onClick:()=>s(!e),children:e?i.jsx(x,{}):i.jsx(d,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(c,{children:[i.jsx(a,{to:"/",children:i.jsx(f,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(h,{})})]})]})})})})},$=()=>i.jsx(S,{});export{$ as default};
+`,S=()=>{const[e,s]=o.useState(!1);return i.jsx(g,{children:i.jsx(w,{children:i.jsx(p,{children:i.jsxs(u,{children:[i.jsx(b,{children:"Wasp"}),i.jsx(k,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(W,{children:"Danger rating 5/10"}),i.jsx(l,{onClick:()=>s(!e),children:e?i.jsx(x,{}):i.jsx(d,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(c,{children:[i.jsx(a,{to:"/",children:i.jsx(h,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(m,{})})]})]})})})})},$=()=>i.jsx(S,{});export{$ as default};
