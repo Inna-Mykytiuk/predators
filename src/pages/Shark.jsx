@@ -1,7 +1,11 @@
-import React from "react";
+import { SharkSection } from "../components/SharkSection/SharkSection";
 
 const Shark = () => {
-  return <div>Shark</div>;
+  return (
+    <>
+      <SharkSection />
+    </>
+  );
 };
 
 export default Shark;

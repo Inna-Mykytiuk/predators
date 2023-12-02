@@ -5,6 +5,7 @@ import Container from "../container/Container";
 import {
   TigerHero,
   TigerWrapper,
+  TigerBtnBlock,
   TextWrapper,
   HeroTextMain,
   HeroTextSubtitle,
@@ -14,7 +15,6 @@ import {
   RaitingList,
   RaitingListItem,
   RaitingWrapperBtn,
-  TigerBtnBlock,
   RaitingIconUp,
   RaitingIconDown,
   RaitingBtn,
@@ -91,7 +91,7 @@ export const TigerSection = () => {
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/'>
+              <GoBackLink to='/shark'>
                 <GoNextIcon />
               </GoBackLink>
             </TigerBtnBlock>
