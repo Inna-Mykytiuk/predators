@@ -1,4 +1,4 @@
-import{n as e,N as o,r as s,j as i}from"./index-cb3cd85b.js";import{k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-41abc538.js";const g="/predators/assets/snakeHero-b4ad6989.png",f=e.div`
+import{n as e,N as o,r as s,j as i}from"./index-2841df9b.js";import{k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-e7090098.js";const g="/predators/assets/snakeHero-b4ad6989.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -130,7 +130,7 @@ import{n as e,N as o,r as s,j as i}from"./index-cb3cd85b.js";import{k as x,c as 
   }
 `,z=e.div`
   display: flex;
-  padding: 10px;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
 `,S=e.h3`
@@ -149,7 +149,7 @@ import{n as e,N as o,r as s,j as i}from"./index-cb3cd85b.js";import{k as x,c as 
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(-20px);
+  transform: translateY(0);
   opacity: ${({isVisible:t})=>t?1:0};
   transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
   height: ${({isVisible:t})=>t?"100%":"30px"};
@@ -177,11 +177,11 @@ import{n as e,N as o,r as s,j as i}from"./index-cb3cd85b.js";import{k as x,c as 
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    /* font-size: 18px; */
     /* text-align: end; */
   }
   @media (min-width: 1440px) {
-    /* font-size: 16px; */
+    font-size: 18px;
   }
 `,D=e.div`
   display: flex;
