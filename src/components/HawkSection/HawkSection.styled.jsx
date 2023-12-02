@@ -7,7 +7,7 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import hawkHero from "../../assets/pagesImg/hawkHero.webp";
+import hawkHero from "../../assets/pagesImg/hawkHero.png";
 
 export const HawkHero = styled.div`
   display: flex;

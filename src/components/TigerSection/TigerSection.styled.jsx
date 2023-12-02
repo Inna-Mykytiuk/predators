@@ -7,7 +7,7 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import tigerHero from "../../assets/pagesImg/tigerHero.webp";
+import tigerHero from "../../assets/pagesImg/tigerHero.png";
 
 export const TigerHero = styled.div`
   display: flex;

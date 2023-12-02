@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 
-import waspHero from "../../assets/pagesImg/waspHero.webp";
+import waspHero from "../../assets/pagesImg/waspHero.png";
 
 export const WaspHero = styled.div`
   display: flex;

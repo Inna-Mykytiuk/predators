@@ -7,7 +7,7 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import sharkHero from "../../assets/pagesImg/sharkHero.webp";
+import sharkHero from "../../assets/pagesImg/sharkHero.png";
 
 export const SharkHero = styled.div`
   display: flex;

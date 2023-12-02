@@ -7,7 +7,7 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import virusHero from "../../assets/pagesImg/virusHero.webp";
+import virusHero from "../../assets/pagesImg/virusHero.png";
 
 export const VirusHero = styled.div`
   display: flex;
