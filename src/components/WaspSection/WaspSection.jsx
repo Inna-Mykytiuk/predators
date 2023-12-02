@@ -15,8 +15,8 @@ import {
   RaitingListItem,
   RaitingWrapperBtn,
 } from "./WaspSection.styled";
+
 import {
-  GoBackIcon,
   GoBackLink,
   GoNextIcon,
   BtnBlock,
@@ -28,12 +28,6 @@ import {
 
 export const WaspSection = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isRaitingListVisible, setRaitingListVisible] = useState(false);
-
-  // const toggleRaitingList = () => {
-  //   setRaitingListVisible(!isRaitingListVisible);
-  //   setIsOpen(!isOpen);
-  // };
 
   return (
     <WaspHero>
@@ -89,9 +83,6 @@ export const WaspSection = () => {
               </RaitingList>
             </RaitingWrapper>
             <BtnBlock>
-              <GoBackLink to='/'>
-                <GoBackIcon />
-              </GoBackLink>
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>

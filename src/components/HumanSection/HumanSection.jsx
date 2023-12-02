@@ -41,7 +41,7 @@ const HumanSection = () => {
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
-                <RaitingTitle>Danger rating 5/10</RaitingTitle>
+                <RaitingTitle>Danger rating 9/10</RaitingTitle>
                 <RaitingBtn onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>

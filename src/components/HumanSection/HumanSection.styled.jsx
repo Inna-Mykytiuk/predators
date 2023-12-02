@@ -56,7 +56,7 @@ export const HeroTextMain = styled.h1`
   text-align: center;
   text-transform: uppercase;
   color: #a40007;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Cinzel", serif;
 
   font-weight: bold;
   font-size: 48px;
@@ -158,7 +158,7 @@ export const RaitingTitle = styled.h3`
   font-size: 22px;
   font-weight: bold;
   color: #a40007;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Cinzel", serif;
 `;
 
 export const RaitingList = styled.ul`

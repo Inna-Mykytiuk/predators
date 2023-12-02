@@ -43,7 +43,7 @@ export const TigerSection = () => {
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
-                <RaitingTitle>Danger rating 5/10</RaitingTitle>
+                <RaitingTitle>Danger rating 7/10</RaitingTitle>
                 <RaitingBtn onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>

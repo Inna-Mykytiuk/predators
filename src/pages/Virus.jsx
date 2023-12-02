@@ -1,7 +1,11 @@
-import React from "react";
+import { VirusSection } from "../components/VirusSection/VirusSection";
 
 const Virus = () => {
-  return <div>Virus</div>;
+  return (
+    <>
+      <VirusSection />
+    </>
+  );
 };
 
 export default Virus;
