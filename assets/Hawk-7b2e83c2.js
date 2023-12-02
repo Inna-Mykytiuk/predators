@@ -1,6 +1,6 @@
-import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b as h,F as m,S as g,a as f,C as b}from"./index.esm-15eabcf0.js";const w="/predators/assets/hawkHero-859879e1.png",u=e.div`
+import{n as e,N as o,r as s,j as i}from"./index-67a32544.js";import{k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-2bb2b35a.js";const g="/predators/assets/hawkHero-859879e1.png",f=e.div`
   display: flex;
-  background: url(${w});
+  background: url(${g});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,7 +8,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   background-position: right center;
   width: 100%;
   min-height: 100vh;
-`,k=e.div`
+`,b=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -26,7 +26,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
     gap: 30px;
     width: 100%;
   }
-`,j=e.div`
+`,w=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -43,7 +43,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     align-items: flex-end;
   }
-`,y=e.h1`
+`,u=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     font-size: 80px;
     line-height: 1.4;
   }
@@ -68,14 +68,14 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
     font-weight: bold;
     line-height: 1.2;
   }
-`,v=r`
+`,k=d`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,z=e.h2`
+`,j=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -87,18 +87,18 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${v} 4s linear infinite;
+  animation: ${k} 4s linear infinite;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,H=e.p`
+`,v=e.p`
   color: #4c7e9b;
   font-weight: 400;
   font-family: "Kaushan Script", cursive;
@@ -120,7 +120,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,S=e.div`
+`,y=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -131,40 +131,16 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
     align-items: flex-end;
     margin-top: 20px;
   }
-`,R=e.div`
+`,z=e.div`
   display: flex;
   padding: 10px;
   gap: 10px;
-`,L=e.h3`
+`,H=e.h3`
   font-size: 22px;
   font-weight: bold;
   color: #2da4e9;
   font-family: "Kaushan Script", cursive;
-`,I=r`
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-  }
-
-`,T=r`
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-`,A=e.ul`
+`,S=e.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -176,14 +152,23 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
-  animation: ${({isVisible:a})=>a?I:T} 2s ease;
+  transform: translateY(-20px);
+  opacity: ${({isVisible:t})=>t?1:0};
+  height: ${({isVisible:t})=>t?"100%":"30px"};
+  /* overflow: ${({isVisible:t})=>t?"":"none"}; */
+  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
+  transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
+
+  transition: all 0.8s;
 
   @media (min-width: 768px) {
+    height: ${({isVisible:t})=>t?"100%":"10px"};
+    overflow: ${({isVisible:t})=>t?"visible":"hidden"};
     max-width: 700px;
     font-size: 28px;
     text-align: end;
   }
-`,t=e.li`
+`,n=e.li`
   color: #4c7e9b;
   font-family: "Kaushan Script", cursive;
   font-size: 12px;
@@ -201,7 +186,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,B=e.div`
+`,R=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -211,7 +196,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 768px) {
     margin-top: 30px;
   }
-`,F=e(c)`
+`,$=e(p)`
   width: 12px;
   height: 12px;
 
@@ -235,7 +220,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,C=e(h)`
+`,I=e(x)`
   width: 12px;
   height: 12px;
 
@@ -259,7 +244,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,G=e.button`
+`,T=e.button`
   display: flex;
   font-family: "Montserrat", sans-serif;
   background-color: transparent;
@@ -301,7 +286,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,K=e(m)`
+`,A=e(l)`
   width: 12px;
   height: 12px;
 
@@ -324,7 +309,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,N=e(g)`
+`,B=e(c)`
   width: 12px;
   height: 12px;
 
@@ -347,7 +332,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,V=e(f)`
+`,F=e(h)`
   width: 12px;
   height: 12px;
 
@@ -370,7 +355,7 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,n=e(l)`
+`,a=e(o)`
   display: flex;
   font-family: "Montserrat", sans-serif;
 
@@ -409,4 +394,4 @@ import{n as e,N as l,r as s,j as i}from"./index-5d66dae7.js";import{k as r,c,b a
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,W=()=>{const[a,d]=s.useState(!1),[o,p]=s.useState(!1),x=()=>{d(!a),p(!o)};return i.jsx(u,{children:i.jsx(k,{children:i.jsx(b,{children:i.jsxs(j,{children:[i.jsx(z,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Hawk"}),i.jsx(H,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(S,{children:[i.jsxs(R,{children:[i.jsx(L,{children:"Danger rating 4/10"}),i.jsx(G,{onClick:x,children:o?i.jsx(F,{}):i.jsx(C,{})})]}),a&&i.jsxs(A,{isVisible:a,children:[i.jsx(t,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(t,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(t,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(t,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(t,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(t,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(t,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]}),i.jsxs(B,{children:[i.jsx(n,{to:"/wasp",children:i.jsx(K,{})}),i.jsx(n,{to:"/",children:i.jsx(N,{})}),i.jsx(n,{to:"/wolf",children:i.jsx(V,{})})]})]})})})})},M=()=>i.jsx(i.Fragment,{children:i.jsx(W,{})});export{M as default};
+`,C=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(w,{children:[i.jsx(u,{children:"Hawk"}),i.jsx(j,{children:"Nature's Architects and Stingers"}),i.jsx(v,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(y,{children:[i.jsxs(z,{children:[i.jsx(H,{children:"Danger rating 4/10"}),i.jsx(T,{onClick:()=>r(!t),children:t?i.jsx($,{}):i.jsx(I,{})})]}),i.jsxs(S,{isVisible:t,children:[i.jsx(n,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(n,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(n,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(n,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(n,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(n,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(n,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]}),i.jsxs(R,{children:[i.jsx(a,{to:"/wasp",children:i.jsx(A,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/wolf",children:i.jsx(F,{})})]})]})})})})},K=()=>i.jsx(i.Fragment,{children:i.jsx(C,{})});export{K as default};
