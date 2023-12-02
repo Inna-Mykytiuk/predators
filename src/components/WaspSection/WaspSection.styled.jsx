@@ -28,9 +28,12 @@ export const WaspWrapper = styled.div`
   padding: 60px 0 60px;
   width: 100%;
   align-items: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     gap: 20px;
+    backdrop-filter: blur(0);
   }
   @media (min-width: 1440px) {
     padding: 50px 0 50px;
@@ -183,6 +186,8 @@ export const RaitingList = styled.ul`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
+  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
+  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
   transition: all 0.5s;
 
   @media (min-width: 768px) {

@@ -189,6 +189,8 @@ export const RaitingList = styled.ul`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
+  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
+  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
   transition: all 0.5s;
 
   @media (min-width: 768px) {
@@ -225,10 +227,6 @@ export const TigerBtnBlock = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-
-  /* @media (min-width: 768px) {
-    margin-top: 30px;
-  } */
 `;
 
 export const RaitingIconUp = styled(FaArrowUp)`
