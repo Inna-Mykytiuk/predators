@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 
-import hero from "../../assets/pagesImg/predatorHero.png";
+import hero from "../../assets/pagesImg/predatorHero.webp";
 
 export const Hero = styled.div`
   display: flex;
