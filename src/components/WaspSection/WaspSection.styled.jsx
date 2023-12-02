@@ -6,11 +6,6 @@ import waspHero from "../../assets/pagesImg/waspHero.png";
 export const WaspHero = styled.div`
   display: flex;
   background: url(${waspHero});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,15 +20,12 @@ export const WaspWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 60px 0 60px;
+  padding: 30px 0 60px;
   width: 100%;
   align-items: center;
-  color: #fff;
-  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     gap: 20px;
-    backdrop-filter: blur(0);
   }
   @media (min-width: 1440px) {
     padding: 50px 0 50px;

@@ -12,11 +12,6 @@ import tigerHero from "../../assets/pagesImg/tigerHero.png";
 export const TigerHero = styled.div`
   display: flex;
   background: url(${tigerHero});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,7 +26,7 @@ export const TigerWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 60px 0 60px;
+  padding: 30px 0 60px;
   width: 100%;
   align-items: center;
 
