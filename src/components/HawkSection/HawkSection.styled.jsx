@@ -187,6 +187,7 @@ export const RaitingList = styled.ul`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
 
