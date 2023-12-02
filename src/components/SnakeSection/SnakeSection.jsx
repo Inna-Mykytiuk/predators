@@ -91,7 +91,7 @@ const SnakeSection = () => {
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/'>
+              <GoBackLink to='/tiger'>
                 <GoNextIcon />
               </GoBackLink>
             </SnakeBtnBlock>

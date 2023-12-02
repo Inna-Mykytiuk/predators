@@ -11,8 +11,6 @@ import {
   SharkIcon,
   HumanIcon,
   VirusIcon,
-  // GoBackLink,
-  // GoBackIcon,
   NavBlock,
 } from "./Navigation.styled";
 
@@ -41,7 +39,6 @@ export const Navigation = () => {
               <SnakeIcon />
             </Link>
           </NavListItem>
-
           <NavListItem>
             <Link to='/tiger'>
               <TigerIcon />

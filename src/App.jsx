@@ -9,7 +9,7 @@ const Wasp = lazy(() => import("./pages/Wasp"));
 const Hawk = lazy(() => import("./pages/Hawk"));
 const Snake = lazy(() => import("./pages/Snake"));
 const Wolf = lazy(() => import("./pages/Wolf"));
-const Bear = lazy(() => import("./pages/Bear"));
+const Tiger = lazy(() => import("./pages/Tiger"));
 const Shark = lazy(() => import("./pages/Shark"));
 const Human = lazy(() => import("./pages/Human"));
 const Virus = lazy(() => import("./pages/Virus"));
@@ -24,9 +24,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/wasp' element={<Wasp />} />
             <Route path='/hawk' element={<Hawk />} />
-            <Route path='/snake' element={<Snake />} />
             <Route path='/wolf' element={<Wolf />} />
-            <Route path='/bear' element={<Bear />} />
+            <Route path='/snake' element={<Snake />} />
+            <Route path='/tiger' element={<Tiger />} />
             <Route path='/shark' element={<Shark />} />
             <Route path='/human' element={<Human />} />
             <Route path='/virus' element={<Virus />} />
