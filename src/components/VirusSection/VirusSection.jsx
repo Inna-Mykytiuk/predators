@@ -19,7 +19,6 @@ import {
   RaitingIconDown,
   RaitingBtn,
   GoBackIcon,
-  GoNextIcon,
   GoHomeIcon,
   GoBackLink,
 } from "./VirusSection.styled";

@@ -1,145 +1,74 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { LoaderContainer, Rect, Container } from "./Loader.styled";
+import styled, { keyframes } from "styled-components";
 
-const TIMER = 150;
-const TRANSITION = 0.5;
-const DEF_SIZE = 60;
-const GUTTER = 5;
+const ContainerLoader = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-const initialState = {
-  positions: {
-    1: "alpha",
-    2: "bravo",
-    3: "charlie",
-    4: null,
-    5: "delta",
-    6: "echo",
-    7: "foxtrot",
-  },
-  stateNumber: 0,
-};
-
-const Loader = ({ size, style, center }) => {
-  const [state, setState] = useState(initialState);
-
-  const positionForTile = useCallback(
-    (radioCommand) => {
-      for (const position in state.positions) {
-        const tile = state.positions[position];
-        if (tile === radioCommand) {
-          return position;
-        }
-      }
-    },
-    [state]
-  );
-
-  const tileIndexToMove = useCallback(() => {
-    switch (state.stateNumber) {
-      case 0:
-        return 7;
-      case 1:
-        return 6;
-      case 2:
-        return 5;
-      case 3:
-        return 4;
-      case 4:
-        return 3;
-      case 5:
-        return 2;
-      case 6:
-        return 1;
-      case 7:
-        return 4;
-      default:
-        return 0;
-    }
-  }, [state]);
-
-  const setNextState = useCallback(() => {
-    const currentPositions = state.positions;
-    const emptyIndex = positionForTile(null);
-    const indexToMove = tileIndexToMove();
-    const newPositions = {
-      ...currentPositions,
-      [indexToMove]: null,
-      [emptyIndex]: currentPositions[indexToMove],
-    };
-
-    const currentState = state.stateNumber;
-    const nextState = currentState === 7 ? 0 : currentState + 1;
-
-    setState({ stateNumber: nextState, positions: newPositions });
-  }, [state, positionForTile, tileIndexToMove]);
-
-  useEffect(() => {
-    const timerId = setInterval(setNextState, TIMER);
-
-    return () => {
-      clearInterval(timerId);
-    };
-  }, [setNextState]);
-
-  const clipPathForPosition = (position) => {
-    position = parseInt(position, 10);
-    const SIZE = (100 - 2 * GUTTER) / 3;
-    const VAR0 = "0% ";
-    const VAR1 = SIZE + GUTTER + "% ";
-    const VAR2 = 2 * SIZE + 2 * GUTTER + "% ";
-    switch (position) {
-      case 1:
-        return `inset(${VAR1}${VAR2}${VAR1}${VAR0}round 5%)`;
-      case 2:
-        return `inset(${VAR0}${VAR2}${VAR2}${VAR0}round 5%)`;
-      case 3:
-        return `inset(${VAR0}${VAR1}${VAR2}${VAR1}round 5%)`;
-      case 4:
-        return `inset(${VAR1}${VAR1}${VAR1}${VAR1}round 5%)`;
-      case 5:
-        return `inset(${VAR2}${VAR1}${VAR0}${VAR1}round 5%)`;
-      case 6:
-        return `inset(${VAR2}${VAR0}${VAR0}${VAR2}round 5%)`;
-      case 7:
-        return `inset(${VAR1}${VAR0}${VAR1}${VAR2}round 5%)`;
-      default:
-        return "";
-    }
-  };
-
-  const styles = {
-    width: DEF_SIZE + "px",
-    height: DEF_SIZE + "px",
-    ...style,
-  };
-
-  if (size) {
-    styles.width = size + "px";
-    styles.height = size + "px";
+const rotationAnimation = keyframes`
+  from {
+    transform: rotate(0) scale(1, 1);
+    filter: hue-rotate(-60deg);
   }
-
-  let className = "sw-loader__wrapper";
-  if (center) {
-    className += " sw-loader__wrapper--center";
+  60% {
+    transform: rotate(360deg) scale(0.8, 0.8);
+    filter: hue-rotate(10deg);
   }
+  to {
+    transform: rotate(720deg) scale(1, 1);
+    filter: hue-rotate(-60deg);
+  }
+`;
 
+const colorMixin = (color) => `
+  border-color: ${color};
+`;
+
+const PreloaderContainer = styled.div`
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: ${rotationAnimation} 2.5s infinite normal linear;
+  transform-origin: 50% 50%;
+`;
+
+const PreloaderItem = styled.div`
+  position: absolute;
+  border-style: solid;
+  border: 1px solid transparent;
+  border-radius: 43%; // or 50%
+  border-width: 5px 0 0 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const PreloaderOne = styled(PreloaderItem)`
+  ${colorMixin("#D50000")}
+  transform: rotate(0);
+`;
+
+const PreloaderTwo = styled(PreloaderItem)`
+  ${colorMixin("#FF1744")}
+  transform: rotate(120deg);
+`;
+
+const PreloaderThree = styled(PreloaderItem)`
+  ${colorMixin("#FF5252")}
+  transform: rotate(240deg);
+`;
+
+const Loader = () => {
   return (
-    <LoaderContainer style={styles} className={className}>
-      <Container>
-        {["alpha", "bravo", "charlie", "delta", "echo", "foxtrot"].map(
-          (radioCommand) => {
-            const pos = positionForTile(radioCommand);
-            return (
-              <Rect
-                key={"rect-" + radioCommand}
-                clipPath={clipPathForPosition(pos)}
-                transition={`${TRANSITION}s cubic-bezier(0.86, 0, 0.07, 1)`}
-              />
-            );
-          }
-        )}
-      </Container>
-    </LoaderContainer>
+    <ContainerLoader>
+      <PreloaderContainer>
+        <PreloaderOne />
+        <PreloaderTwo />
+        <PreloaderThree />
+      </PreloaderContainer>
+    </ContainerLoader>
   );
 };
 
