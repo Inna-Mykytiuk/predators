@@ -25,12 +25,11 @@ export const WaspWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 20px 0 30px;
+  padding: 60px 0 60px;
   width: 100%;
   align-items: center;
 
   @media (min-width: 768px) {
-    padding: 30px 0 30px;
     gap: 20px;
   }
   @media (min-width: 1440px) {
@@ -157,6 +156,7 @@ export const RaitingWrapper = styled.div`
 export const RaitingWrapperBtn = styled.div`
   display: flex;
   gap: 10px;
+  align-items: center;
 `;
 
 export const RaitingTitle = styled.h3`

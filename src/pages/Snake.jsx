@@ -1,7 +1,11 @@
-import React from "react";
+import { SnakeSection } from "../components/SnakeSection/SnakeSection";
 
 const Snake = () => {
-  return <div>Snake</div>;
+  return (
+    <>
+      <SnakeSection />
+    </>
+  );
 };
 
 export default Snake;

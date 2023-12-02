@@ -25,13 +25,7 @@ import {
 } from "./WolfSection.styled";
 
 const WolfSection = () => {
-  const [isRaitingListVisible, setRaitingListVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleRaitingList = () => {
-    setRaitingListVisible(!isRaitingListVisible);
-    setIsOpen(!isOpen);
-  };
 
   return (
     <WolfHero>
@@ -50,46 +44,45 @@ const WolfSection = () => {
             <RaitingWrapper>
               <RaitingWrapperBtn>
                 <RaitingTitle>Danger rating 5/10</RaitingTitle>
-                <RaitingBtn onClick={toggleRaitingList}>
+                <RaitingBtn onClick={() => setIsOpen(!isOpen)}>
                   {isOpen ? <RaitingIconUp /> : <RaitingIconDown />}
                 </RaitingBtn>
               </RaitingWrapperBtn>
-              {isRaitingListVisible && (
-                <RaitingList isVisible={isRaitingListVisible}>
-                  <RaitingListItem>
-                    Wolves are skilled hunters, often targeting large ungulates
-                    such as deer and elk.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Pack hierarchy is established through a combination of
-                    dominance displays and submission.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Communication within a wolf pack involves vocalizations,
-                    body language, and scent marking.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    The iconic howl of a wolf serves various purposes, including
-                    signaling location and maintaining pack cohesion.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    The iconic howl of a wolf serves various purposes, including
-                    signaling location and maintaining pack cohesion.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Wolf territories can cover vast areas, depending on prey
-                    availability and pack size.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    The gestation period for wolf pups is around two months,
-                    with the entire pack participating in their care.
-                  </RaitingListItem>
-                  <RaitingListItem>
-                    Gray wolves, the most widespread species, exhibit a wide
-                    range of coat colors, from white to black.
-                  </RaitingListItem>
-                </RaitingList>
-              )}
+
+              <RaitingList isVisible={isOpen}>
+                <RaitingListItem>
+                  Wolves are skilled hunters, often targeting large ungulates
+                  such as deer and elk.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Pack hierarchy is established through a combination of
+                  dominance displays and submission.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Communication within a wolf pack involves vocalizations, body
+                  language, and scent marking.
+                </RaitingListItem>
+                <RaitingListItem>
+                  The iconic howl of a wolf serves various purposes, including
+                  signaling location and maintaining pack cohesion.
+                </RaitingListItem>
+                <RaitingListItem>
+                  The iconic howl of a wolf serves various purposes, including
+                  signaling location and maintaining pack cohesion.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Wolf territories can cover vast areas, depending on prey
+                  availability and pack size.
+                </RaitingListItem>
+                <RaitingListItem>
+                  The gestation period for wolf pups is around two months, with
+                  the entire pack participating in their care.
+                </RaitingListItem>
+                <RaitingListItem>
+                  Gray wolves, the most widespread species, exhibit a wide range
+                  of coat colors, from white to black.
+                </RaitingListItem>
+              </RaitingList>
             </RaitingWrapper>
             <WolfBtnBlock>
               <GoBackLink to='/hawk'>
@@ -98,7 +91,7 @@ const WolfSection = () => {
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/'>
+              <GoBackLink to='/snake'>
                 <GoNextIcon />
               </GoBackLink>
             </WolfBtnBlock>

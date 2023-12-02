@@ -7,21 +7,21 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import hawkHero from "../../assets/pagesImg/hawkHero.png";
+import snakeHero from "../../assets/pagesImg/snakeHero.png";
 
-export const HawkHero = styled.div`
+export const SnakeHero = styled.div`
   display: flex;
-  background: url(${hawkHero});
+  background: url(${snakeHero});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   width: 100%;
   min-height: 100vh;
 `;
 
-export const HawkWrapper = styled.div`
+export const SnakeWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -48,37 +48,37 @@ export const TextWrapper = styled.div`
 
   width: 100%;
   height: 100%;
-  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 768px) {
-    justify-content: flex-end;
+  /* @media (min-width: 768px) {
+
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
     align-items: flex-end;
-  }
+  } */
 `;
 
 export const HeroTextMain = styled.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
+  color: #e5a52a;
+  font-family: "Ephesis", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 8px #419bcf;
+  text-shadow: 1px 1px 2px #e5a52a;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     font-size: 80px;
     line-height: 1.4;
   }
   @media (min-width: 1440px) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 120px;
     text-transform: uppercase;
     font-weight: bold;
@@ -98,21 +98,21 @@ export const flicker = keyframes`
 export const HeroTextSubtitle = styled.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
+  background: linear-gradient(90deg, #e5a52a, #789146, #e5a52a);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   animation: ${flicker} 4s linear infinite;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 10px;
-
+    margin-bottom: 20px;
+    font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
@@ -121,26 +121,24 @@ export const HeroTextSubtitle = styled.h2`
 `;
 
 export const HeroTextSecondary = styled.p`
-  color: #4c7e9b;
+  color: #789146;
   font-weight: 400;
-  font-family: "Kaushan Script", cursive;
-  font-size: 14px;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-left: auto;
+  margin-right: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
   backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    text-align: end;
-    font-size: 16px;
     max-width: 400px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 `;
 
@@ -152,7 +150,7 @@ export const RaitingWrapper = styled.div`
   margin-top: 10px;
 
   @media (min-width: 768px) {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     margin-top: 20px;
   }
 `;
@@ -167,8 +165,8 @@ export const RaitingWrapperBtn = styled.div`
 export const RaitingTitle = styled.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
+  color: #e5a52a;
+  font-family: "Dancing Script", cursive;
 `;
 
 export const RaitingList = styled.ul`
@@ -182,55 +180,55 @@ export const RaitingList = styled.ul`
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
   transform: translateY(-20px);
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
-  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
-
-  transition: all 0.8s;
+  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
+  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  transition: all 0.5s;
 
   @media (min-width: 768px) {
-    height: ${({ isVisible }) => (isVisible ? "100%" : "10px")};
-    overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
-    max-width: 700px;
+    max-width: 600px;
     font-size: 28px;
-    text-align: end;
+    /* text-align: end; */
+  }
+  @media (min-width: 1420px) {
+    max-width: 700px;
+    /* text-align: end; */
   }
 `;
 
 export const RaitingListItem = styled.li`
-  color: #4c7e9b;
-  font-family: "Kaushan Script", cursive;
-  font-size: 12px;
+  color: #789146;
+  font-family: "Dancing Script", cursive;
+  font-size: 16px;
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    text-align: end;
+    font-size: 18px;
+    /* text-align: end; */
   }
   @media (min-width: 1440px) {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 `;
 
-export const HawkBtnBlock = styled.div`
+export const SnakeBtnBlock = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     margin-top: 30px;
-  }
+  } */
 `;
 
 export const RaitingIconUp = styled(FaArrowUp)`
@@ -239,14 +237,14 @@ export const RaitingIconUp = styled(FaArrowUp)`
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -265,14 +263,14 @@ export const RaitingIconDown = styled(FaArrowDown)`
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -287,7 +285,6 @@ export const RaitingIconDown = styled(FaArrowDown)`
 
 export const RaitingBtn = styled.button`
   display: flex;
-  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   outline: 0;
   margin: 0;
@@ -295,7 +292,7 @@ export const RaitingBtn = styled.button`
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #e5a52a;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -304,20 +301,20 @@ export const RaitingBtn = styled.button`
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #1d1e26;
+  text-shadow: 2px 2px 5px #e5a52a;
 
   svg {
-    fill: #2da4e9;
+    fill: #e5a52a;
   }
 
   /* &.active, */
   &:hover {
-    color: #4c7e9b;
+    color: #536830;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #4c7e9b 0px 0px 15px;
+      fill: #536830;
+      border: 3px solid #536830;
+      box-shadow: #536830 0px 0px 15px;
     }
   }
 
@@ -335,14 +332,14 @@ export const GoBackIcon = styled(FaArrowLeft)`
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -359,14 +356,14 @@ export const GoHomeIcon = styled(SiGooglehome)`
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -383,14 +380,14 @@ export const GoNextIcon = styled(FaArrowRight)`
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -409,7 +406,7 @@ export const GoBackLink = styled(NavLink)`
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #e5a52a;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -417,21 +414,21 @@ export const GoBackLink = styled(NavLink)`
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #4c7e9b;
+  text-shadow: 2px 2px 5px #e5a52a;
 
   svg {
-    fill: #2da4e9;
+    fill: #e5a52a;
   }
 
   /* &.active, */
   &:hover,
   &:focus {
-    color: #a40007;
+    color: #536830;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #355da9 0px 0px 15px;
+      fill: #536830;
+      border: 3px solid #536830;
+      box-shadow: #536830 0px 0px 15px;
     }
   }
 

@@ -26,12 +26,11 @@ export const WolfWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 60px 0 30px;
+  padding: 60px 0 60px;
   width: 100%;
   align-items: center;
 
   @media (min-width: 768px) {
-    padding: 30px 0 30px;
     gap: 20px;
   }
   @media (min-width: 1440px) {
@@ -64,13 +63,13 @@ export const HeroTextMain = styled.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
+  color: #e1d05e;
+  font-family: "Permanent Marker", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 8px #419bcf;
+  text-shadow: 1px 1px 2px #e1d05e;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
@@ -102,7 +101,7 @@ export const HeroTextSubtitle = styled.h2`
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
+  background: linear-gradient(90deg, #e1d05e, #50514d, #e1d05e);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
@@ -122,9 +121,9 @@ export const HeroTextSubtitle = styled.h2`
 `;
 
 export const HeroTextSecondary = styled.p`
-  color: #4c7e9b;
+  color: #878986;
   font-weight: 400;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Arvo", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
@@ -161,41 +160,14 @@ export const RaitingWrapperBtn = styled.div`
   display: flex;
   padding: 10px;
   gap: 10px;
+  align-items: center;
 `;
 
 export const RaitingTitle = styled.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
-`;
-
-export const dropdown = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-  }
-
-`;
-
-export const fadeOut = keyframes`
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+  color: #e1d05e;
+  font-family: "Permanent Marker", cursive;
 `;
 
 export const RaitingList = styled.ul`
@@ -209,19 +181,26 @@ export const RaitingList = styled.ul`
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
-  animation: ${({ isVisible }) => (isVisible ? dropdown : fadeOut)} 2s ease;
+  transform: translateY(-20px);
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transform: ${({ isVisible }) =>
+    isVisible ? "translateY(0)" : "translateY(-20px)"};
+  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
+  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  transition: all 0.5s;
 
   @media (min-width: 768px) {
-    max-width: 700px;
+    max-width: 600px;
     font-size: 28px;
-    /* text-align: end; */
+  }
+  @media (min-width: 1420px) {
+    max-width: 700px;
   }
 `;
 
 export const RaitingListItem = styled.li`
-  color: #4c7e9b;
-  font-family: "Kaushan Script", cursive;
+  color: #878986;
+  font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
   /* text-align: start; */
@@ -232,7 +211,6 @@ export const RaitingListItem = styled.li`
 
   @media (min-width: 768px) {
     font-size: 16px;
-    /* text-align: end; */
   }
   @media (min-width: 1440px) {
     font-size: 16px;
@@ -257,14 +235,14 @@ export const RaitingIconUp = styled(FaArrowUp)`
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -283,14 +261,14 @@ export const RaitingIconDown = styled(FaArrowDown)`
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -305,7 +283,6 @@ export const RaitingIconDown = styled(FaArrowDown)`
 
 export const RaitingBtn = styled.button`
   display: flex;
-  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   outline: 0;
   margin: 0;
@@ -313,7 +290,7 @@ export const RaitingBtn = styled.button`
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #e1d05e;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -322,20 +299,20 @@ export const RaitingBtn = styled.button`
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #1d1e26;
+  text-shadow: 2px 2px 5px #e1d05e;
 
   svg {
-    fill: #2da4e9;
+    fill: #e1d05e;
   }
 
   /* &.active, */
   &:hover {
-    color: #4c7e9b;
+    color: #878986;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #4c7e9b 0px 0px 15px;
+      fill: #878986;
+      border: 3px solid #878986;
+      box-shadow: #878986 0px 0px 15px;
     }
   }
 
@@ -353,14 +330,14 @@ export const GoBackIcon = styled(FaArrowLeft)`
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -377,14 +354,14 @@ export const GoHomeIcon = styled(SiGooglehome)`
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -401,14 +378,14 @@ export const GoNextIcon = styled(FaArrowRight)`
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -427,7 +404,7 @@ export const GoBackLink = styled(NavLink)`
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #e1d05e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -435,21 +412,21 @@ export const GoBackLink = styled(NavLink)`
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #4c7e9b;
+  text-shadow: 2px 2px 5px #e1d05e;
 
   svg {
-    fill: #2da4e9;
+    fill: #e1d05e;
   }
 
   /* &.active, */
   &:hover,
   &:focus {
-    color: #a40007;
+    color: #878986;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #355da9 0px 0px 15px;
+      fill: #878986;
+      border: 3px solid #878986;
+      box-shadow: #878986 0px 0px 15px;
     }
   }
 
