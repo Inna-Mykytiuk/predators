@@ -74,7 +74,7 @@ export const HeroTextMain = styled.h1`
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     font-size: 80px;
     line-height: 1.4;
   }
@@ -112,7 +112,7 @@ export const HeroTextSubtitle = styled.h2`
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -171,34 +171,6 @@ export const RaitingTitle = styled.h3`
   font-family: "Kaushan Script", cursive;
 `;
 
-export const dropdown = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-  }
-
-`;
-
-export const fadeOut = keyframes`
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-`;
-
 export const RaitingList = styled.ul`
   display: flex;
   flex-direction: column;
@@ -211,9 +183,19 @@ export const RaitingList = styled.ul`
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
-  animation: ${({ isVisible }) => (isVisible ? dropdown : fadeOut)} 2s ease;
+  transform: translateY(-20px);
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
+  /* overflow: ${({ isVisible }) => (isVisible ? "" : "none")}; */
+  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  transform: ${({ isVisible }) =>
+    isVisible ? "translateY(0)" : "translateY(-20px)"};
+
+  transition: all 0.8s;
 
   @media (min-width: 768px) {
+    height: ${({ isVisible }) => (isVisible ? "100%" : "10px")};
+    overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
     max-width: 700px;
     font-size: 28px;
     text-align: end;

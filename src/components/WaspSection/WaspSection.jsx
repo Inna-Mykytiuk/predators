@@ -28,6 +28,12 @@ import {
 
 export const WaspSection = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // const [isRaitingListVisible, setRaitingListVisible] = useState(false);
+
+  // const toggleRaitingList = () => {
+  //   setRaitingListVisible(!isRaitingListVisible);
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
     <WaspHero>
