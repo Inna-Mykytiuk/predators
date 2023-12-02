@@ -90,7 +90,7 @@ const HumanSection = () => {
               <GoBackLink to='/'>
                 <GoHomeIcon />
               </GoBackLink>
-              <GoBackLink to='/'>
+              <GoBackLink to='/virus'>
                 <GoNextIcon />
               </GoBackLink>
             </HumanBtnBlock>
