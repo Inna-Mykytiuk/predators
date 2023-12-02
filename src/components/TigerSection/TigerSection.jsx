@@ -32,14 +32,14 @@ export const TigerSection = () => {
       <TigerWrapper>
         <Container>
           <TextWrapper>
-            <HeroTextMain>Wasp</HeroTextMain>
+            <HeroTextMain>Tiger</HeroTextMain>
             <HeroTextSubtitle>
-              Nature&apos;s Architects and Stingers
+              Striking Elegance, Formidable Power
             </HeroTextSubtitle>
             <HeroTextSecondary>
-              Enter the intricate world of wasps, where social structures,
-              stingers, and vital ecological roles converge in a dance of
-              precision and purpose.
+              Embark on a journey through the jungles and grasslands where
+              tigers, with their striking beauty and unparalleled hunting
+              prowess, reign as the kings of stealth and power.
             </HeroTextSecondary>
             <RaitingWrapper>
               <RaitingWrapperBtn>
@@ -51,32 +51,36 @@ export const TigerSection = () => {
 
               <RaitingList isVisible={isOpen}>
                 <RaitingListItem>
-                  Some wasps are social, forming intricate colonies with
-                  specialized roles for individuals.
+                  Tigers are the largest big cats, known for their distinctive
+                  orange coat and dark stripes.
                 </RaitingListItem>
                 <RaitingListItem>
-                  Social wasps, like yellow jackets, can form large colonies
-                  with hierarchical structures.
+                  Exceptional swimmers, tigers are uncharacteristically
+                  comfortable in water compared to other cats.
                 </RaitingListItem>
                 <RaitingListItem>
-                  Wasps possess a venomous sting used for hunting and defense
-                  against predators.
+                  Tigers have unique stripe patterns, allowing for individual
+                  identification, similar to human fingerprints.
                 </RaitingListItem>
                 <RaitingListItem>
-                  Certain wasp species exhibit parasitic behavior, laying eggs
-                  on or inside other insects.
+                  Despite their size, tigers are incredibly agile and can leap
+                  great distances.
                 </RaitingListItem>
                 <RaitingListItem>
-                  Pollination is another essential role of certain wasp species,
-                  contributing to plant diversity.
+                  Tigers have a wide range of vocalizations, including roars,
+                  chuffs, and growls, used for communication.
                 </RaitingListItem>
                 <RaitingListItem>
-                  Wasps communicate through chemical signals, coordinating
-                  activities within their colonies.
+                  The whisker spots on a tiger&apos;s face help them navigate
+                  and judge distances in the dark.
                 </RaitingListItem>
                 <RaitingListItem>
-                  Mimicry is a common defense mechanism among wasps, imitating
-                  the appearance of more dangerous species.
+                  Tigers are territorial animals, marking their boundaries with
+                  scent markings and scratches.
+                </RaitingListItem>
+                <RaitingListItem>
+                  The tiger population has faced significant threats, primarily
+                  due to habitat loss and poaching for their body parts.
                 </RaitingListItem>
               </RaitingList>
             </RaitingWrapper>

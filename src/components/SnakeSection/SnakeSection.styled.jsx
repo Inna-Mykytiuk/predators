@@ -123,8 +123,8 @@ export const HeroTextSubtitle = styled.h2`
 export const HeroTextSecondary = styled.p`
   color: #789146;
   font-weight: 400;
-  font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-family: "Arvo", sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
@@ -138,7 +138,8 @@ export const HeroTextSecondary = styled.p`
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 24px;
+    font-size: 18px;
+    max-width: 400px;
   }
 `;
 
@@ -201,8 +202,8 @@ export const RaitingList = styled.ul`
 
 export const RaitingListItem = styled.li`
   color: #789146;
-  font-family: "Dancing Script", cursive;
-  font-size: 16px;
+  font-family: "Arvo", sans-serif;
+  font-size: 12px;
   font-weight: normal;
   /* text-align: start; */
 
@@ -211,11 +212,11 @@ export const RaitingListItem = styled.li`
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    /* font-size: 18px; */
+    /* font-size: 16px; */
     /* text-align: end; */
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 14px;
   }
 `;
 

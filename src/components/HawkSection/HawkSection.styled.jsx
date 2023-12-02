@@ -123,7 +123,7 @@ export const HeroTextSubtitle = styled.h2`
 export const HeroTextSecondary = styled.p`
   color: #4c7e9b;
   font-weight: 400;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Arvo", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
@@ -203,7 +203,7 @@ export const RaitingList = styled.ul`
 
 export const RaitingListItem = styled.li`
   color: #4c7e9b;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
   text-align: start;
@@ -213,7 +213,7 @@ export const RaitingListItem = styled.li`
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
     text-align: end;
   }
   @media (min-width: 1440px) {

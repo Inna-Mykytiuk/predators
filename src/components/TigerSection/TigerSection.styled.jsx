@@ -68,7 +68,7 @@ export const HeroTextMain = styled.h1`
   text-align: center;
   text-transform: uppercase;
   color: #ff6000;
-  font-family: "Antonio", sans-serif;
+  font-family: "Caveat", cursive;
 
   font-weight: bold;
   font-size: 48px;
@@ -126,7 +126,7 @@ export const HeroTextSubtitle = styled.h2`
 export const HeroTextSecondary = styled.p`
   color: #99360f;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
@@ -136,12 +136,12 @@ export const HeroTextSecondary = styled.p`
 
   @media (min-width: 768px) {
     text-align: end;
-    font-size: 16px;
-    max-width: 450px;
+    font-size: 18px;
+    max-width: 420px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 20px;
     max-width: 500px;
   }
 `;
@@ -163,14 +163,14 @@ export const RaitingWrapperBtn = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
-  padding: 10px 0 20px 0;
+  padding: 0 0 20px 0;
 `;
 
 export const RaitingTitle = styled.h3`
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bold;
   color: #ff6000;
-  font-family: "Antonio", sans-serif;
+  font-family: "Caveat", cursive;
 `;
 
 export const RaitingList = styled.ul`
@@ -178,7 +178,7 @@ export const RaitingList = styled.ul`
   flex-direction: column;
   gap: 10px;
   padding: 0 10px;
-  max-width: 400px;
+  max-width: 380px;
   opacity: 0;
 
   color: #fff;
@@ -195,12 +195,15 @@ export const RaitingList = styled.ul`
     font-size: 28px;
     text-align: end;
   }
+  @media (min-width: 1420px) {
+    max-width: 500px;
+  }
 `;
 
 export const RaitingListItem = styled.li`
   color: #99360f;
   font-family: "Antonio", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   text-align: start;
 
@@ -209,7 +212,6 @@ export const RaitingListItem = styled.li`
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 16px;
     text-align: end;
   }
   @media (min-width: 1440px) {
@@ -235,14 +237,14 @@ export const RaitingIconUp = styled(FaArrowUp)`
 
   padding: 5px;
 
-  color: #e5a52a;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -261,14 +263,14 @@ export const RaitingIconDown = styled(FaArrowDown)`
 
   padding: 5px;
 
-  color: #e5a52a;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -290,7 +292,7 @@ export const RaitingBtn = styled.button`
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e5a52a;
+  color: #ff6000;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -299,20 +301,19 @@ export const RaitingBtn = styled.button`
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e5a52a;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #e5a52a;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover {
-    color: #536830;
+    color: #99360f;
 
     svg {
-      fill: #536830;
-      border: 3px solid #536830;
-      box-shadow: #536830 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -327,17 +328,16 @@ export const RaitingBtn = styled.button`
 export const GoBackIcon = styled(FaArrowLeft)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #e5a52a;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -348,20 +348,20 @@ export const GoBackIcon = styled(FaArrowLeft)`
     margin: 0;
   }
 `;
+
 export const GoHomeIcon = styled(SiGooglehome)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #e5a52a;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -372,20 +372,21 @@ export const GoHomeIcon = styled(SiGooglehome)`
     margin: 0;
   }
 `;
+
 export const GoNextIcon = styled(FaArrowRight)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e5a52a;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -399,12 +400,11 @@ export const GoNextIcon = styled(FaArrowRight)`
 
 export const GoBackLink = styled(NavLink)`
   display: flex;
-  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e5a52a;
+  color: #ff6000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -412,21 +412,20 @@ export const GoBackLink = styled(NavLink)`
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e5a52a;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #e5a52a;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover,
   &:focus {
-    color: #536830;
+    color: #99360f;
 
     svg {
-      fill: #536830;
-      border: 3px solid #536830;
-      box-shadow: #536830 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
