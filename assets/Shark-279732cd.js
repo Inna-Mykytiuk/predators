@@ -1,19 +1,14 @@
-import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-c32af5a0.js";const g="/predators/assets/tigerHero-d327fef5.png",m=e.div`
+import{n as i,N as o,r as s,j as e}from"./index-3826ff14.js";import{k as d,c as p,b as x,F as h,S as l,a as c,C as m}from"./index.esm-ed24bf60.js";const g="/predators/assets/sharkHero-62539fec.png",f=i.div`
   display: flex;
   background: url(${g});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   width: 100%;
   min-height: 100vh;
-`,w=e.div`
+`,b=i.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,7 +25,7 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
     gap: 30px;
     width: 100%;
   }
-`,b=e.div`
+`,w=i.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,26 +33,27 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
 
   width: 100%;
   height: 100%;
-  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
+
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
     align-items: flex-end;
-  }
-`,u=e.h1`
+  } */
+`,u=i.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #ff6000;
-  font-family: "Caveat", cursive;
+  color: #e1d05e;
+  font-family: "Playfair Display", serif;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #181717;
-  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #e1d05e;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
@@ -71,120 +67,120 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,j=x`
+`,y=d`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,k=e.h2`
+`,k=i.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
+  background: linear-gradient(90deg, #398c9b, #e1d05e, #398c9b);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${j} 4s linear infinite;
-  margin-bottom: 20px;
+  animation: ${y} 4s linear infinite;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,y=e.p`
-  color: #99360f;
+`,j=i.p`
+  color: #76aab3;
   font-weight: 400;
-  font-size: 16px;
+  font-family: "Arvo", sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-left: auto;
+  margin-right: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    text-align: end;
-    font-size: 18px;
-    max-width: 420px;
+    font-size: 16px;
+    max-width: 400px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 20px;
-    max-width: 500px;
+    font-size: 18px;
   }
-`,z=e.div`
+`,v=i.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   margin-top: 10px;
 
   @media (min-width: 768px) {
-    align-items: flex-end;
     margin-top: 20px;
   }
-`,v=e.div`
+`,z=i.div`
   display: flex;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-  padding: 0 0 20px 0;
-`,T=e.h3`
-  font-size: 32px;
+`,S=i.h3`
+  font-size: 22px;
   font-weight: bold;
-  color: #ff6000;
-  font-family: "Caveat", cursive;
-`,R=e.ul`
+  color: #e1d05e;
+  font-family: "Playfair Display", serif;
+`,R=i.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 0 10px;
-  max-width: 380px;
-  opacity: 0;
+  max-width: 400px;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(0);
-  opacity: ${({isVisible:n})=>n?1:0};
-  transform: ${({isVisible:n})=>n?"translateY(0)":"translateY(-20px)"};
+  transform: translateY(-20px);
+  opacity: ${({isVisible:t})=>t?1:0};
+  transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
+  height: ${({isVisible:t})=>t?"100%":"30px"};
+  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
   transition: all 0.5s;
 
   @media (min-width: 768px) {
+    max-width: 600px;
     font-size: 28px;
-    text-align: end;
   }
   @media (min-width: 1420px) {
-    max-width: 500px;
+    max-width: 700px;
   }
-`,t=e.li`
-  color: #99360f;
-  font-family: "Antonio", sans-serif;
-  font-size: 14px;
+`,n=i.li`
+  color: #76aab3;
+  font-family: "Arvo", sans-serif;
+  font-size: 12px;
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    text-align: end;
+    font-size: 14px;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,S=e.div`
+`,H=i.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -194,20 +190,20 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
-`,F=e(d)`
+`,I=i(p)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #ff6000;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -218,20 +214,20 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,H=e(p)`
+`,T=i(x)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #ff6000;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -242,7 +238,7 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=e.button`
+`,A=i.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -251,7 +247,7 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #ff6000;
+  color: #e1d05e;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -260,19 +256,20 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #ff6000;
+  text-shadow: 2px 2px 5px #e1d05e;
 
   svg {
-    fill: #ff6000;
+    fill: #e1d05e;
   }
 
+  /* &.active, */
   &:hover {
-    color: #99360f;
+    color: #878986;
 
     svg {
-      fill: #99360f;
-      border: 3px solid #99360f;
-      box-shadow: #99360f 0px 0px 15px;
+      fill: #878986;
+      border: 3px solid #878986;
+      box-shadow: #878986 0px 0px 15px;
     }
   }
 
@@ -282,19 +279,20 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,B=e(l)`
+`,B=i(h)`
   width: 12px;
   height: 12px;
+
   padding: 10px;
 
-  color: #ff6000;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -304,19 +302,20 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=e(c)`
+`,F=i(l)`
   width: 12px;
   height: 12px;
+
   padding: 10px;
 
-  color: #ff6000;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -326,20 +325,20 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,C=e(h)`
+`,$=i(c)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #ff6000;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -349,13 +348,14 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,a=e(o)`
+`,r=i(o)`
   display: flex;
+  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #ff6000;
+  color: #e1d05e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -363,20 +363,21 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #ff6000;
+  text-shadow: 2px 2px 5px #e1d05e;
 
   svg {
-    fill: #ff6000;
+    fill: #e1d05e;
   }
 
+  /* &.active, */
   &:hover,
   &:focus {
-    color: #99360f;
+    color: #878986;
 
     svg {
-      fill: #99360f;
-      border: 3px solid #99360f;
-      box-shadow: #99360f 0px 0px 15px;
+      fill: #878986;
+      border: 3px solid #878986;
+      box-shadow: #878986 0px 0px 15px;
     }
   }
 
@@ -386,4 +387,4 @@ import{n as e,N as o,r as s,j as i}from"./index-6f5941d4.js";import{k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,E=()=>{const[n,r]=s.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(f,{children:i.jsxs(b,{children:[i.jsx(u,{children:"Tiger"}),i.jsx(k,{children:"Striking Elegance, Formidable Power"}),i.jsx(y,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(T,{children:"Danger rating 5/10"}),i.jsx(I,{onClick:()=>r(!n),children:n?i.jsx(F,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:n,children:[i.jsx(t,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(t,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(t,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(t,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(t,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(t,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(t,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(t,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]}),i.jsxs(S,{children:[i.jsx(a,{to:"/snake",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(A,{})}),i.jsx(a,{to:"/shark",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(E,{})});export{D as default};
+`,D=()=>{const[t,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(b,{children:e.jsx(m,{children:e.jsxs(w,{children:[e.jsx(k,{children:"Sovereigns of the Sea"}),e.jsx(u,{children:"Shark"}),e.jsx(j,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(v,{children:[e.jsxs(z,{children:[e.jsx(S,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!t),children:t?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs(R,{isVisible:t,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx($,{})})]})]})})})})},C=()=>e.jsx(e.Fragment,{children:e.jsx(D,{})});export{C as default};
