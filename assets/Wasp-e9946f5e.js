@@ -1,6 +1,6 @@
-import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"./index.esm-8a1dd60a.js";import{R as l,g as x,h as d,B as c,G as a,i as g,j as h}from"./Navigation.styled-c8ebd48a.js";const m="/predators/assets/waspHero-bd929eaa.png",f=e.div`
+import{r as o,j as i}from"./index-b1936e5e.js";import{n as t,k as r,C as p}from"./index.esm-79284b10.js";import{R as l,g as x,h as d,B as c,G as a,i as f,j as h}from"./Navigation.styled-dfb9f8e1.js";const g="/predators/assets/waspHero-bd929eaa.png",m=t.div`
   display: flex;
-  background: url(${m});
+  background: url(${g});
   /* linear-gradient(
       to right,
       rgba(47, 48, 58, 0.1),
@@ -13,7 +13,7 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   background-position: center;
   width: 100%;
   min-height: 100vh;
-`,w=e.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,16 +21,19 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   padding: 60px 0 60px;
   width: 100%;
   align-items: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     gap: 20px;
+    backdrop-filter: blur(0);
   }
   @media (min-width: 1440px) {
     padding: 50px 0 50px;
     gap: 30px;
     width: 100%;
   }
-`,u=e.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,7 +49,7 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   @media (min-width: 1440px) {
     align-items: flex-end;
   }
-`,b=e.h1`
+`,b=t.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -78,7 +81,7 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   100% {
     background-position: 500%;
   }
-`,k=e.h2`
+`,k=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -100,7 +103,7 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,y=e.p`
+`,y=t.p`
   color: #99360f;
   font-weight: 400;
   font-size: 14px;
@@ -121,7 +124,7 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
     font-size: 18px;
     max-width: 500px;
   }
-`,z=e.div`
+`,v=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -133,17 +136,17 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
     align-items: flex-end;
     margin-top: 20px;
   }
-`,v=e.div`
+`,z=t.div`
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 10px 0 20px 0;
-`,W=e.h3`
+`,W=t.h3`
   font-size: 22px;
   font-weight: bold;
   color: #ff6000;
   font-family: "Antonio", sans-serif;
-`,R=e.ul`
+`,R=t.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -156,15 +159,17 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transform: translateY(0);
-  opacity: ${({isVisible:t})=>t?1:0};
-  transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
+  opacity: ${({isVisible:e})=>e?1:0};
+  transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
+  height: ${({isVisible:e})=>e?"100%":"30px"};
+  overflow: ${({isVisible:e})=>e?"visible":"hidden"};
   transition: all 0.5s;
 
   @media (min-width: 768px) {
     font-size: 28px;
     text-align: end;
   }
-`,n=e.li`
+`,n=t.li`
   color: #99360f;
   font-family: "Antonio", sans-serif;
   font-size: 12px;
@@ -182,4 +187,4 @@ import{r as o,j as i}from"./index-4a3d67dc.js";import{n as e,k as r,C as p}from"
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,S=()=>{const[t,s]=o.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(p,{children:i.jsxs(u,{children:[i.jsx(b,{children:"Wasp"}),i.jsx(k,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(W,{children:"Danger rating 5/10"}),i.jsx(l,{onClick:()=>s(!t),children:t?i.jsx(x,{}):i.jsx(d,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(c,{children:[i.jsx(a,{to:"/",children:i.jsx(g,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(h,{})})]})]})})})})},T=()=>i.jsx(S,{});export{T as default};
+`,S=()=>{const[e,s]=o.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(p,{children:i.jsxs(u,{children:[i.jsx(b,{children:"Wasp"}),i.jsx(k,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(W,{children:"Danger rating 5/10"}),i.jsx(l,{onClick:()=>s(!e),children:e?i.jsx(x,{}):i.jsx(d,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(c,{children:[i.jsx(a,{to:"/",children:i.jsx(f,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(h,{})})]})]})})})})},$=()=>i.jsx(S,{});export{$ as default};
