@@ -1,6 +1,11 @@
-import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as x,b as p,F as l,S as c,a as h,C as m}from"./index.esm-d045a59c.js";const g="/predators/assets/hawkHero-859879e1.png",f=e.div`
+import{n as e,N as o,r as s,j as i}from"./index-68c4e2e2.js";import{k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-e4cb71ff.js";const g="/predators/assets/tigerHero-d327fef5.png",m=e.div`
   display: flex;
   background: url(${g});
+  /* linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.1),
+      rgba(47, 48, 58, 0.5)
+    ), */
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,7 +13,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   background-position: right center;
   width: 100%;
   min-height: 100vh;
-`,b=e.div`
+`,w=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,7 +30,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
     gap: 30px;
     width: 100%;
   }
-`,w=e.div`
+`,b=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -36,7 +41,6 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   margin-left: auto;
 
   @media (min-width: 768px) {
-    justify-content: flex-end;
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
@@ -46,17 +50,17 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
+  color: #ff6000;
+  font-family: "Caveat", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 8px #419bcf;
-  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #181717;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     font-size: 80px;
     line-height: 1.4;
   }
@@ -67,110 +71,106 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,k=d`
+`,j=x`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,j=e.h2`
+`,k=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
+  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${k} 4s linear infinite;
+  animation: ${j} 4s linear infinite;
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    margin-bottom: 10px;
-
+    font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
 `,y=e.p`
-  color: #4c7e9b;
+  color: #99360f;
   font-weight: 400;
-  font-family: "Kaushan Script", cursive;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
   margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
-  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     text-align: end;
-    font-size: 16px;
-    max-width: 400px;
+    font-size: 18px;
+    max-width: 420px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 20px;
+    max-width: 500px;
   }
-`,v=e.div`
+`,z=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   margin-top: 10px;
 
   @media (min-width: 768px) {
     align-items: flex-end;
     margin-top: 20px;
   }
-`,z=e.div`
+`,v=e.div`
   display: flex;
-  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,H=e.h3`
-  font-size: 22px;
+  padding: 0 0 20px 0;
+`,T=e.h3`
+  font-size: 32px;
   font-weight: bold;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
-`,S=e.ul`
+  color: #ff6000;
+  font-family: "Caveat", cursive;
+`,R=e.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 0 10px;
-  max-width: 400px;
+  max-width: 380px;
+  opacity: 0;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
   transform: translateY(0);
-  opacity: ${({isVisible:t})=>t?1:0};
-  height: ${({isVisible:t})=>t?"100%":"30px"};
-  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
-  transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
-
-  transition: all 0.8s;
+  opacity: ${({isVisible:n})=>n?1:0};
+  transform: ${({isVisible:n})=>n?"translateY(0)":"translateY(-20px)"};
+  transition: all 0.5s;
 
   @media (min-width: 768px) {
-    height: ${({isVisible:t})=>t?"100%":"10px"};
-    overflow: ${({isVisible:t})=>t?"visible":"hidden"};
-    max-width: 700px;
     font-size: 28px;
     text-align: end;
   }
-`,a=e.li`
-  color: #4c7e9b;
-  font-family: "Kaushan Script", cursive;
-  font-size: 12px;
+  @media (min-width: 1420px) {
+    max-width: 500px;
+  }
+`,t=e.li`
+  color: #99360f;
+  font-family: "Antonio", sans-serif;
+  font-size: 14px;
   font-weight: normal;
   text-align: start;
 
@@ -179,36 +179,35 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 16px;
     text-align: end;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,R=e.div`
+`,S=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     margin-top: 30px;
-  }
-`,$=e(x)`
+  } */
+`,F=e(d)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -219,20 +218,20 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=e(p)`
+`,H=e(p)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -243,9 +242,8 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=e.button`
+`,I=e.button`
   display: flex;
-  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   outline: 0;
   margin: 0;
@@ -253,7 +251,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #ff6000;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -262,20 +260,19 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #1d1e26;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #2da4e9;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover {
-    color: #4c7e9b;
+    color: #99360f;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #4c7e9b 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -285,20 +282,19 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,A=e(l)`
+`,B=e(l)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #2da4e9;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -308,20 +304,19 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,B=e(c)`
+`,A=e(c)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #2da4e9;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -331,20 +326,20 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=e(h)`
+`,C=e(h)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -354,14 +349,13 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,n=e(o)`
+`,a=e(o)`
   display: flex;
-  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #ff6000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -369,21 +363,20 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #4c7e9b;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #2da4e9;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover,
   &:focus {
-    color: #a40007;
+    color: #99360f;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #355da9 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -393,4 +386,4 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,C=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(w,{children:[i.jsx(u,{children:"Hawk"}),i.jsx(j,{children:"Nature's Architects and Stingers"}),i.jsx(y,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(H,{children:"Danger rating 4/10"}),i.jsx(T,{onClick:()=>r(!t),children:t?i.jsx($,{}):i.jsx(I,{})})]}),i.jsxs(S,{isVisible:t,children:[i.jsx(a,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(a,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(a,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(a,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(a,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(a,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(a,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]}),i.jsxs(R,{children:[i.jsx(n,{to:"/wasp",children:i.jsx(A,{})}),i.jsx(n,{to:"/",children:i.jsx(B,{})}),i.jsx(n,{to:"/wolf",children:i.jsx(F,{})})]})]})})})})},K=()=>i.jsx(i.Fragment,{children:i.jsx(C,{})});export{K as default};
+`,E=()=>{const[n,r]=s.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(f,{children:i.jsxs(b,{children:[i.jsx(u,{children:"Tiger"}),i.jsx(k,{children:"Striking Elegance, Formidable Power"}),i.jsx(y,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(T,{children:"Danger rating 5/10"}),i.jsx(I,{onClick:()=>r(!n),children:n?i.jsx(F,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:n,children:[i.jsx(t,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(t,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(t,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(t,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(t,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(t,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(t,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(t,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]}),i.jsxs(S,{children:[i.jsx(a,{to:"/snake",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(A,{})}),i.jsx(a,{to:"/",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(E,{})});export{D as default};

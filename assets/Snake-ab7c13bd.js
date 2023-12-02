@@ -1,4 +1,4 @@
-import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-d045a59c.js";const g="/predators/assets/snakeHero-b4ad6989.png",f=e.div`
+import{n as e,N as o,r as s,j as i}from"./index-68c4e2e2.js";import{k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-e4cb71ff.js";const g="/predators/assets/snakeHero-b4ad6989.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -100,8 +100,8 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
 `,y=e.p`
   color: #789146;
   font-weight: 400;
-  font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-family: "Arvo", sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
@@ -115,7 +115,8 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 24px;
+    font-size: 18px;
+    max-width: 400px;
   }
 `,v=e.div`
   position: relative;
@@ -167,8 +168,8 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
   }
 `,n=e.li`
   color: #789146;
-  font-family: "Dancing Script", cursive;
-  font-size: 16px;
+  font-family: "Arvo", sans-serif;
+  font-size: 12px;
   font-weight: normal;
   /* text-align: start; */
 
@@ -177,13 +178,13 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    /* font-size: 18px; */
+    /* font-size: 16px; */
     /* text-align: end; */
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 14px;
   }
-`,D=e.div`
+`,H=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -193,7 +194,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
-`,H=e(d)`
+`,I=e(d)`
   width: 12px;
   height: 12px;
 
@@ -217,7 +218,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=e(p)`
+`,A=e(p)`
   width: 12px;
   height: 12px;
 
@@ -390,4 +391,4 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(w,{children:[i.jsx(j,{children:"Masters of Stealth and Precision"}),i.jsx(u,{children:"Snake"}),i.jsx(y,{children:"Slither into the enigmatic world of snakes, where limbless wonders navigate silently, employing lethal tactics and serving as guardians of ecological balance."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(S,{children:"Danger rating 6/10"}),i.jsx(B,{onClick:()=>r(!t),children:t?i.jsx(H,{}):i.jsx(I,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Snakes lack limbs but are incredibly agile, using their bodies to navigate various environments."}),i.jsx(n,{children:"Venomous snakes have specialized fangs for injecting venom, while non-venomous snakes rely on constriction for hunting."}),i.jsx(n,{children:"Some snake species have heat-sensing pits, enabling them to detect infrared radiation and locate warm-blooded prey."}),i.jsx(n,{children:"The iconic cobra hood is formed by elongated ribs and a web of skin, creating an intimidating display."}),i.jsx(n,{children:"Snakes exhibit a wide range of colors and patterns, often serving as camouflage in their respective habitats."}),i.jsx(n,{children:"Despite their often-misunderstood reputation, most snakes are harmless to humans, and snakebites are relatively rare."}),i.jsx(n,{children:"Snakes utilize a unique jaw structure that allows them to consume prey much larger than their head."}),i.jsx(n,{children:"Snakes shed their skin regularly, a process known as ecdysis, allowing for growth and removing parasites."})]})]}),i.jsxs(D,{children:[i.jsx(a,{to:"/wolf",children:i.jsx(F,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})}),i.jsx(a,{to:"/tiger",children:i.jsx($,{})})]})]})})})})},W=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{W as default};
+`,D=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(w,{children:[i.jsx(j,{children:"Masters of Stealth and Precision"}),i.jsx(u,{children:"Snake"}),i.jsx(y,{children:"Slither into the enigmatic world of snakes, where limbless wonders navigate silently, employing lethal tactics and serving as guardians of ecological balance."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(S,{children:"Danger rating 6/10"}),i.jsx(B,{onClick:()=>r(!t),children:t?i.jsx(I,{}):i.jsx(A,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Snakes lack limbs but are incredibly agile, using their bodies to navigate various environments."}),i.jsx(n,{children:"Venomous snakes have specialized fangs for injecting venom, while non-venomous snakes rely on constriction for hunting."}),i.jsx(n,{children:"Some snake species have heat-sensing pits, enabling them to detect infrared radiation and locate warm-blooded prey."}),i.jsx(n,{children:"The iconic cobra hood is formed by elongated ribs and a web of skin, creating an intimidating display."}),i.jsx(n,{children:"Snakes exhibit a wide range of colors and patterns, often serving as camouflage in their respective habitats."}),i.jsx(n,{children:"Despite their often-misunderstood reputation, most snakes are harmless to humans, and snakebites are relatively rare."}),i.jsx(n,{children:"Snakes utilize a unique jaw structure that allows them to consume prey much larger than their head."}),i.jsx(n,{children:"Snakes shed their skin regularly, a process known as ecdysis, allowing for growth and removing parasites."})]})]}),i.jsxs(H,{children:[i.jsx(a,{to:"/wolf",children:i.jsx(F,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})}),i.jsx(a,{to:"/tiger",children:i.jsx($,{})})]})]})})})})},W=()=>i.jsx(i.Fragment,{children:i.jsx(D,{})});export{W as default};

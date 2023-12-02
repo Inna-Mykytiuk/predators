@@ -1,16 +1,11 @@
-import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as x,b as d,F as l,S as c,a as h,C as g}from"./index.esm-d045a59c.js";const m="/predators/assets/tigerHero-d327fef5.png",f=e.div`
+import{n as e,N as r,r as s,j as i}from"./index-68c4e2e2.js";import{k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-e4cb71ff.js";const g="/predators/assets/wolfHero-3c13ba6d.png",f=e.div`
   display: flex;
-  background: url(${m});
-  /* linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.5)
-    ), */
+  background: url(${g});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   width: 100%;
   min-height: 100vh;
 `,w=e.div`
@@ -38,26 +33,27 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
 
   width: 100%;
   height: 100%;
-  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
+
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
     align-items: flex-end;
-  }
+  } */
 `,u=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #ff6000;
-  font-family: "Antonio", sans-serif;
+  color: #e1d05e;
+  font-family: "Permanent Marker", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #181717;
-  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #e1d05e;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
@@ -71,118 +67,121 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,j=p`
+`,k=d`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,y=e.h2`
+`,j=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
+  background: linear-gradient(90deg, #e1d05e, #50514d, #e1d05e);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${j} 4s linear infinite;
-  margin-bottom: 20px;
+  animation: ${k} 4s linear infinite;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,k=e.p`
-  color: #99360f;
+`,y=e.p`
+  color: #878986;
   font-weight: 400;
+  font-family: "Arvo", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-left: auto;
+  margin-right: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    text-align: end;
     font-size: 16px;
-    max-width: 450px;
+    max-width: 400px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
-    max-width: 500px;
   }
-`,z=e.div`
+`,v=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   margin-top: 10px;
 
   @media (min-width: 768px) {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     margin-top: 20px;
   }
-`,v=e.div`
+`,z=e.div`
   display: flex;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-  padding: 10px 0 20px 0;
-`,R=e.h3`
+`,W=e.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #ff6000;
-  font-family: "Antonio", sans-serif;
-`,S=e.ul`
+  color: #e1d05e;
+  font-family: "Permanent Marker", cursive;
+`,R=e.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 0 10px;
   max-width: 400px;
-  opacity: 0;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(0);
+  transform: translateY(-20px);
   opacity: ${({isVisible:t})=>t?1:0};
   transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
+  height: ${({isVisible:t})=>t?"100%":"30px"};
+  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
   transition: all 0.5s;
 
   @media (min-width: 768px) {
+    max-width: 600px;
     font-size: 28px;
-    text-align: end;
+  }
+  @media (min-width: 1420px) {
+    max-width: 700px;
   }
 `,n=e.li`
-  color: #99360f;
-  font-family: "Antonio", sans-serif;
+  color: #878986;
+  font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    text-align: end;
+    font-size: 14px;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,T=e.div`
+`,S=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -192,20 +191,44 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
+`,T=e(p)`
+  width: 12px;
+  height: 12px;
+
+  padding: 5px;
+
+  color: #e1d05e;
+  border-radius: 50%;
+  border: 3px solid #e1d05e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: #e1d05e 0px 0px 15px;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
 `,A=e(x)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e5a52a;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -216,31 +239,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,H=e(d)`
-  width: 12px;
-  height: 12px;
-
-  padding: 5px;
-
-  color: #e5a52a;
-  border-radius: 50%;
-  border: 3px solid #e5a52a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
-  border-radius: 50%;
-
-  @media (min-width: 768px) {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-  }
-  @media (min-width: 1440px) {
-    margin: 0;
-  }
-`,I=e.button`
+`,H=e.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -249,7 +248,7 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e5a52a;
+  color: #e1d05e;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -258,20 +257,20 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e5a52a;
+  text-shadow: 2px 2px 5px #e1d05e;
 
   svg {
-    fill: #e5a52a;
+    fill: #e1d05e;
   }
 
   /* &.active, */
   &:hover {
-    color: #536830;
+    color: #878986;
 
     svg {
-      fill: #536830;
-      border: 3px solid #536830;
-      box-shadow: #536830 0px 0px 15px;
+      fill: #878986;
+      border: 3px solid #878986;
+      box-shadow: #878986 0px 0px 15px;
     }
   }
 
@@ -281,20 +280,20 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,W=e(l)`
+`,I=e(l)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e5a52a;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -310,14 +309,14 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
 
   padding: 10px;
 
-  color: #e5a52a;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -333,14 +332,14 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
 
   padding: 10px;
 
-  color: #e5a52a;
+  color: #e1d05e;
   border-radius: 50%;
-  border: 3px solid #e5a52a;
+  border: 3px solid #e1d05e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e5a52a 0px 0px 15px;
+  box-shadow: #e1d05e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -350,14 +349,14 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,a=e(o)`
+`,a=e(r)`
   display: flex;
   font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e5a52a;
+  color: #e1d05e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -365,21 +364,21 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e5a52a;
+  text-shadow: 2px 2px 5px #e1d05e;
 
   svg {
-    fill: #e5a52a;
+    fill: #e1d05e;
   }
 
   /* &.active, */
   &:hover,
   &:focus {
-    color: #536830;
+    color: #878986;
 
     svg {
-      fill: #536830;
-      border: 3px solid #536830;
-      box-shadow: #536830 0px 0px 15px;
+      fill: #878986;
+      border: 3px solid #878986;
+      box-shadow: #878986 0px 0px 15px;
     }
   }
 
@@ -389,4 +388,4 @@ import{n as e,N as o,r as s,j as i}from"./index-9fc95b50.js";import{k as p,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(g,{children:i.jsxs(b,{children:[i.jsx(u,{children:"Wasp"}),i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(k,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(R,{children:"Danger rating 5/10"}),i.jsx(I,{onClick:()=>r(!t),children:t?i.jsx(A,{}):i.jsx(H,{})})]}),i.jsxs(S,{isVisible:t,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]}),i.jsxs(T,{children:[i.jsx(a,{to:"/snake",children:i.jsx(W,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})})]})]})})})})},N=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{N as default};
+`,G=()=>{const[t,o]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(m,{children:i.jsxs(b,{children:[i.jsx(j,{children:"Nature's Architects and Stingers"}),i.jsx(u,{children:"Wolf"}),i.jsx(y,{children:"Join the packs and explore the untamed landscapes where wolves, with their intricate social structures and haunting howls, command the wilderness."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(W,{children:"Danger rating 5/10"}),i.jsx(H,{onClick:()=>o(!t),children:t?i.jsx(T,{}):i.jsx(A,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Wolves are skilled hunters, often targeting large ungulates such as deer and elk."}),i.jsx(n,{children:"Pack hierarchy is established through a combination of dominance displays and submission."}),i.jsx(n,{children:"Communication within a wolf pack involves vocalizations, body language, and scent marking."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"Wolf territories can cover vast areas, depending on prey availability and pack size."}),i.jsx(n,{children:"The gestation period for wolf pups is around two months, with the entire pack participating in their care."}),i.jsx(n,{children:"Gray wolves, the most widespread species, exhibit a wide range of coat colors, from white to black."})]})]}),i.jsxs(S,{children:[i.jsx(a,{to:"/hawk",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/snake",children:i.jsx(F,{})})]})]})})})})},C=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{C as default};
