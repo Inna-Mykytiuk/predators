@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as x,b as p,F as l,S as c,a as h,C as m}from"./index.esm-2f45aec5.js";const g="/predators/assets/virusHero-db7a81db.png",f=e.div`
+import{N as o,r as s,j as i}from"./index-07a68f3b.js";import{n as t,k as d,c as x,b as p,F as l,S as c,a as h,C as m}from"./index.esm-b4d420bb.js";const g="/predators/assets/virusHero-db7a81db.png",f=t.div`
   display: flex;
   background: url(${g});
 
@@ -8,13 +8,13 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   background-position: right center;
   width: 100%;
   height: 100%;
-`,u=e.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: space-between;
-`,b=e.div`
+`,b=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,13 +31,13 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
     gap: 30px;
     width: 100%;
   }
-`,w=e.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  overflow-y: scroll;
+  overflow-y: ${({isVisible:e})=>e?"hidden":"auto"};
 
   width: 100%;
   /* height: 100%; */
@@ -49,7 +49,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     align-items: flex-end;
   }
-`,j=e.h1`
+`,j=t.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -81,7 +81,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   100% {
     background-position: 500%;
   }
-`,v=e.h2`
+`,v=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -103,7 +103,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,k=e.p`
+`,k=t.p`
   color: #99360f;
   font-weight: 400;
   font-size: 16px;
@@ -124,7 +124,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
     font-size: 20px;
     max-width: 500px;
   }
-`,z=e.div`
+`,z=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -135,21 +135,21 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 768px) {
     align-items: flex-end;
   }
-`,B=e.div`
+`,V=t.div`
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 0 20px 0;
-`,R=e.h3`
+`,B=t.h3`
   font-size: 32px;
   font-weight: bold;
   color: #d3371e;
   font-family: "Special Elite", cursive;
-`,V=e.ul`
+`,R=t.ul`
   display: flex;
   flex-direction: column;
-  gap: ${({isVisible:t})=>t?"10px":"0"};
-  padding: ${({isVisible:t})=>t?"0 10px":"0"};
+  gap: ${({isVisible:e})=>e?"10px":"0"};
+  padding: ${({isVisible:e})=>e?"0 10px":"0"};
   max-width: 380px;
   opacity: 0;
 
@@ -158,11 +158,11 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transform: translateY(0);
-  opacity: ${({isVisible:t})=>t?1:0};
-  transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
-  height: ${({isVisible:t})=>t?"100%":"30px"};
-  /* overflow: ${({isVisible:t})=>t?"visible":"hidden"}; */
-  margin-bottom: ${({isVisible:t})=>t?"20px":"0"};
+  opacity: ${({isVisible:e})=>e?1:0};
+  transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
+  height: ${({isVisible:e})=>e?"100%":"30px"};
+  /* overflow: ${({isVisible:e})=>e?"visible":"hidden"}; */
+  margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
   transition: all 0.5s;
 
   @media (min-width: 768px) {
@@ -172,7 +172,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1420px) {
     max-width: 500px;
   }
-`,n=e.li`
+`,n=t.li`
   color: #99360f;
   font-family: "Antonio", sans-serif;
   font-size: 14px;
@@ -189,13 +189,13 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,S=e.div`
+`,$=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-`,$=e(x)`
+`,S=t(x)`
   width: 12px;
   height: 12px;
 
@@ -219,7 +219,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,H=e(p)`
+`,H=t(p)`
   width: 12px;
   height: 12px;
 
@@ -243,7 +243,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=e.button`
+`,F=t.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -283,7 +283,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,I=e(l)`
+`,I=t(l)`
   width: 12px;
   height: 12px;
   padding: 10px;
@@ -305,7 +305,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=e(c)`
+`,T=t(c)`
   width: 12px;
   height: 12px;
   padding: 10px;
@@ -327,7 +327,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`;e(h)`
+`;t(h)`
   width: 12px;
   height: 12px;
 
@@ -350,7 +350,7 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`;const a=e(o)`
+`;const a=t(o)`
   display: flex;
 
   font-size: 14px;
@@ -387,4 +387,4 @@ import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,A=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(u,{children:[i.jsxs(w,{children:[i.jsx(j,{children:"Virus"}),i.jsx(v,{children:"Microscopic Menaces Unveiled"}),i.jsx(k,{children:"Delve into the unseen realm of microscopic menaces, where viruses and bacteria shape the course of life, challenging our understanding and resilience."}),i.jsxs(z,{children:[i.jsxs(B,{children:[i.jsx(R,{children:"Danger rating 10/10"}),i.jsx(F,{onClick:()=>r(!t),children:t?i.jsx($,{}):i.jsx(H,{})})]}),i.jsxs(V,{isVisible:t,children:[i.jsx(n,{children:"Viruses are not classified as living organisms but consist of genetic material encased in a protein coat."}),i.jsx(n,{children:"Bacteria are single-celled organisms playing vital roles in ecological processes, including nutrient cycling."}),i.jsx(n,{children:"Viruses hijack host cells to replicate, causing diseases in animals, plants, and bacteria."}),i.jsx(n,{children:"Bacteria can form resilient structures called endospores, allowing them to survive harsh conditions."}),i.jsx(n,{children:"Both viruses and bacteria are crucial for human health, contributing to the microbiome and immune system development."}),i.jsx(n,{children:"Bacteria can exchange genetic material through horizontal gene transfer, contributing to their adaptability."}),i.jsx(n,{children:"Viruses exhibit a wide range of shapes and structures, from simple spheres to complex helical forms."}),i.jsx(n,{children:"The study of viruses and bacteria is essential in fields such as medicine, biotechnology, and environmental science. scales."})]})]})]}),i.jsxs(S,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(A,{})});export{D as default};
+`,A=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(u,{children:[i.jsxs(w,{isVisible:!e,children:[i.jsx(j,{children:"Virus"}),i.jsx(v,{children:"Microscopic Menaces Unveiled"}),i.jsx(k,{children:"Delve into the unseen realm of microscopic menaces, where viruses and bacteria shape the course of life, challenging our understanding and resilience."}),i.jsxs(z,{children:[i.jsxs(V,{children:[i.jsx(B,{children:"Danger rating 10/10"}),i.jsx(F,{onClick:()=>r(!e),children:e?i.jsx(S,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Viruses are not classified as living organisms but consist of genetic material encased in a protein coat."}),i.jsx(n,{children:"Bacteria are single-celled organisms playing vital roles in ecological processes, including nutrient cycling."}),i.jsx(n,{children:"Viruses hijack host cells to replicate, causing diseases in animals, plants, and bacteria."}),i.jsx(n,{children:"Bacteria can form resilient structures called endospores, allowing them to survive harsh conditions."}),i.jsx(n,{children:"Both viruses and bacteria are crucial for human health, contributing to the microbiome and immune system development."}),i.jsx(n,{children:"Bacteria can exchange genetic material through horizontal gene transfer, contributing to their adaptability."}),i.jsx(n,{children:"Viruses exhibit a wide range of shapes and structures, from simple spheres to complex helical forms."}),i.jsx(n,{children:"The study of viruses and bacteria is essential in fields such as medicine, biotechnology, and environmental science. scales."})]})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(A,{})});export{D as default};

@@ -1,4 +1,4 @@
-import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as p,b as x,F as l,S as h,a as c,C as m}from"./index.esm-2f45aec5.js";const g="/predators/assets/sharkHero1-942c43d2.png",f=i.div`
+import{N as o,r as s,j as e}from"./index-07a68f3b.js";import{n as t,k as d,c as p,b as x,F as l,S as h,a as c,C as m}from"./index.esm-b4d420bb.js";const g="/predators/assets/sharkHero1-942c43d2.png",f=t.div`
   display: flex;
   background: url(${g});
 
@@ -8,13 +8,13 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   background-position: left center;
   width: 100%;
   height: 100%;
-`,b=i.div`
+`,b=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: space-between;
-`,w=i.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -23,7 +23,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   width: 100%;
   align-items: center;
 
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 
   @media (min-width: 768px) {
     gap: 20px;
@@ -33,17 +33,18 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
     gap: 30px;
     width: 100%;
   }
-`,u=i.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: scroll;
+
+  overflow-y: ${({isVisible:i})=>i?"hidden":"auto"};
 
   width: 100%;
   /* height: 100%; */
   margin-right: auto;
-`,y=i.h1`
+`,y=t.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -75,7 +76,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   100% {
     background-position: 500%;
   }
-`,j=i.h2`
+`,j=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -98,7 +99,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,v=i.p`
+`,v=t.p`
   color: #76aab3;
   font-weight: 400;
   font-family: "Arvo", sans-serif;
@@ -119,7 +120,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,z=i.div`
+`,z=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -129,21 +130,21 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 768px) {
     margin-top: 20px;
   }
-`,S=i.div`
+`,S=t.div`
   display: flex;
   padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,R=i.h3`
+`,R=t.h3`
   font-size: 22px;
   font-weight: bold;
   color: #e1d05e;
   font-family: "Playfair Display", serif;
-`,$=i.ul`
+`,$=t.ul`
   display: flex;
   flex-direction: column;
-  gap: ${({isVisible:t})=>t?"10px":"0"};
-  padding: ${({isVisible:t})=>t?"0 10px":"0"};
+  gap: ${({isVisible:i})=>i?"10px":"0"};
+  padding: ${({isVisible:i})=>i?"0 10px":"0"};
   max-width: 400px;
 
   color: #fff;
@@ -151,11 +152,11 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transform: translateY(-20px);
-  opacity: ${({isVisible:t})=>t?1:0};
-  transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
-  height: ${({isVisible:t})=>t?"100%":"30px"};
-  /* overflow: ${({isVisible:t})=>t?"visible":"hidden"}; */
-  margin-bottom: ${({isVisible:t})=>t?"20px":"0"};
+  opacity: ${({isVisible:i})=>i?1:0};
+  transform: ${({isVisible:i})=>i?"translateY(0)":"translateY(-20px)"};
+  height: ${({isVisible:i})=>i?"100%":"30px"};
+  /* overflow: ${({isVisible:i})=>i?"visible":"hidden"}; */
+  margin-bottom: ${({isVisible:i})=>i?"20px":"0"};
   transition: all 0.5s;
 
   @media (min-width: 768px) {
@@ -165,7 +166,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1420px) {
     max-width: 700px;
   }
-`,n=i.li`
+`,n=t.li`
   color: #76aab3;
   font-family: "Arvo", sans-serif;
   font-size: 12px;
@@ -182,7 +183,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,H=i.div`
+`,H=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -192,7 +193,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
-`,I=i(p)`
+`,I=t(p)`
   width: 12px;
   height: 12px;
 
@@ -216,7 +217,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=i(x)`
+`,T=t(x)`
   width: 12px;
   height: 12px;
 
@@ -240,7 +241,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=i.button`
+`,A=t.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -281,7 +282,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,B=i(l)`
+`,B=t(l)`
   width: 12px;
   height: 12px;
 
@@ -304,7 +305,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=i(h)`
+`,F=t(h)`
   width: 12px;
   height: 12px;
 
@@ -327,7 +328,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,D=i(c)`
+`,D=t(c)`
   width: 12px;
   height: 12px;
 
@@ -350,7 +351,7 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,r=i(o)`
+`,r=t(o)`
   display: flex;
   font-family: "Montserrat", sans-serif;
 
@@ -389,4 +390,4 @@ import{N as o,r as s,j as e}from"./index-bb7f4f12.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[t,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(w,{children:e.jsx(m,{children:e.jsxs(b,{children:[e.jsxs(u,{children:[e.jsx(j,{children:"Sovereigns of the Sea"}),e.jsx(y,{children:"Shark"}),e.jsx(v,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(z,{children:[e.jsxs(S,{children:[e.jsx(R,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!t),children:t?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs($,{isVisible:t,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx(D,{})})]})]})})})})},C=()=>e.jsx(e.Fragment,{children:e.jsx(G,{})});export{C as default};
+`,G=()=>{const[i,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(w,{children:e.jsx(m,{children:e.jsxs(b,{children:[e.jsxs(u,{isVisible:!i,children:[e.jsx(j,{children:"Sovereigns of the Sea"}),e.jsx(y,{children:"Shark"}),e.jsx(v,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(z,{children:[e.jsxs(S,{children:[e.jsx(R,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!i),children:i?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs($,{isVisible:i,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx(D,{})})]})]})})})})},C=()=>e.jsx(e.Fragment,{children:e.jsx(G,{})});export{C as default};

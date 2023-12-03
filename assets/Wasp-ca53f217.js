@@ -1,4 +1,4 @@
-import{r as o,j as i}from"./index-bb7f4f12.js";import{n as t,k as r,C as p}from"./index.esm-2f45aec5.js";import{R as l,g as x,h as d,B as c,G as a,i as h,j as m}from"./Navigation.styled-782481ad.js";const f="/predators/assets/waspHero-9e1391d1.png",g=t.div`
+import{r as o,j as i}from"./index-07a68f3b.js";import{n as t,k as r,C as p}from"./index.esm-b4d420bb.js";import{R as l,g as x,h as d,B as c,G as a,i as h,j as m}from"./Navigation.styled-04c60f1f.js";const f="/predators/assets/waspHero-9e1391d1.png",g=t.div`
   display: flex;
   background: url(${f});
 
@@ -36,7 +36,8 @@ import{r as o,j as i}from"./index-bb7f4f12.js";import{n as t,k as r,C as p}from"
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: scroll;
+
+  overflow-y: ${({isVisible:e})=>e?"hidden":"auto"};
 
   width: 100%;
   /* height: 100%; */
@@ -188,4 +189,4 @@ import{r as o,j as i}from"./index-bb7f4f12.js";import{n as t,k as r,C as p}from"
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,S=()=>{const[e,s]=o.useState(!1);return i.jsx(g,{children:i.jsx(u,{children:i.jsx(p,{children:i.jsxs(w,{children:[i.jsxs(b,{children:[i.jsx(j,{children:"Wasp"}),i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(v,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(z,{children:[i.jsxs(W,{children:[i.jsx(R,{children:"Danger rating 5/10"}),i.jsx(l,{onClick:()=>s(!e),children:e?i.jsx(x,{}):i.jsx(d,{})})]}),i.jsxs($,{isVisible:e,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]})]}),i.jsxs(c,{children:[i.jsx(a,{to:"/",children:i.jsx(h,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(m,{})})]})]})})})})},T=()=>i.jsx(S,{});export{T as default};
+`,S=()=>{const[e,s]=o.useState(!1);return i.jsx(g,{children:i.jsx(u,{children:i.jsx(p,{children:i.jsxs(w,{children:[i.jsxs(b,{isVisible:!e,children:[i.jsx(j,{children:"Wasp"}),i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(v,{children:"Enter the intricate world of wasps, where social structures, stingers, and vital ecological roles converge in a dance of precision and purpose."}),i.jsxs(z,{children:[i.jsxs(W,{children:[i.jsx(R,{children:"Danger rating 5/10"}),i.jsx(l,{onClick:()=>s(!e),children:e?i.jsx(x,{}):i.jsx(d,{})})]}),i.jsxs($,{isVisible:e,children:[i.jsx(n,{children:"Some wasps are social, forming intricate colonies with specialized roles for individuals."}),i.jsx(n,{children:"Social wasps, like yellow jackets, can form large colonies with hierarchical structures."}),i.jsx(n,{children:"Wasps possess a venomous sting used for hunting and defense against predators."}),i.jsx(n,{children:"Certain wasp species exhibit parasitic behavior, laying eggs on or inside other insects."}),i.jsx(n,{children:"Pollination is another essential role of certain wasp species, contributing to plant diversity."}),i.jsx(n,{children:"Wasps communicate through chemical signals, coordinating activities within their colonies."}),i.jsx(n,{children:"Mimicry is a common defense mechanism among wasps, imitating the appearance of more dangerous species."})]})]})]}),i.jsxs(c,{children:[i.jsx(a,{to:"/",children:i.jsx(h,{})}),i.jsx(a,{to:"/hawk",children:i.jsx(m,{})})]})]})})})})},T=()=>i.jsx(S,{});export{T as default};
