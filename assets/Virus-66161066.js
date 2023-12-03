@@ -1,4 +1,4 @@
-import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Container-b48efed6.js";import{n as t,k as p,c as x,b as l,F as h,S as c,a as m}from"./index.esm-076da570.js";const g="/predators/assets/sharkHero1-942c43d2.png",f=t.div`
+import{N as o,r as s,j as i}from"./index-126e2f9a.js";import{C as d}from"./Container-00501e37.js";import{n as t,k as x,c as p,b as l,F as c,S as h,a as m}from"./index.esm-9bb87a5c.js";const g="/predators/assets/virusHero-db7a81db.png",f=t.div`
   display: flex;
   background: url(${g});
 
@@ -8,13 +8,13 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   background-position: right center;
   width: 100%;
   height: 100%;
-`,b=t.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: space-between;
-`,u=t.div`
+`,b=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,19 +38,26 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   align-items: flex-start;
 
   width: 100%;
-  margin-right: auto;
-`,y=t.h1`
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    align-items: flex-end;
+  }
+  @media (min-width: 1440px) {
+    align-items: flex-end;
+  }
+`,j=t.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #e1d05e;
-  font-family: "Playfair Display", serif;
+  color: #d3371e;
+  font-family: "Special Elite", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #e1d05e;
-  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #181717;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
@@ -64,30 +71,29 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
     font-weight: bold;
     line-height: 1.2;
   }
-`,k=p`
+`,y=x`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,j=t.h2`
+`,k=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #398c9b, #e1d05e, #398c9b);
+  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${k} 4s linear infinite;
-  margin-bottom: 10px;
+  animation: ${y} 4s linear infinite;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -95,68 +101,70 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
     font-size: 18px;
   }
 `,v=t.p`
-  color: #76aab3;
+  color: #99360f;
   font-weight: 400;
-  font-family: "Arvo", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-right: auto;
+  margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
-  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    max-width: 400px;
+    text-align: end;
+    font-size: 18px;
+    max-width: 420px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 20px;
+    max-width: 500px;
   }
 `,z=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 10px;
+
+  margin-top: 20px;
 
   @media (min-width: 768px) {
-    margin-top: 20px;
+    align-items: flex-end;
   }
-`,S=t.div`
+`,V=t.div`
   display: flex;
-  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,R=t.h3`
+  padding: 0 0 20px 0;
+`,B=t.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #e1d05e;
-  font-family: "Playfair Display", serif;
-`,$=t.ul`
+  color: #d3371e;
+  font-family: "Special Elite", cursive;
+`,R=t.ul`
   display: flex;
   flex-direction: column;
-  gap: ${({isVisible:i})=>i?"10px":"0"};
-  padding: ${({isVisible:i})=>i?"0 10px":"0"};
-  max-width: 400px;
+  gap: ${({isVisible:e})=>e?"10px":"0"};
+  padding: ${({isVisible:e})=>e?"0 10px":"0"};
+  max-width: 380px;
+  opacity: 0;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(-20px);
-  opacity: ${({isVisible:i})=>i?1:0};
-  transform: ${({isVisible:i})=>i?"translateY(0)":"translateY(-20px)"};
+  transform: translateY(0);
+  opacity: ${({isVisible:e})=>e?1:0};
+  transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
 
-  height: ${({isVisible:i})=>i?"240px":"30px"};
-  margin-bottom: ${({isVisible:i})=>i?"20px":"0"};
+  height: ${({isVisible:e})=>e?"170px":"30px"};
+  margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
   transition: all 0.5s;
 
   overflow-y: scroll;
   ::-webkit-scrollbar-thumb {
-    background-color: #76aab3;
+    background-color: #99360f;
     border: 2px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
@@ -167,55 +175,51 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   }
 
   @media (min-width: 768px) {
-    max-width: 600px;
     font-size: 28px;
-    height: ${({isVisible:i})=>i?"210px":"30px"};
+    text-align: end;
+    height: ${({isVisible:e})=>e?"220px":"30px"};
   }
   @media (min-width: 1420px) {
-    max-width: 700px;
-    height: ${({isVisible:i})=>i?"100%":"30px"};
+    max-width: 500px;
+    height: ${({isVisible:e})=>e?"100%":"30px"};
   }
 `,n=t.li`
-  color: #76aab3;
-  font-family: "Arvo", sans-serif;
-  font-size: 12px;
+  color: #99360f;
+  font-family: "Antonio", sans-serif;
+  font-size: 14px;
   font-weight: normal;
-  /* text-align: start; */
+  text-align: start;
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    text-align: end;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,H=t.div`
+`,$=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-
-  /* @media (min-width: 768px) {
-    margin-top: 30px;
-  } */
-`,I=t(x)`
+`,S=t(p)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e1d05e;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -226,20 +230,20 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=t(l)`
+`,H=t(l)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e1d05e;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -250,7 +254,7 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=t.button`
+`,F=t.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -259,7 +263,7 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e1d05e;
+  color: #d3371e;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -268,20 +272,19 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e1d05e;
+  text-shadow: 2px 2px 5px #d3371e;
 
   svg {
-    fill: #e1d05e;
+    fill: #d3371e;
   }
 
-  /* &.active, */
   &:hover {
-    color: #878986;
+    color: #99360f;
 
     svg {
-      fill: #878986;
-      border: 3px solid #878986;
-      box-shadow: #878986 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -291,20 +294,19 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,B=t(h)`
+`,I=t(c)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #e1d05e;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -314,20 +316,19 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=t(c)`
+`,T=t(h)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #e1d05e;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -337,20 +338,20 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,D=t(m)`
+`;t(m)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e1d05e;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -360,14 +361,13 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,r=t(o)`
+`;const a=t(o)`
   display: flex;
-  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e1d05e;
+  color: #d3371e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -375,21 +375,20 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e1d05e;
+  text-shadow: 2px 2px 5px #d3371e;
 
   svg {
-    fill: #e1d05e;
+    fill: #d3371e;
   }
 
-  /* &.active, */
   &:hover,
   &:focus {
-    color: #878986;
+    color: #99360f;
 
     svg {
-      fill: #878986;
-      border: 3px solid #878986;
-      box-shadow: #878986 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -399,4 +398,4 @@ import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[i,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(u,{children:e.jsx(d,{children:e.jsxs(b,{children:[e.jsxs(w,{isVisible:!i,children:[e.jsx(j,{children:"Sovereigns of the Sea"}),e.jsx(y,{children:"Shark"}),e.jsx(v,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(z,{children:[e.jsxs(S,{children:[e.jsx(R,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!i),children:i?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs($,{isVisible:i,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx(D,{})})]})]})})})})},E=()=>e.jsx(e.Fragment,{children:e.jsx(G,{})});export{E as default};
+`,A=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(d,{children:i.jsxs(u,{children:[i.jsxs(w,{isVisible:!e,children:[i.jsx(j,{children:"Virus"}),i.jsx(k,{children:"Microscopic Menaces Unveiled"}),i.jsx(v,{children:"Delve into the unseen realm of microscopic menaces, where viruses and bacteria shape the course of life, challenging our understanding and resilience."}),i.jsxs(z,{children:[i.jsxs(V,{children:[i.jsx(B,{children:"Danger rating 10/10"}),i.jsx(F,{onClick:()=>r(!e),children:e?i.jsx(S,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Viruses are not classified as living organisms but consist of genetic material encased in a protein coat."}),i.jsx(n,{children:"Bacteria are single-celled organisms playing vital roles in ecological processes, including nutrient cycling."}),i.jsx(n,{children:"Viruses hijack host cells to replicate, causing diseases in animals, plants, and bacteria."}),i.jsx(n,{children:"Bacteria can form resilient structures called endospores, allowing them to survive harsh conditions."}),i.jsx(n,{children:"Both viruses and bacteria are crucial for human health, contributing to the microbiome and immune system development."}),i.jsx(n,{children:"Bacteria can exchange genetic material through horizontal gene transfer, contributing to their adaptability."}),i.jsx(n,{children:"Viruses exhibit a wide range of shapes and structures, from simple spheres to complex helical forms."}),i.jsx(n,{children:"The study of viruses and bacteria is essential in fields such as medicine, biotechnology, and environmental science. scales."})]})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})})]})]})})})})},E=()=>i.jsx(i.Fragment,{children:i.jsx(A,{})});export{E as default};
