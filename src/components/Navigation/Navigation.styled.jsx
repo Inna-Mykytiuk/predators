@@ -183,8 +183,8 @@ export const WaspIcon = styled(GiWaspSting)`
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
   @media (min-width: 768px) {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   @media (min-width: 1440px) {
     width: 50px;
@@ -192,8 +192,8 @@ export const WaspIcon = styled(GiWaspSting)`
   }
 `;
 export const HawkIcon = styled(GiHawkEmblem)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -215,8 +215,8 @@ export const HawkIcon = styled(GiHawkEmblem)`
   }
 `;
 export const SnakeIcon = styled(GiSnake)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -238,8 +238,8 @@ export const SnakeIcon = styled(GiSnake)`
   }
 `;
 export const WolfIcon = styled(GiWolfHead)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -261,8 +261,8 @@ export const WolfIcon = styled(GiWolfHead)`
   }
 `;
 export const TigerIcon = styled(GiTigerHead)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -284,8 +284,8 @@ export const TigerIcon = styled(GiTigerHead)`
   }
 `;
 export const SharkIcon = styled(GiSharkFin)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -307,8 +307,8 @@ export const SharkIcon = styled(GiSharkFin)`
   }
 `;
 export const HumanIcon = styled(GiBowman)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -330,8 +330,8 @@ export const HumanIcon = styled(GiBowman)`
   }
 `;
 export const VirusIcon = styled(RiVirusLine)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
