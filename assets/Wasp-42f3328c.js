@@ -1,4 +1,4 @@
-import{r as o,j as i}from"./index-1f95df5d.js";import{n as t,k as r,C as p}from"./index.esm-e0e28d46.js";import{R as l,g as x,h as d,B as c,G as a,i as h,j as m}from"./Navigation.styled-f7be161b.js";const f="/predators/assets/waspHero-9e1391d1.png",g=t.div`
+import{r as o,j as i}from"./index-770f26db.js";import{n as t,k as r,C as p}from"./index.esm-ef278d39.js";import{R as l,g as x,h as d,B as c,G as a,i as h,j as m}from"./Navigation.styled-b4b7ea1b.js";const f="/predators/assets/waspHero-9e1391d1.png",g=t.div`
   display: flex;
   background: url(${f});
 
@@ -15,7 +15,6 @@ import{r as o,j as i}from"./index-1f95df5d.js";import{n as t,k as r,C as p}from"
   align-items: flex-end;
   padding: 30px 0 30px;
   width: 100%;
-  /* height: 100%; */
   align-items: center;
 
   @media (min-width: 768px) {
