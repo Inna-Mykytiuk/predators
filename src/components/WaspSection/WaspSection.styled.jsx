@@ -12,7 +12,7 @@ export const WaspHero = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 `;
 
 export const WaspWrapper = styled.div`
@@ -22,6 +22,7 @@ export const WaspWrapper = styled.div`
   align-items: flex-end;
   padding: 30px 0 30px;
   width: 100%;
+  /* height: 100%; */
   align-items: center;
 
   @media (min-width: 768px) {

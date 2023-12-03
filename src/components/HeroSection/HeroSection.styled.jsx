@@ -17,7 +17,7 @@ export const Hero = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const ContentWrapper = styled.div`
