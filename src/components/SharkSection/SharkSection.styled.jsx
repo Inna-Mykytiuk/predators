@@ -16,7 +16,7 @@ export const SharkHero = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: left center;
+  background-position: right center;
   width: 100%;
   height: 100%;
 `;
@@ -38,8 +38,6 @@ export const SharkWrapper = styled.div`
   width: 100%;
   align-items: center;
 
-  /* overflow-y: scroll; */
-
   @media (min-width: 768px) {
     gap: 20px;
   }
@@ -56,10 +54,7 @@ export const TextWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
-  overflow-y: ${({ isVisible }) => (isVisible ? "hidden" : "auto")};
-
   width: 100%;
-  /* height: 100%; */
   margin-right: auto;
 `;
 
@@ -188,17 +183,31 @@ export const RaitingList = styled.ul`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
-  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  /* overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")}; */
+
+  height: ${({ isVisible }) => (isVisible ? "240px" : "30px")};
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
+
+  overflow-y: scroll;
+  ::-webkit-scrollbar-thumb {
+    background-color: #76aab3;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
 
   @media (min-width: 768px) {
     max-width: 600px;
     font-size: 28px;
+    height: ${({ isVisible }) => (isVisible ? "210px" : "30px")};
   }
   @media (min-width: 1420px) {
     max-width: 700px;
+    height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   }
 `;
 

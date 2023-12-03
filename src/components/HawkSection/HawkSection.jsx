@@ -34,10 +34,10 @@ const HawkSection = () => {
         <Container>
           <Wrapper>
             <TextWrapper isVisible={!isOpen}>
-              <HeroTextMain>Hawk</HeroTextMain>
               <HeroTextSubtitle>
                 Nature&apos;s Architects and Stingers
               </HeroTextSubtitle>
+              <HeroTextMain>Hawk</HeroTextMain>
 
               <HeroTextSecondary>
                 Take flight with the majestic hawks, rulers of the skies, as we

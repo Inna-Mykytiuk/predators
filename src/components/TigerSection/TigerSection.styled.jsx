@@ -54,10 +54,7 @@ export const TextWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
-  /* overflow-y: ${({ isVisible }) => (isVisible ? "hidden" : "auto")}; */
-
   width: 100%;
-  /* height: 100%; */
   margin-left: auto;
 
   @media (min-width: 768px) {
@@ -195,8 +192,8 @@ export const RaitingList = styled.ul`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
-  /* overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")}; */
-  height: ${({ isVisible }) => (isVisible ? "170px" : "30px")};
+
+  height: ${({ isVisible }) => (isVisible ? "210px" : "30px")};
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
 
@@ -212,14 +209,10 @@ export const RaitingList = styled.ul`
     width: 8px;
   }
 
-  /* @media (min-width: 650px) {
-    height: ${({ isVisible }) => (isVisible ? "150px" : "30px")};
-  } */
-
   @media (min-width: 768px) {
     font-size: 28px;
     text-align: end;
-    height: ${({ isVisible }) => (isVisible ? "270px" : "30px")};
+    height: ${({ isVisible }) => (isVisible ? "220px" : "30px")};
   }
   @media (min-width: 1420px) {
     max-width: 500px;

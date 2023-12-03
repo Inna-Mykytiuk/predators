@@ -53,7 +53,6 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: ${({ isVisible }) => (isVisible ? "hidden" : "auto")};
 
   width: 100%;
   margin-right: auto;
@@ -185,17 +184,31 @@ export const RaitingList = styled.ul`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
-  height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  /* overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")}; */
+
+  height: ${({ isVisible }) => (isVisible ? "250px" : "30px")};
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
 
+  overflow-y: scroll;
+  ::-webkit-scrollbar-thumb {
+    background-color: #789146;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
   @media (min-width: 768px) {
-    max-width: 600px;
+    max-width: 500px;
     font-size: 28px;
+    height: ${({ isVisible }) => (isVisible ? "240px" : "30px")};
   }
   @media (min-width: 1420px) {
     max-width: 700px;
+    height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   }
 `;
 
@@ -204,7 +217,6 @@ export const RaitingListItem = styled.li`
   font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
-  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
