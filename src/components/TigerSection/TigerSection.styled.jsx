@@ -26,7 +26,7 @@ export const TigerWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 30px 0 60px;
+  padding: 30px 0 30px;
   width: 100%;
   align-items: center;
 

@@ -23,18 +23,20 @@ export const Hero = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 
   gap: 10px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-right: auto;
   align-items: center;
+  padding: 30px 0;
 
   @media (min-width: 768px) {
     gap: 20px;
-    width: 500px;
+    width: 450px;
     align-items: center;
+    padding: 100px 0 0 0;
   }
   @media (min-width: 1440px) {
     gap: 30px;
@@ -74,9 +76,9 @@ export const HeroTextSecondary = styled.h2`
   line-height: 1.2;
   max-width: 450px;
   text-align: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-shadow: 1px 1px 2px #181717;
-  margin-top: 20px;
+  margin: 20px 0 40px;
 
   @media (min-width: 768px) {
     max-width: 550px;

@@ -12,15 +12,13 @@ export const HeroSection = () => {
   return (
     <Container>
       <ContentWrapper>
-        <div>
-          <HeroTextMain>Predators</HeroTextMain>
-          <TextShadow>-- of the Earth --</TextShadow>
-          <HeroTextSecondary>
-            Welcome to the captivating realm of Earth&apos;s most formidable and
-            fascinating predators. In a world where each species unveils its
-            unique prowess.
-          </HeroTextSecondary>
-        </div>
+        <HeroTextMain>Predators</HeroTextMain>
+        <TextShadow>-- of the Earth --</TextShadow>
+        <HeroTextSecondary>
+          Welcome to the captivating realm of Earth&apos;s most formidable and
+          fascinating predators. In a world where each species unveils its
+          unique prowess.
+        </HeroTextSecondary>
         <Navigation />
       </ContentWrapper>
     </Container>

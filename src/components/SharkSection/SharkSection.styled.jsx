@@ -26,7 +26,7 @@ export const SharkWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 30px 0 60px;
+  padding: 30px 0 30px;
   width: 100%;
   align-items: center;
 
@@ -49,14 +49,6 @@ export const TextWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-right: auto;
-
-  /* @media (min-width: 768px) {
-
-    align-items: flex-end;
-  }
-  @media (min-width: 1440px) {
-    align-items: flex-end;
-  } */
 `;
 
 export const HeroTextMain = styled.h1`

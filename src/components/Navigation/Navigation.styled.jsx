@@ -21,6 +21,10 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
 `;
 
 export const NavList = styled.div`
