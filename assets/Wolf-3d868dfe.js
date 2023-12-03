@@ -1,4 +1,4 @@
-import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-965f1437.js";const g="/predators/assets/wolfHero-c2200093.png",f=t.div`
+import{N as r,r as s,j as i}from"./index-6f6ab6ec.js";import{C as d}from"./Container-ed4730b4.js";import{n as t,k as p,c as x,b as l,F as c,S as h,a as m}from"./index.esm-19791114.js";const g="/predators/assets/wolfHero-c2200093.png",f=t.div`
   display: flex;
   background: url(${g});
 
@@ -67,7 +67,7 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,k=d`
+`,k=p`
   0% {
     background-position: -500%;
   }
@@ -192,7 +192,7 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
-`,T=t(p)`
+`,T=t(x)`
   width: 12px;
   height: 12px;
 
@@ -216,7 +216,7 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=t(x)`
+`,A=t(l)`
   width: 12px;
   height: 12px;
 
@@ -281,7 +281,7 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,I=t(l)`
+`,I=t(c)`
   width: 12px;
   height: 12px;
 
@@ -304,7 +304,7 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,B=t(c)`
+`,B=t(h)`
   width: 12px;
   height: 12px;
 
@@ -327,7 +327,7 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=t(h)`
+`,F=t(m)`
   width: 12px;
   height: 12px;
 
@@ -389,4 +389,4 @@ import{N as r,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[e,a]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(w,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(j,{children:"Wolf"}),i.jsx(v,{children:"Join the packs and explore the untamed landscapes where wolves, with their intricate social structures and haunting howls, command the wilderness."}),i.jsxs(z,{children:[i.jsxs(W,{children:[i.jsx(R,{children:"Danger rating 5/10"}),i.jsx(H,{onClick:()=>a(!e),children:e?i.jsx(T,{}):i.jsx(A,{})})]}),i.jsxs($,{isVisible:e,children:[i.jsx(n,{children:"Wolves are skilled hunters, often targeting large ungulates such as deer and elk."}),i.jsx(n,{children:"Pack hierarchy is established through a combination of dominance displays and submission."}),i.jsx(n,{children:"Communication within a wolf pack involves vocalizations, body language, and scent marking."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"Wolf territories can cover vast areas, depending on prey availability and pack size."}),i.jsx(n,{children:"The gestation period for wolf pups is around two months, with the entire pack participating in their care."}),i.jsx(n,{children:"Gray wolves, the most widespread species, exhibit a wide range of coat colors, from white to black."})]})]})]}),i.jsxs(S,{children:[i.jsx(o,{to:"/hawk",children:i.jsx(I,{})}),i.jsx(o,{to:"/",children:i.jsx(B,{})}),i.jsx(o,{to:"/snake",children:i.jsx(F,{})})]})]})})})})},M=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{M as default};
+`,G=()=>{const[e,a]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(d,{children:i.jsxs(w,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(j,{children:"Wolf"}),i.jsx(v,{children:"Join the packs and explore the untamed landscapes where wolves, with their intricate social structures and haunting howls, command the wilderness."}),i.jsxs(z,{children:[i.jsxs(W,{children:[i.jsx(R,{children:"Danger rating 5/10"}),i.jsx(H,{onClick:()=>a(!e),children:e?i.jsx(T,{}):i.jsx(A,{})})]}),i.jsxs($,{isVisible:e,children:[i.jsx(n,{children:"Wolves are skilled hunters, often targeting large ungulates such as deer and elk."}),i.jsx(n,{children:"Pack hierarchy is established through a combination of dominance displays and submission."}),i.jsx(n,{children:"Communication within a wolf pack involves vocalizations, body language, and scent marking."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"Wolf territories can cover vast areas, depending on prey availability and pack size."}),i.jsx(n,{children:"The gestation period for wolf pups is around two months, with the entire pack participating in their care."}),i.jsx(n,{children:"Gray wolves, the most widespread species, exhibit a wide range of coat colors, from white to black."})]})]})]}),i.jsxs(S,{children:[i.jsx(o,{to:"/hawk",children:i.jsx(I,{})}),i.jsx(o,{to:"/",children:i.jsx(B,{})}),i.jsx(o,{to:"/snake",children:i.jsx(F,{})})]})]})})})})},N=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{N as default};

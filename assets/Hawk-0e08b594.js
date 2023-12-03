@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as x,b as p,F as l,S as c,a as h,C as m}from"./index.esm-965f1437.js";const g="/predators/assets/virusHero-db7a81db.png",f=t.div`
+import{N as o,r as s,j as i}from"./index-6f6ab6ec.js";import{C as d}from"./Container-ed4730b4.js";import{n as t,k as x,c as p,b as l,F as c,S as h,a as m}from"./index.esm-19791114.js";const g="/predators/assets/hawkHero-e1f4900b.png",f=t.div`
   display: flex;
   background: url(${g});
 
@@ -8,13 +8,13 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   background-position: right center;
   width: 100%;
   height: 100%;
-`,u=t.div`
+`,b=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: space-between;
-`,b=t.div`
+  justify-content: flex-end;
+`,w=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,151 +31,155 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
     gap: 30px;
     width: 100%;
   }
-`,w=t.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  overflow-y: ${({isVisible:e})=>e?"hidden":"auto"};
-
   width: 100%;
   /* height: 100%; */
   margin-left: auto;
 
+  overflow-y: ${({isVisible:e})=>e?"hidden":"auto"};
+
   @media (min-width: 768px) {
+    justify-content: flex-end;
     align-items: flex-end;
   }
   @media (min-width: 1440px) {
     align-items: flex-end;
   }
-`,j=t.h1`
-  margin: 0;
+`,k=t.h1`
+  margin: 0 0 10px 0;
   text-align: center;
   text-transform: uppercase;
-  color: #d3371e;
-  font-family: "Special Elite", cursive;
+  color: #2da4e9;
+  font-family: "Kaushan Script", cursive;
+  padding: 0 20px 0 0;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #181717;
-  margin-bottom: 20px;
+  text-shadow: 1px 1px 8px #419bcf;
 
   @media (min-width: 768px) {
-    margin-bottom: 30px;
+    margin: 0 0 80px 0;
     font-size: 80px;
     line-height: 1.4;
   }
   @media (min-width: 1440px) {
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
     font-size: 120px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.2;
   }
-`,y=d`
+`,j=x`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,v=t.h2`
+`,y=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
+  background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${y} 4s linear infinite;
+  animation: ${j} 4s linear infinite;
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    margin-bottom: 10px;
+
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,k=t.p`
-  color: #99360f;
+`,v=t.p`
+  color: #4c7e9b;
   font-weight: 400;
-  font-size: 16px;
+  font-family: "Arvo", sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
   margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
+  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     text-align: end;
-    font-size: 18px;
-    max-width: 420px;
+    font-size: 16px;
+    max-width: 400px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 20px;
-    max-width: 500px;
+    font-size: 18px;
   }
 `,z=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  margin-top: 20px;
+  margin-top: 10px;
 
   @media (min-width: 768px) {
     align-items: flex-end;
+    margin-top: 20px;
   }
-`,V=t.div`
+`,H=t.div`
   display: flex;
+  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-  padding: 0 0 20px 0;
-`,B=t.h3`
-  font-size: 32px;
+`,$=t.h3`
+  font-size: 22px;
   font-weight: bold;
-  color: #d3371e;
-  font-family: "Special Elite", cursive;
-`,R=t.ul`
+  color: #2da4e9;
+  font-family: "Kaushan Script", cursive;
+`,S=t.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:e})=>e?"10px":"0"};
   padding: ${({isVisible:e})=>e?"0 10px":"0"};
-  max-width: 380px;
-  opacity: 0;
+  max-width: 400px;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+
   transform: translateY(0);
   opacity: ${({isVisible:e})=>e?1:0};
-  transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
   height: ${({isVisible:e})=>e?"100%":"30px"};
   /* overflow: ${({isVisible:e})=>e?"visible":"hidden"}; */
   margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
-  transition: all 0.5s;
+  transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
+
+  transition: all 0.8s;
 
   @media (min-width: 768px) {
+    height: ${({isVisible:e})=>e?"100%":"10px"};
+    overflow: ${({isVisible:e})=>e?"visible":"hidden"};
+    max-width: 700px;
     font-size: 28px;
     text-align: end;
   }
-  @media (min-width: 1420px) {
-    max-width: 500px;
-  }
 `,n=t.li`
-  color: #99360f;
-  font-family: "Antonio", sans-serif;
-  font-size: 14px;
+  color: #4c7e9b;
+  font-family: "Arvo", sans-serif;
+  font-size: 12px;
   font-weight: normal;
   text-align: start;
 
@@ -184,31 +188,36 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
+    font-size: 14px;
     text-align: end;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,$=t.div`
+`,R=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
-`,S=t(x)`
+  margin-top: ${({isVisible:e})=>e?"0":"auto"};
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+`,A=t(p)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #d3371e;
+  color: #2da4e9;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #2da4e9;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #355da9 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -219,20 +228,20 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,H=t(p)`
+`,I=t(l)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #d3371e;
+  color: #2da4e9;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #2da4e9;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #355da9 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -243,8 +252,9 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=t.button`
+`,T=t.button`
   display: flex;
+  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   outline: 0;
   margin: 0;
@@ -252,7 +262,7 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #d3371e;
+  color: #2da4e9;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -261,19 +271,20 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #d3371e;
+  text-shadow: 2px 2px 5px #1d1e26;
 
   svg {
-    fill: #d3371e;
+    fill: #2da4e9;
   }
 
+  /* &.active, */
   &:hover {
-    color: #99360f;
+    color: #4c7e9b;
 
     svg {
-      fill: #99360f;
-      border: 3px solid #99360f;
-      box-shadow: #99360f 0px 0px 15px;
+      fill: #4c7e9b;
+      border: 3px solid #4c7e9b;
+      box-shadow: #4c7e9b 0px 0px 15px;
     }
   }
 
@@ -283,19 +294,20 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,I=t(l)`
+`,B=t(c)`
   width: 12px;
   height: 12px;
+
   padding: 10px;
 
-  color: #d3371e;
+  color: #2da4e9;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #2da4e9;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #355da9 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -305,19 +317,20 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=t(c)`
+`,F=t(h)`
   width: 12px;
   height: 12px;
+
   padding: 10px;
 
-  color: #d3371e;
+  color: #2da4e9;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #2da4e9;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #355da9 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -327,20 +340,20 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`;t(h)`
+`,C=t(m)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #d3371e;
+  color: #2da4e9;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #2da4e9;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #355da9 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -350,13 +363,14 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`;const a=t(o)`
+`,a=t(o)`
   display: flex;
+  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #d3371e;
+  color: #2da4e9;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -364,20 +378,21 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #d3371e;
+  text-shadow: 2px 2px 5px #4c7e9b;
 
   svg {
-    fill: #d3371e;
+    fill: #2da4e9;
   }
 
+  /* &.active, */
   &:hover,
   &:focus {
-    color: #99360f;
+    color: #a40007;
 
     svg {
-      fill: #99360f;
-      border: 3px solid #99360f;
-      box-shadow: #99360f 0px 0px 15px;
+      fill: #4c7e9b;
+      border: 3px solid #4c7e9b;
+      box-shadow: #355da9 0px 0px 15px;
     }
   }
 
@@ -387,4 +402,4 @@ import{N as o,r as s,j as i}from"./index-8bdedf44.js";import{n as t,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,A=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(u,{children:[i.jsxs(w,{isVisible:!e,children:[i.jsx(j,{children:"Virus"}),i.jsx(v,{children:"Microscopic Menaces Unveiled"}),i.jsx(k,{children:"Delve into the unseen realm of microscopic menaces, where viruses and bacteria shape the course of life, challenging our understanding and resilience."}),i.jsxs(z,{children:[i.jsxs(V,{children:[i.jsx(B,{children:"Danger rating 10/10"}),i.jsx(F,{onClick:()=>r(!e),children:e?i.jsx(S,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Viruses are not classified as living organisms but consist of genetic material encased in a protein coat."}),i.jsx(n,{children:"Bacteria are single-celled organisms playing vital roles in ecological processes, including nutrient cycling."}),i.jsx(n,{children:"Viruses hijack host cells to replicate, causing diseases in animals, plants, and bacteria."}),i.jsx(n,{children:"Bacteria can form resilient structures called endospores, allowing them to survive harsh conditions."}),i.jsx(n,{children:"Both viruses and bacteria are crucial for human health, contributing to the microbiome and immune system development."}),i.jsx(n,{children:"Bacteria can exchange genetic material through horizontal gene transfer, contributing to their adaptability."}),i.jsx(n,{children:"Viruses exhibit a wide range of shapes and structures, from simple spheres to complex helical forms."}),i.jsx(n,{children:"The study of viruses and bacteria is essential in fields such as medicine, biotechnology, and environmental science. scales."})]})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(A,{})});export{D as default};
+`,G=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(d,{children:i.jsxs(b,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(k,{children:"Hawk"}),i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(v,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(z,{children:[i.jsxs(H,{children:[i.jsx($,{children:"Danger rating 4/10"}),i.jsx(T,{onClick:()=>r(!e),children:e?i.jsx(A,{}):i.jsx(I,{})})]}),i.jsxs(S,{isVisible:e,children:[i.jsx(n,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(n,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(n,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(n,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(n,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(n,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(n,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]})]}),i.jsxs(R,{children:[i.jsx(a,{to:"/wasp",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})}),i.jsx(a,{to:"/wolf",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{D as default};
