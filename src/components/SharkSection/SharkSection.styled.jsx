@@ -18,7 +18,7 @@ export const SharkHero = styled.div`
   background-size: cover;
   background-position: left center;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 `;
 
 export const SharkWrapper = styled.div`
@@ -29,6 +29,8 @@ export const SharkWrapper = styled.div`
   padding: 30px 0 30px;
   width: 100%;
   align-items: center;
+
+  overflow-y: scroll;
 
   @media (min-width: 768px) {
     gap: 20px;

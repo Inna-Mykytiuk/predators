@@ -18,7 +18,7 @@ export const TigerHero = styled.div`
   background-size: cover;
   background-position: right center;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 `;
 
 export const TigerWrapper = styled.div`
@@ -49,6 +49,8 @@ export const TextWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-left: auto;
+
+  overflow-y: scroll;
 
   @media (min-width: 768px) {
     align-items: flex-end;

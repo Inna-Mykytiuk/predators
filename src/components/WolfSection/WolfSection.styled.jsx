@@ -18,7 +18,7 @@ export const WolfHero = styled.div`
   background-size: cover;
   background-position: left center;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 `;
 
 export const WolfWrapper = styled.div`
@@ -45,6 +45,8 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  overflow-y: scroll;
 
   width: 100%;
   height: 100%;

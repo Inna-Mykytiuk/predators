@@ -22,7 +22,6 @@ export const WaspWrapper = styled.div`
   align-items: flex-end;
   padding: 30px 0 30px;
   width: 100%;
-  /* height: 100%; */
   align-items: center;
 
   @media (min-width: 768px) {
