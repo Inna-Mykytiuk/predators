@@ -41,7 +41,7 @@ export const TextWrapper = styled.div`
   align-items: flex-start;
 
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-left: auto;
 
   @media (min-width: 768px) {
@@ -142,8 +142,7 @@ export const RaitingWrapper = styled.div`
   align-items: flex-start;
 
   margin-top: 10px;
-  margin-bottom: auto;
-  overflow: scroll;
+  /* margin-bottom: auto; */
 
   @media (min-width: 768px) {
     align-items: flex-end;
@@ -155,6 +154,13 @@ export const RaitingWrapperBtn = styled.div`
   gap: 10px;
   align-items: center;
   padding: 10px 0 20px 0;
+`;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
 `;
 
 export const RaitingTitle = styled.h3`
@@ -181,7 +187,7 @@ export const RaitingList = styled.ul`
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  overflow: ${({ isVisible }) => (isVisible ? "scroll" : "hidden")};
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
 
