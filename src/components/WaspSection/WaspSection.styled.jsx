@@ -143,6 +143,7 @@ export const RaitingWrapper = styled.div`
   align-items: flex-start;
 
   margin-top: 10px;
+  margin-bottom: auto;
 
   @media (min-width: 768px) {
     align-items: flex-end;
