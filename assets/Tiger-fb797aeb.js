@@ -1,14 +1,14 @@
-import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as p,b as d,F as l,S as c,a as m,C as h}from"./index.esm-e9ae7de3.js";const g="/predators/assets/humanHero-3ab7bd92.png",f=e.div`
+import{N as o,r as s,j as i}from"./index-e4adcb00.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-21fac664.js";const g="/predators/assets/tigerHero-5590036e.png",m=e.div`
   display: flex;
   background: url(${g});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: left center;
+  background-position: right center;
   width: 100%;
   height: 100%;
-`,u=e.div`
+`,w=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,23 +30,31 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: scroll;
 
   width: 100%;
   height: 100%;
-  margin-right: auto;
-`,w=e.h1`
+  margin-left: auto;
+
+  overflow-y: scroll;
+
+  @media (min-width: 768px) {
+    align-items: flex-end;
+  }
+  @media (min-width: 1440px) {
+    align-items: flex-end;
+  }
+`,u=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #a40007;
-  font-family: "Cinzel", serif;
+  color: #ff6000;
+  font-family: "Caveat", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 8px #770409;
-  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #181717;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
@@ -67,82 +75,84 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   100% {
     background-position: 500%;
   }
-`,y=e.h2`
+`,k=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #a40007, #50514d, #a40007);
+  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   animation: ${j} 4s linear infinite;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,v=e.p`
-  color: #878986;
+`,y=e.p`
+  color: #99360f;
   font-weight: 400;
-  font-family: "Arvo", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-right: auto;
+  margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
-  backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    max-width: 500px;
+    text-align: end;
+    font-size: 18px;
+    max-width: 420px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 20px;
+    max-width: 500px;
   }
-`,k=e.div`
+`,z=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   margin-top: 10px;
 
   @media (min-width: 768px) {
+    align-items: flex-end;
     margin-top: 20px;
   }
-`,z=e.div`
+`,v=e.div`
   display: flex;
-  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,H=e.h3`
-  font-size: 22px;
+  padding: 0 0 20px 0;
+`,T=e.h3`
+  font-size: 32px;
   font-weight: bold;
-  color: #a40007;
-  font-family: "Cinzel", serif;
+  color: #ff6000;
+  font-family: "Caveat", cursive;
 `,R=e.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:t})=>t?"10px":"0"};
   padding: ${({isVisible:t})=>t?"0 10px":"0"};
-  max-width: 400px;
+  max-width: 380px;
+  opacity: 0;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(-20px);
+  transform: translateY(0);
   opacity: ${({isVisible:t})=>t?1:0};
   transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
   height: ${({isVisible:t})=>t?"100%":"30px"};
@@ -151,25 +161,25 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   transition: all 0.5s;
 
   @media (min-width: 768px) {
-    max-width: 600px;
     font-size: 28px;
+    text-align: end;
   }
-  /* @media (min-width: 1420px) {
-    max-width: 700px;
-  } */
+  @media (min-width: 1420px) {
+    max-width: 500px;
+  }
 `,n=e.li`
-  color: #878986;
-  font-family: "Arvo", sans-serif;
-  font-size: 12px;
+  color: #99360f;
+  font-family: "Antonio", sans-serif;
+  font-size: 14px;
   font-weight: normal;
-  /* text-align: start; */
+  text-align: start;
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    text-align: end;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
@@ -180,20 +190,20 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-`,S=e(p)`
+`,S=e(d)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #a40007;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #a40007;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #a40007 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -204,20 +214,20 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=e(d)`
+`,F=e(p)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #a40007;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #a40007;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #a40007 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -228,7 +238,7 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=e.button`
+`,H=e.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -237,7 +247,7 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #a40007;
+  color: #ff6000;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -246,20 +256,19 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #a40007;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #a40007;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover {
-    color: #770409;
+    color: #99360f;
 
     svg {
-      fill: #770409;
-      border: 3px solid #770409;
-      box-shadow: #770409 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -269,20 +278,19 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,A=e(l)`
+`,I=e(l)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #a40007;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #a40007;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #a40007 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -295,17 +303,16 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
 `,B=e(c)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #a40007;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #a40007;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #a40007 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -315,20 +322,20 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=e(m)`
+`,A=e(h)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #a40007;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #a40007;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #a40007 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -338,14 +345,13 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,a=e(r)`
+`,a=e(o)`
   display: flex;
-  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #a40007;
+  color: #ff6000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -353,21 +359,20 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #a40007;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #a40007;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover,
   &:focus {
-    color: #770409;
+    color: #99360f;
 
     svg {
-      fill: #770409;
-      border: 3px solid #770409;
-      box-shadow: #770409 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -377,4 +382,4 @@ import{N as r,r as s,j as i}from"./index-efa83e49.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,C=()=>{const[t,o]=s.useState(!1);return i.jsx(f,{children:i.jsx(u,{children:i.jsx(h,{children:i.jsxs(b,{children:[i.jsx(y,{children:"The Unrivaled Dominance"}),i.jsx(w,{children:"Human"}),i.jsx(v,{children:"Step into the realm of humanity, where innovation and adaptability have crowned us as Earth's ultimate predator, shaping landscapes and rewriting the rules of survival."}),i.jsxs(k,{children:[i.jsxs(z,{children:[i.jsx(H,{children:"Danger rating 9/10"}),i.jsx(I,{onClick:()=>o(!t),children:t?i.jsx(S,{}):i.jsx(T,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Humans kill over 1 million animals daily for food. Humans kill animals for their skin, meat, and as experimental subjects in science."}),i.jsx(n,{children:"Historically, humans have used animals for entertainment, including animal fights."}),i.jsx(n,{children:"The development of tools allowed early humans to become effective hunters and gatherers."}),i.jsx(n,{children:"Human societies exhibit diverse cultural practices, from art and music to complex belief systems."}),i.jsx(n,{children:"Humans are capable of complex language, enabling advanced communication and cooperation."}),i.jsx(n,{children:"The invention of writing marked a significant leap in recording and transmitting knowledge."}),i.jsx(n,{children:"Humans have successfully adapted to various environments, from icy tundras to scorching deserts."}),i.jsx(n,{children:"Human innovation has led to technological advancements, shaping the modern world."})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/shark",children:i.jsx(A,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/virus",children:i.jsx(F,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(C,{})});export{D as default};
+`,C=()=>{const[t,r]=s.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(f,{children:i.jsxs(b,{children:[i.jsx(u,{children:"Tiger"}),i.jsx(k,{children:"Striking Elegance, Formidable Power"}),i.jsx(y,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(T,{children:"Danger rating 7/10"}),i.jsx(H,{onClick:()=>r(!t),children:t?i.jsx(S,{}):i.jsx(F,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(n,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(n,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(n,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(n,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(n,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(n,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(n,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/shark",children:i.jsx(A,{})})]})]})})})})},L=()=>i.jsx(i.Fragment,{children:i.jsx(C,{})});export{L as default};
