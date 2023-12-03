@@ -18,7 +18,7 @@ export const HawkHero = styled.div`
   background-size: cover;
   background-position: right center;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 `;
 
 export const HawkWrapper = styled.div`
@@ -50,7 +50,7 @@ export const TextWrapper = styled.div`
   height: 100%;
   margin-left: auto;
 
-  overflow-y: auto;
+  overflow-y: scroll;
 
   @media (min-width: 768px) {
     justify-content: flex-end;
