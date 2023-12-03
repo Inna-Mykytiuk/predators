@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-9368794a.js";const g="/predators/assets/tigerHero-5590036e.png",m=e.div`
+import{N as o,r as s,j as i}from"./index-1f95df5d.js";import{n as e,k as d,c as x,b as p,F as l,S as c,a as h,C as m}from"./index.esm-e0e28d46.js";const g="/predators/assets/virusHero-db7a81db.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -8,7 +8,7 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   background-position: right center;
   width: 100%;
   min-height: 100vh;
-`,w=e.div`
+`,u=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -41,12 +41,12 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     align-items: flex-end;
   }
-`,u=e.h1`
+`,w=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #ff6000;
-  font-family: "Caveat", cursive;
+  color: #d3371e;
+  font-family: "Special Elite", cursive;
 
   font-weight: bold;
   font-size: 48px;
@@ -66,14 +66,14 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,j=x`
+`,j=d`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,k=e.h2`
+`,y=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -95,7 +95,7 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,y=e.p`
+`,v=e.p`
   color: #99360f;
   font-weight: 400;
   font-size: 16px;
@@ -116,28 +116,27 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
     font-size: 20px;
     max-width: 500px;
   }
-`,z=e.div`
+`,k=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  margin-top: 10px;
+  margin-top: 20px;
 
   @media (min-width: 768px) {
     align-items: flex-end;
-    margin-top: 20px;
   }
-`,v=e.div`
+`,z=e.div`
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 0 20px 0;
-`,T=e.h3`
+`,B=e.h3`
   font-size: 32px;
   font-weight: bold;
-  color: #ff6000;
-  font-family: "Caveat", cursive;
+  color: #d3371e;
+  font-family: "Special Elite", cursive;
 `,R=e.ul`
   display: flex;
   flex-direction: column;
@@ -182,26 +181,26 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,S=e.div`
+`,V=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-`,F=e(d)`
+`,S=e(x)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #ff6000;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -218,14 +217,14 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
 
   padding: 5px;
 
-  color: #ff6000;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -236,7 +235,7 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=e.button`
+`,$=e.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -245,7 +244,7 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #ff6000;
+  color: #d3371e;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -254,10 +253,10 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #ff6000;
+  text-shadow: 2px 2px 5px #d3371e;
 
   svg {
-    fill: #ff6000;
+    fill: #d3371e;
   }
 
   &:hover {
@@ -276,19 +275,19 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,$=e(l)`
+`,F=e(l)`
   width: 12px;
   height: 12px;
   padding: 10px;
 
-  color: #ff6000;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -298,19 +297,19 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,B=e(c)`
+`,I=e(c)`
   width: 12px;
   height: 12px;
   padding: 10px;
 
-  color: #ff6000;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -320,20 +319,20 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=e(h)`
+`;e(h)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #ff6000;
+  color: #d3371e;
   border-radius: 50%;
-  border: 3px solid #ff6000;
+  border: 3px solid #d3371e;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #ff6000 0px 0px 15px;
+  box-shadow: #d3371e 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -343,13 +342,13 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,a=e(o)`
+`;const a=e(o)`
   display: flex;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #ff6000;
+  color: #d3371e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -357,10 +356,10 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #ff6000;
+  text-shadow: 2px 2px 5px #d3371e;
 
   svg {
-    fill: #ff6000;
+    fill: #d3371e;
   }
 
   &:hover,
@@ -380,4 +379,4 @@ import{N as o,r as s,j as i}from"./index-7793e0df.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,C=()=>{const[t,r]=s.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(f,{children:i.jsxs(b,{children:[i.jsx(u,{children:"Tiger"}),i.jsx(k,{children:"Striking Elegance, Formidable Power"}),i.jsx(y,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(T,{children:"Danger rating 7/10"}),i.jsx(I,{onClick:()=>r(!t),children:t?i.jsx(F,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(n,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(n,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(n,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(n,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(n,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(n,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(n,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]}),i.jsxs(S,{children:[i.jsx(a,{to:"/snake",children:i.jsx($,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/shark",children:i.jsx(A,{})})]})]})})})})},L=()=>i.jsx(i.Fragment,{children:i.jsx(C,{})});export{L as default};
+`,T=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(u,{children:i.jsx(m,{children:i.jsxs(b,{children:[i.jsx(w,{children:"Virus"}),i.jsx(y,{children:"Microscopic Menaces Unveiled"}),i.jsx(v,{children:"Delve into the unseen realm of microscopic menaces, where viruses and bacteria shape the course of life, challenging our understanding and resilience."}),i.jsxs(k,{children:[i.jsxs(z,{children:[i.jsx(B,{children:"Danger rating 10/10"}),i.jsx($,{onClick:()=>r(!t),children:t?i.jsx(S,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Viruses are not classified as living organisms but consist of genetic material encased in a protein coat."}),i.jsx(n,{children:"Bacteria are single-celled organisms playing vital roles in ecological processes, including nutrient cycling."}),i.jsx(n,{children:"Viruses hijack host cells to replicate, causing diseases in animals, plants, and bacteria."}),i.jsx(n,{children:"Bacteria can form resilient structures called endospores, allowing them to survive harsh conditions."}),i.jsx(n,{children:"Both viruses and bacteria are crucial for human health, contributing to the microbiome and immune system development."}),i.jsx(n,{children:"Bacteria can exchange genetic material through horizontal gene transfer, contributing to their adaptability."}),i.jsx(n,{children:"Viruses exhibit a wide range of shapes and structures, from simple spheres to complex helical forms."}),i.jsx(n,{children:"The study of viruses and bacteria is essential in fields such as medicine, biotechnology, and environmental science. scales."})]})]}),i.jsxs(V,{children:[i.jsx(a,{to:"/snake",children:i.jsx(F,{})}),i.jsx(a,{to:"/",children:i.jsx(I,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(T,{})});export{D as default};
