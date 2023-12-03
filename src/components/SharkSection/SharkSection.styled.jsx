@@ -7,7 +7,7 @@ import { SiGooglehome } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-import sharkHero from "../../assets/pagesImg/sharkHero1.png";
+import sharkHero from "../../assets/pagesImg/sharkHero2.png";
 
 export const SharkHero = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export const SharkHero = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: right top;
   width: 100%;
   height: 100%;
 `;
@@ -52,7 +52,7 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
 
   width: 100%;
   margin-right: auto;
@@ -127,14 +127,14 @@ export const HeroTextSecondary = styled.p`
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-right: auto;
+
   text-shadow: 1px 1px 2px #181717;
-  text-align: start;
+  text-align: end;
   backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
     font-size: 16px;
-    max-width: 400px;
+    /* max-width: 400px; */
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
@@ -146,7 +146,7 @@ export const RaitingWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-top: 10px;
 
   @media (min-width: 768px) {
@@ -201,7 +201,7 @@ export const RaitingList = styled.ul`
   }
 
   @media (min-width: 768px) {
-    max-width: 600px;
+    max-width: 500px;
     font-size: 28px;
     height: ${({ isVisible }) => (isVisible ? "210px" : "30px")};
   }
