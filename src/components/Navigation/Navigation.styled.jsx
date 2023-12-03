@@ -166,34 +166,11 @@ export const Link = styled(NavLink)`
   }
 `;
 
-// export const ServicesImg = styled.img`
-//   display: block;
-//   margin: 0 auto;
-//   padding: 0;
-//   fill: red;
-//   color: red;
-
-//   svg {
-//     fill: #770409;
-//   }
-
-//   /* max-width: 50%; */
-
-//   @media (min-width: 768px) {
-//     display: block;
-//     /* width: 40%; */
-//   }
-//   @media (min-width: 1440px) {
-//     display: block;
-//     /* width: 30%; */
-//   }
-// `;
-
 //Icons------------------------------------------
 
 export const WaspIcon = styled(GiWaspSting)`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 10px;
 
@@ -206,8 +183,8 @@ export const WaspIcon = styled(GiWaspSting)`
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgb(169 70 53) 0px 0px 15px;
   @media (min-width: 768px) {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   @media (min-width: 1440px) {
     width: 50px;

@@ -26,6 +26,7 @@ export const ContentWrapper = styled.div`
   /* justify-content: space-evenly; */
 
   gap: 10px;
+  overflow-y: hidden;
   width: 100%;
   /* height: 100%; */
   margin-right: auto;

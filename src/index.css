@@ -16,7 +16,7 @@ body,
   background-color: #000;
 
   width: 100%;
-  height: 100%;
+  height: 100vh;
   letter-spacing: 0.02em;
   font-size: 14px;
   margin: 0 auto;
@@ -32,12 +32,12 @@ body,
 }
 
 main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
