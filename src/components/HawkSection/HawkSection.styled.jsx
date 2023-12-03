@@ -50,6 +50,8 @@ export const TextWrapper = styled.div`
   height: 100%;
   margin-left: auto;
 
+  overflow-y: auto;
+
   @media (min-width: 768px) {
     justify-content: flex-end;
     align-items: flex-end;
