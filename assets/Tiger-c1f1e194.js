@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-1bc1a0b0.js";const g="/predators/assets/tigerHero-5590036e.png",m=e.div`
+import{N as o,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as f}from"./index.esm-2f45aec5.js";const g="/predators/assets/tigerHero-5590036e.png",m=e.div`
   display: flex;
   background: url(${g});
 
@@ -9,6 +9,12 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   width: 100%;
   height: 100%;
 `,w=e.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`,b=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,17 +31,16 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
     gap: 30px;
     width: 100%;
   }
-`,b=e.div`
+`,u=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: scroll;
 
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-left: auto;
-
-  overflow-y: scroll;
 
   @media (min-width: 768px) {
     align-items: flex-end;
@@ -43,7 +48,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     align-items: flex-end;
   }
-`,u=e.h1`
+`,j=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -68,7 +73,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,j=x`
+`,y=x`
   0% {
     background-position: -500%;
   }
@@ -87,7 +92,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${j} 4s linear infinite;
+  animation: ${y} 4s linear infinite;
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
@@ -97,7 +102,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,y=e.p`
+`,z=e.p`
   color: #99360f;
   font-weight: 400;
   font-size: 16px;
@@ -118,7 +123,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
     font-size: 20px;
     max-width: 500px;
   }
-`,z=e.div`
+`,v=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -130,17 +135,17 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
     align-items: flex-end;
     margin-top: 20px;
   }
-`,v=e.div`
+`,T=e.div`
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 0 20px 0;
-`,T=e.h3`
+`,R=e.h3`
   font-size: 32px;
   font-weight: bold;
   color: #ff6000;
   font-family: "Caveat", cursive;
-`,R=e.ul`
+`,$=e.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:t})=>t?"10px":"0"};
@@ -156,7 +161,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   opacity: ${({isVisible:t})=>t?1:0};
   transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
   height: ${({isVisible:t})=>t?"100%":"30px"};
-  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
+  /* overflow: ${({isVisible:t})=>t?"visible":"hidden"}; */
   margin-bottom: ${({isVisible:t})=>t?"20px":"0"};
   transition: all 0.5s;
 
@@ -184,13 +189,13 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,$=e.div`
+`,S=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-`,S=e(d)`
+`,F=e(d)`
   width: 12px;
   height: 12px;
 
@@ -214,7 +219,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=e(p)`
+`,H=e(p)`
   width: 12px;
   height: 12px;
 
@@ -238,7 +243,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,H=e.button`
+`,I=e.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -278,7 +283,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,I=e(l)`
+`,B=e(l)`
   width: 12px;
   height: 12px;
   padding: 10px;
@@ -300,7 +305,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,B=e(c)`
+`,A=e(c)`
   width: 12px;
   height: 12px;
   padding: 10px;
@@ -322,7 +327,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=e(h)`
+`,C=e(h)`
   width: 12px;
   height: 12px;
 
@@ -345,7 +350,7 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,a=e(o)`
+`,r=e(o)`
   display: flex;
 
   font-size: 14px;
@@ -382,4 +387,4 @@ import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,C=()=>{const[t,r]=s.useState(!1);return i.jsx(m,{children:i.jsx(w,{children:i.jsx(f,{children:i.jsxs(b,{children:[i.jsx(u,{children:"Tiger"}),i.jsx(k,{children:"Striking Elegance, Formidable Power"}),i.jsx(y,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(z,{children:[i.jsxs(v,{children:[i.jsx(T,{children:"Danger rating 7/10"}),i.jsx(H,{onClick:()=>r(!t),children:t?i.jsx(S,{}):i.jsx(F,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(n,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(n,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(n,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(n,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(n,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(n,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(n,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(B,{})}),i.jsx(a,{to:"/shark",children:i.jsx(A,{})})]})]})})})})},L=()=>i.jsx(i.Fragment,{children:i.jsx(C,{})});export{L as default};
+`,E=()=>{const[t,a]=s.useState(!1);return i.jsx(m,{children:i.jsx(b,{children:i.jsx(f,{children:i.jsxs(w,{children:[i.jsxs(u,{children:[i.jsx(j,{children:"Tiger"}),i.jsx(k,{children:"Striking Elegance, Formidable Power"}),i.jsx(z,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(v,{children:[i.jsxs(T,{children:[i.jsx(R,{children:"Danger rating 7/10"}),i.jsx(I,{onClick:()=>a(!t),children:t?i.jsx(F,{}):i.jsx(H,{})})]}),i.jsxs($,{isVisible:t,children:[i.jsx(n,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(n,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(n,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(n,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(n,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(n,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(n,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(n,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]})]}),i.jsxs(S,{children:[i.jsx(r,{to:"/snake",children:i.jsx(B,{})}),i.jsx(r,{to:"/",children:i.jsx(A,{})}),i.jsx(r,{to:"/shark",children:i.jsx(C,{})})]})]})})})})},W=()=>i.jsx(i.Fragment,{children:i.jsx(E,{})});export{W as default};

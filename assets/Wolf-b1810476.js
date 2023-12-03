@@ -1,4 +1,4 @@
-import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as p,b as x,F as l,S as h,a as c,C as m}from"./index.esm-1bc1a0b0.js";const g="/predators/assets/sharkHero1-942c43d2.png",f=i.div`
+import{N as r,r as s,j as i}from"./index-bb7f4f12.js";import{n as e,k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-2f45aec5.js";const g="/predators/assets/wolfHero-c2200093.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -8,7 +8,13 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   background-position: left center;
   width: 100%;
   height: 100%;
-`,b=i.div`
+`,w=e.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`,b=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -16,8 +22,6 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   padding: 30px 0 30px;
   width: 100%;
   align-items: center;
-
-  overflow-y: scroll;
 
   @media (min-width: 768px) {
     gap: 20px;
@@ -27,21 +31,23 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
     gap: 30px;
     width: 100%;
   }
-`,w=i.div`
+`,u=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
+  overflow-y: scroll;
+
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-right: auto;
-`,u=i.h1`
+`,j=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   color: #e1d05e;
-  font-family: "Playfair Display", serif;
+  font-family: "Permanent Marker", cursive;
 
   font-weight: bold;
   font-size: 48px;
@@ -61,26 +67,26 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
     font-weight: bold;
     line-height: 1.2;
   }
-`,y=d`
+`,k=d`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,k=i.h2`
+`,y=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #398c9b, #e1d05e, #398c9b);
+  background: linear-gradient(90deg, #e1d05e, #50514d, #e1d05e);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${y} 4s linear infinite;
+  animation: ${k} 4s linear infinite;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
@@ -91,8 +97,8 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,j=i.p`
-  color: #76aab3;
+`,v=e.p`
+  color: #878986;
   font-weight: 400;
   font-family: "Arvo", sans-serif;
   font-size: 14px;
@@ -112,7 +118,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,v=i.div`
+`,z=e.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -120,19 +126,20 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   margin-top: 10px;
 
   @media (min-width: 768px) {
+    /* align-items: flex-end; */
     margin-top: 20px;
   }
-`,z=i.div`
+`,W=e.div`
   display: flex;
   padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,S=i.h3`
+`,R=e.h3`
   font-size: 22px;
   font-weight: bold;
   color: #e1d05e;
-  font-family: "Playfair Display", serif;
-`,R=i.ul`
+  font-family: "Permanent Marker", cursive;
+`,$=e.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:t})=>t?"10px":"0"};
@@ -147,7 +154,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   opacity: ${({isVisible:t})=>t?1:0};
   transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
   height: ${({isVisible:t})=>t?"100%":"30px"};
-  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
+  /* overflow: ${({isVisible:t})=>t?"visible":"hidden"}; */
   margin-bottom: ${({isVisible:t})=>t?"20px":"0"};
   transition: all 0.5s;
 
@@ -158,8 +165,8 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1420px) {
     max-width: 700px;
   }
-`,n=i.li`
-  color: #76aab3;
+`,n=e.li`
+  color: #878986;
   font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -175,7 +182,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,$=i.div`
+`,S=e.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -185,7 +192,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
-`,H=i(p)`
+`,T=e(p)`
   width: 12px;
   height: 12px;
 
@@ -209,7 +216,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=i(x)`
+`,A=e(x)`
   width: 12px;
   height: 12px;
 
@@ -233,7 +240,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=i.button`
+`,H=e.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -274,7 +281,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,A=i(l)`
+`,I=e(l)`
   width: 12px;
   height: 12px;
 
@@ -297,7 +304,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,B=i(h)`
+`,B=e(c)`
   width: 12px;
   height: 12px;
 
@@ -320,7 +327,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=i(c)`
+`,F=e(h)`
   width: 12px;
   height: 12px;
 
@@ -343,7 +350,7 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,r=i(o)`
+`,o=e(r)`
   display: flex;
   font-family: "Montserrat", sans-serif;
 
@@ -382,4 +389,4 @@ import{N as o,r as s,j as e}from"./index-ca7db4bf.js";import{n as i,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,D=()=>{const[t,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(b,{children:e.jsx(m,{children:e.jsxs(w,{children:[e.jsx(k,{children:"Sovereigns of the Sea"}),e.jsx(u,{children:"Shark"}),e.jsx(j,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(v,{children:[e.jsxs(z,{children:[e.jsx(S,{children:"Danger rating 8/10"}),e.jsx(T,{onClick:()=>a(!t),children:t?e.jsx(H,{}):e.jsx(I,{})})]}),e.jsxs(R,{isVisible:t,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]}),e.jsxs($,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(A,{})}),e.jsx(r,{to:"/",children:e.jsx(B,{})}),e.jsx(r,{to:"/human",children:e.jsx(F,{})})]})]})})})})},C=()=>e.jsx(e.Fragment,{children:e.jsx(D,{})});export{C as default};
+`,G=()=>{const[t,a]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(w,{children:[i.jsxs(u,{children:[i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(j,{children:"Wolf"}),i.jsx(v,{children:"Join the packs and explore the untamed landscapes where wolves, with their intricate social structures and haunting howls, command the wilderness."}),i.jsxs(z,{children:[i.jsxs(W,{children:[i.jsx(R,{children:"Danger rating 5/10"}),i.jsx(H,{onClick:()=>a(!t),children:t?i.jsx(T,{}):i.jsx(A,{})})]}),i.jsxs($,{isVisible:t,children:[i.jsx(n,{children:"Wolves are skilled hunters, often targeting large ungulates such as deer and elk."}),i.jsx(n,{children:"Pack hierarchy is established through a combination of dominance displays and submission."}),i.jsx(n,{children:"Communication within a wolf pack involves vocalizations, body language, and scent marking."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"Wolf territories can cover vast areas, depending on prey availability and pack size."}),i.jsx(n,{children:"The gestation period for wolf pups is around two months, with the entire pack participating in their care."}),i.jsx(n,{children:"Gray wolves, the most widespread species, exhibit a wide range of coat colors, from white to black."})]})]})]}),i.jsxs(S,{children:[i.jsx(o,{to:"/hawk",children:i.jsx(I,{})}),i.jsx(o,{to:"/",children:i.jsx(B,{})}),i.jsx(o,{to:"/snake",children:i.jsx(F,{})})]})]})})})})},M=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{M as default};
