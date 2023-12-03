@@ -1,20 +1,20 @@
-import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Container-204d2d77.js";import{n as t,k as p,c as x,b as l,F as h,S as c,a as m}from"./index.esm-dbf9ae61.js";const g="/predators/assets/sharkHero2-bcbf2243.png",f=t.div`
+import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as x}from"./Container-771977e0.js";import{n as t,k as p,c as d,b as l,F as c,S as h,a as f}from"./index.esm-8319cc7d.js";const g="/predators/assets/tigerHero-5590036e.png",m=t.div`
   display: flex;
   background: url(${g});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right top;
+  background-position: right center;
   width: 100%;
   height: 100%;
-`,b=t.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: space-between;
-`,u=t.div`
+`,b=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,26 +31,34 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
     gap: 30px;
     width: 100%;
   }
-`,w=t.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
 
   width: 100%;
-  margin-right: auto;
-`,y=t.h1`
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    align-items: flex-end;
+  }
+  @media (min-width: 1440px) {
+    align-items: flex-end;
+  }
+`,j=t.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #e1d05e;
-  font-family: "Playfair Display", serif;
+  color: #ff6000;
+  font-family: "Caveat", cursive;
+  padding: 0 20px 0 0;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #e1d05e;
-  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #181717;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
@@ -71,92 +79,94 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   100% {
     background-position: 500%;
   }
-`,j=t.h2`
+`,y=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #398c9b, #e1d05e, #398c9b);
+  background: linear-gradient(90deg, #ff6000, #a40007, #ff6000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   animation: ${k} 4s linear infinite;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,v=t.p`
-  color: #76aab3;
+`,z=t.p`
+  color: #99360f;
   font-weight: 400;
-  font-family: "Arvo", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-
+  margin-left: auto;
   text-shadow: 1px 1px 2px #181717;
-  text-align: end;
-  backdrop-filter: blur(10px);
+  text-align: start;
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    /* max-width: 400px; */
+    text-align: end;
+    font-size: 18px;
+    max-width: 420px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 20px;
+    max-width: 500px;
   }
-`,z=t.div`
+`,v=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+
   margin-top: 10px;
 
   @media (min-width: 768px) {
+    align-items: flex-end;
     margin-top: 20px;
   }
-`,S=t.div`
+`,T=t.div`
   display: flex;
-  padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,R=t.h3`
-  font-size: 22px;
+  padding: 0 0 20px 0;
+`,$=t.h3`
+  font-size: 32px;
   font-weight: bold;
-  color: #e1d05e;
-  font-family: "Playfair Display", serif;
-`,$=t.ul`
+  color: #ff6000;
+  font-family: "Caveat", cursive;
+`,R=t.ul`
   display: flex;
   flex-direction: column;
-  gap: ${({isVisible:i})=>i?"10px":"0"};
-  padding: ${({isVisible:i})=>i?"0 10px":"0"};
-  max-width: 400px;
+  gap: ${({isVisible:e})=>e?"10px":"0"};
+  padding: ${({isVisible:e})=>e?"0 10px":"0"};
+  max-width: 380px;
+  opacity: 0;
 
   color: #fff;
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(-20px);
-  opacity: ${({isVisible:i})=>i?1:0};
-  transform: ${({isVisible:i})=>i?"translateY(0)":"translateY(-20px)"};
+  transform: translateY(0);
+  opacity: ${({isVisible:e})=>e?1:0};
+  transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
 
-  height: ${({isVisible:i})=>i?"240px":"30px"};
-  margin-bottom: ${({isVisible:i})=>i?"20px":"0"};
+  height: ${({isVisible:e})=>e?"210px":"30px"};
+  margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
   transition: all 0.5s;
 
   overflow-y: scroll;
   ::-webkit-scrollbar-thumb {
-    background-color: #76aab3;
+    background-color: #99360f;
     border: 2px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
@@ -167,55 +177,54 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   }
 
   @media (min-width: 768px) {
-    max-width: 500px;
     font-size: 28px;
-    height: ${({isVisible:i})=>i?"210px":"30px"};
+    text-align: end;
+    height: ${({isVisible:e})=>e?"220px":"30px"};
   }
   @media (min-width: 1420px) {
-    max-width: 700px;
-    height: ${({isVisible:i})=>i?"100%":"30px"};
+    max-width: 500px;
+    height: ${({isVisible:e})=>e?"180px":"30px"};
+  }
+  @media (min-width: 1920px) {
+    height: ${({isVisible:e})=>e?"100%":"30px"};
   }
 `,n=t.li`
-  color: #76aab3;
-  font-family: "Arvo", sans-serif;
-  font-size: 12px;
+  color: #99360f;
+  font-family: "Antonio", sans-serif;
+  font-size: 14px;
   font-weight: normal;
-  /* text-align: start; */
+  text-align: start;
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    text-align: end;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,H=t.div`
+`,S=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-
-  /* @media (min-width: 768px) {
-    margin-top: 30px;
-  } */
-`,I=t(x)`
+`,F=t(d)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e1d05e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -226,20 +235,20 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=t(l)`
+`,H=t(l)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e1d05e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -250,7 +259,7 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,A=t.button`
+`,I=t.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -259,7 +268,7 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e1d05e;
+  color: #ff6000;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -268,20 +277,19 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e1d05e;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #e1d05e;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover {
-    color: #878986;
+    color: #99360f;
 
     svg {
-      fill: #878986;
-      border: 3px solid #878986;
-      box-shadow: #878986 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -291,20 +299,19 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,B=t(h)`
+`,B=t(c)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #e1d05e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -314,20 +321,19 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=t(c)`
+`,A=t(h)`
   width: 12px;
   height: 12px;
-
   padding: 10px;
 
-  color: #e1d05e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -337,20 +343,20 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,D=t(m)`
+`,C=t(f)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e1d05e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -362,12 +368,11 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   }
 `,r=t(o)`
   display: flex;
-  font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e1d05e;
+  color: #ff6000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -375,21 +380,20 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e1d05e;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #e1d05e;
+    fill: #ff6000;
   }
 
-  /* &.active, */
   &:hover,
   &:focus {
-    color: #878986;
+    color: #99360f;
 
     svg {
-      fill: #878986;
-      border: 3px solid #878986;
-      box-shadow: #878986 0px 0px 15px;
+      fill: #99360f;
+      border: 3px solid #99360f;
+      box-shadow: #99360f 0px 0px 15px;
     }
   }
 
@@ -399,4 +403,4 @@ import{N as o,r as s,j as e}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[i,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(u,{children:e.jsx(d,{children:e.jsxs(b,{children:[e.jsxs(w,{isVisible:!i,children:[e.jsx(j,{children:"Sovereigns of the Sea"}),e.jsx(y,{children:"Shark"}),e.jsx(v,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(z,{children:[e.jsxs(S,{children:[e.jsx(R,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!i),children:i?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs($,{isVisible:i,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx(D,{})})]})]})})})})},E=()=>e.jsx(e.Fragment,{children:e.jsx(G,{})});export{E as default};
+`,E=()=>{const[e,a]=s.useState(!1);return i.jsx(m,{children:i.jsx(b,{children:i.jsx(x,{children:i.jsxs(w,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(j,{children:"Tiger"}),i.jsx(y,{children:"Striking Elegance, Formidable Power"}),i.jsx(z,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(v,{children:[i.jsxs(T,{children:[i.jsx($,{children:"Danger rating 7/10"}),i.jsx(I,{onClick:()=>a(!e),children:e?i.jsx(F,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(n,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(n,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(n,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(n,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(n,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(n,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(n,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]})]}),i.jsxs(S,{children:[i.jsx(r,{to:"/snake",children:i.jsx(B,{})}),i.jsx(r,{to:"/",children:i.jsx(A,{})}),i.jsx(r,{to:"/shark",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(E,{})});export{D as default};

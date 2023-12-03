@@ -1,20 +1,20 @@
-import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Container-204d2d77.js";import{n as t,k as p,c as x,b as l,F as c,S as h,a as m}from"./index.esm-dbf9ae61.js";const g="/predators/assets/hawkHero-e1f4900b.png",f=t.div`
+import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as x}from"./Container-771977e0.js";import{n as t,k as p,c as d,b as l,F as c,S as h,a as m}from"./index.esm-8319cc7d.js";const g="/predators/assets/humanHero-3ab7bd92.png",f=t.div`
   display: flex;
   background: url(${g});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   width: 100%;
   height: 100%;
-`,b=t.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: flex-end;
-`,w=t.div`
+  justify-content: space-between;
+`,b=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,94 +31,85 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
     gap: 30px;
     width: 100%;
   }
-`,u=t.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   width: 100%;
-  margin-left: auto;
-
-  @media (min-width: 768px) {
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  @media (min-width: 1440px) {
-    align-items: flex-end;
-  }
-`,k=t.h1`
-  margin: 0 0 10px 0;
+  margin-right: auto;
+`,j=t.h1`
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
-  padding: 0 20px 0 0;
+  color: #a40007;
+  font-family: "Cinzel", serif;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 8px #419bcf;
+  text-shadow: 1px 1px 8px #770409;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin: 0 0 20px 0;
+    margin-bottom: 30px;
     font-size: 80px;
     line-height: 1.4;
   }
   @media (min-width: 1440px) {
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
     font-size: 120px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.2;
   }
-`,j=p`
+`,y=p`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,y=t.h2`
+`,v=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #2da4e9, #4c7e9b, #2da4e9);
+  background: linear-gradient(90deg, #a40007, #50514d, #a40007);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${j} 4s linear infinite;
-  margin-bottom: 20px;
+  animation: ${y} 4s linear infinite;
+  margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 10px;
-
+    margin-bottom: 20px;
+    font-size: 16px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,v=t.p`
-  color: #4c7e9b;
+`,k=t.p`
+  color: #878986;
   font-weight: 400;
   font-family: "Arvo", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   max-width: 350px;
   text-align: center;
-  margin-left: auto;
+  margin-right: auto;
   text-shadow: 1px 1px 2px #181717;
   text-align: start;
   backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    text-align: end;
     font-size: 16px;
-    max-width: 400px;
+    max-width: 500px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
@@ -132,7 +123,6 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   margin-top: 10px;
 
   @media (min-width: 768px) {
-    align-items: flex-end;
     margin-top: 20px;
   }
 `,H=t.div`
@@ -140,12 +130,12 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,S=t.h3`
+`,$=t.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #2da4e9;
-  font-family: "Kaushan Script", cursive;
-`,$=t.ul`
+  color: #a40007;
+  font-family: "Cinzel", serif;
+`,R=t.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:e})=>e?"10px":"0"};
@@ -156,18 +146,17 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
-  transform: translateY(0);
+  transform: translateY(-20px);
   opacity: ${({isVisible:e})=>e?1:0};
-
-  height: ${({isVisible:e})=>e?"200px":"30px"};
-  margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
   transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
-  transition: all 0.8s;
+
+  height: ${({isVisible:e})=>e?"210px":"30px"};
+  margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
+  transition: all 0.5s;
 
   overflow-y: scroll;
   ::-webkit-scrollbar-thumb {
-    background-color: #4c7e9b;
+    background-color: #878986;
     border: 2px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
@@ -178,20 +167,23 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   }
 
   @media (min-width: 768px) {
-    height: ${({isVisible:e})=>e?"170px":"30px"};
-    max-width: 500px;
+    max-width: 600px;
     font-size: 28px;
-    text-align: end;
+    height: ${({isVisible:e})=>e?"230px":"30px"};
   }
   @media (min-width: 1420px) {
+    /* max-width: 700px; */
+    height: ${({isVisible:e})=>e?"190px":"30px"};
+  }
+  @media (min-width: 1920px) {
     height: ${({isVisible:e})=>e?"100%":"30px"};
   }
 `,n=t.li`
-  color: #4c7e9b;
+  color: #878986;
   font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
-  text-align: start;
+  /* text-align: start; */
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -199,35 +191,30 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   @media (min-width: 768px) {
     font-size: 14px;
-    text-align: end;
   }
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,R=t.div`
+`,S=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: ${({isVisible:e})=>e?"0":"auto"};
-
-  @media (min-width: 768px) {
-    margin-top: 30px;
-  }
-`,A=t(x)`
+  margin-top: auto;
+`,T=t(d)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #a40007;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #a40007;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #a40007 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -244,14 +231,14 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   padding: 5px;
 
-  color: #2da4e9;
+  color: #a40007;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #a40007;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #a40007 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -262,9 +249,8 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=t.button`
+`,A=t.button`
   display: flex;
-  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   outline: 0;
   margin: 0;
@@ -272,7 +258,7 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #a40007;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -281,20 +267,20 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #1d1e26;
+  text-shadow: 2px 2px 5px #a40007;
 
   svg {
-    fill: #2da4e9;
+    fill: #a40007;
   }
 
   /* &.active, */
   &:hover {
-    color: #4c7e9b;
+    color: #770409;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #4c7e9b 0px 0px 15px;
+      fill: #770409;
+      border: 3px solid #770409;
+      box-shadow: #770409 0px 0px 15px;
     }
   }
 
@@ -310,14 +296,14 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #a40007;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #a40007;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #a40007 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -333,14 +319,14 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #a40007;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #a40007;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #a40007 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -356,14 +342,14 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   padding: 10px;
 
-  color: #2da4e9;
+  color: #a40007;
   border-radius: 50%;
-  border: 3px solid #2da4e9;
+  border: 3px solid #a40007;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #355da9 0px 0px 15px;
+  box-shadow: #a40007 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -380,7 +366,7 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #2da4e9;
+  color: #a40007;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -388,21 +374,21 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #4c7e9b;
+  text-shadow: 2px 2px 5px #a40007;
 
   svg {
-    fill: #2da4e9;
+    fill: #a40007;
   }
 
   /* &.active, */
   &:hover,
   &:focus {
-    color: #a40007;
+    color: #770409;
 
     svg {
-      fill: #4c7e9b;
-      border: 3px solid #4c7e9b;
-      box-shadow: #355da9 0px 0px 15px;
+      fill: #770409;
+      border: 3px solid #770409;
+      box-shadow: #770409 0px 0px 15px;
     }
   }
 
@@ -412,4 +398,4 @@ import{N as o,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(d,{children:i.jsxs(b,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(k,{children:"Hawk"}),i.jsx(v,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(z,{children:[i.jsxs(H,{children:[i.jsx(S,{children:"Danger rating 4/10"}),i.jsx(T,{onClick:()=>r(!e),children:e?i.jsx(A,{}):i.jsx(I,{})})]}),i.jsxs($,{isVisible:e,children:[i.jsx(n,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(n,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(n,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(n,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(n,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(n,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(n,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]})]}),i.jsxs(R,{children:[i.jsx(a,{to:"/wasp",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})}),i.jsx(a,{to:"/wolf",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{D as default};
+`,G=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(x,{children:i.jsxs(u,{children:[i.jsxs(w,{isVisible:!e,children:[i.jsx(v,{children:"The Unrivaled Dominance"}),i.jsx(j,{children:"Human"}),i.jsx(k,{children:"Step into the realm of humanity, where innovation and adaptability have crowned us as Earth's ultimate predator, shaping landscapes and rewriting the rules of survival."}),i.jsxs(z,{children:[i.jsxs(H,{children:[i.jsx($,{children:"Danger rating 9/10"}),i.jsx(A,{onClick:()=>r(!e),children:e?i.jsx(T,{}):i.jsx(I,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Humans kill over 1 million animals daily for food. Humans kill animals for their skin, meat, and as experimental subjects in science."}),i.jsx(n,{children:"Historically, humans have used animals for entertainment, including animal fights."}),i.jsx(n,{children:"The development of tools allowed early humans to become effective hunters and gatherers."}),i.jsx(n,{children:"Human societies exhibit diverse cultural practices, from art and music to complex belief systems."}),i.jsx(n,{children:"Humans are capable of complex language, enabling advanced communication and cooperation."}),i.jsx(n,{children:"The invention of writing marked a significant leap in recording and transmitting knowledge."}),i.jsx(n,{children:"Humans have successfully adapted to various environments, from icy tundras to scorching deserts."}),i.jsx(n,{children:"Human innovation has led to technological advancements, shaping the modern world."})]})]})]}),i.jsxs(S,{children:[i.jsx(a,{to:"/shark",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})}),i.jsx(a,{to:"/virus",children:i.jsx(C,{})})]})]})})})})},E=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{E as default};
