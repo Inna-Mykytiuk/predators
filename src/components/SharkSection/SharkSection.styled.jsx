@@ -134,11 +134,11 @@ export const HeroTextSecondary = styled.p`
 
   @media (min-width: 768px) {
     font-size: 16px;
-    /* max-width: 400px; */
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
+    max-width: 500px;
   }
 `;
 
@@ -207,6 +207,9 @@ export const RaitingList = styled.ul`
   }
   @media (min-width: 1420px) {
     max-width: 700px;
+    height: ${({ isVisible }) => (isVisible ? "190px" : "30px")};
+  }
+  @media (min-width: 1920px) {
     height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   }
 `;

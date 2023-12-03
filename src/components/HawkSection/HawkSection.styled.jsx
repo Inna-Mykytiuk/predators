@@ -218,6 +218,9 @@ export const RaitingList = styled.ul`
     text-align: end;
   }
   @media (min-width: 1420px) {
+    height: ${({ isVisible }) => (isVisible ? "140px" : "30px")};
+  }
+  @media (min-width: 1920px) {
     height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   }
 `;

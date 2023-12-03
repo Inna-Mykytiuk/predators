@@ -214,6 +214,9 @@ export const RaitingList = styled.ul`
   }
   @media (min-width: 1420px) {
     max-width: 500px;
+    height: ${({ isVisible }) => (isVisible ? "190px" : "30px")};
+  }
+  @media (min-width: 1920px) {
     height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
   }
 `;
