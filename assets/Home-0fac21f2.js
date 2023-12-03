@@ -1,4 +1,4 @@
-import{j as e}from"./index-7fd73eb9.js";import{n,k as s,C as a}from"./index.esm-5b21ffb7.js";import{N as r,a as o,b as x,c as t,L as i,W as h,H as d,d as c,S as p,T as l,e as m,f as g,V as f}from"./Navigation.styled-b32f61cb.js";const j="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
+import{j as e}from"./index-de196e75.js";import{n,k as s,C as a}from"./index.esm-b12327d1.js";import{N as r,a as o,b as x,c as t,L as i,W as h,H as d,d as c,S as p,T as l,e as m,f as g,V as f}from"./Navigation.styled-b1686abb.js";const j="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
   display: flex;
   background:
   /* linear-gradient(
@@ -16,18 +16,20 @@ import{j as e}from"./index-7fd73eb9.js";import{n,k as s,C as a}from"./index.esm-
 `,u=n.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 
   gap: 10px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-right: auto;
   align-items: center;
+  padding: 30px 0;
 
   @media (min-width: 768px) {
     gap: 20px;
-    width: 500px;
+    width: 450px;
     align-items: center;
+    padding: 100px 0 0 0;
   }
   @media (min-width: 1440px) {
     gap: 30px;
@@ -56,16 +58,16 @@ import{j as e}from"./index-7fd73eb9.js";import{n,k as s,C as a}from"./index.esm-
     font-weight: bold;
     line-height: 1.2;
   }
-`,v=n.h2`
+`,b=n.h2`
   color: #770409;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   max-width: 450px;
   text-align: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-shadow: 1px 1px 2px #181717;
-  margin-top: 20px;
+  margin: 20px 0 40px;
 
   @media (min-width: 768px) {
     max-width: 550px;
@@ -76,7 +78,7 @@ import{j as e}from"./index-7fd73eb9.js";import{n,k as s,C as a}from"./index.esm-
     font-size: 20px;
     line-height: 1.6;
   }
-`,b=s`
+`,v=s`
   0% {
     opacity: 0.5;
     text-shadow: 2px 2px 10px #a40007;
@@ -96,7 +98,7 @@ import{j as e}from"./index-7fd73eb9.js";import{n,k as s,C as a}from"./index.esm-
   transition: all 0.5s ease-in-out;
   text-align: center;
   letter-spacing: 0.2em;
-  animation: ${b} 0.5s ease-in-out infinite alternate;
+  animation: ${v} 0.5s ease-in-out infinite alternate;
 
   &:hover {
     color: #fff;
@@ -110,4 +112,4 @@ import{j as e}from"./index-7fd73eb9.js";import{n,k as s,C as a}from"./index.esm-
     font-size: 40px;
     line-height: 1.6;
   } */
-`,z=()=>e.jsx(r,{children:e.jsx(o,{children:e.jsxs(x,{children:[e.jsx(t,{children:e.jsx(i,{to:"/wasp",children:e.jsx(h,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/hawk",children:e.jsx(d,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/wolf",children:e.jsx(c,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/snake",children:e.jsx(p,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/tiger",children:e.jsx(l,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/shark",children:e.jsx(m,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/human",children:e.jsx(g,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/virus",children:e.jsx(f,{})})})]})})}),I=()=>e.jsx(a,{children:e.jsxs(u,{children:[e.jsxs("div",{children:[e.jsx(k,{children:"Predators"}),e.jsx(y,{children:"-- of the Earth --"}),e.jsx(v,{children:"Welcome to the captivating realm of Earth's most formidable and fascinating predators. In a world where each species unveils its unique prowess."})]}),e.jsx(z,{})]})}),T=()=>e.jsx(w,{children:e.jsx(I,{})});export{T as default};
+`,z=()=>e.jsx(r,{children:e.jsx(o,{children:e.jsxs(x,{children:[e.jsx(t,{children:e.jsx(i,{to:"/wasp",children:e.jsx(h,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/hawk",children:e.jsx(d,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/wolf",children:e.jsx(c,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/snake",children:e.jsx(p,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/tiger",children:e.jsx(l,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/shark",children:e.jsx(m,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/human",children:e.jsx(g,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/virus",children:e.jsx(f,{})})})]})})}),I=()=>e.jsx(a,{children:e.jsxs(u,{children:[e.jsx(k,{children:"Predators"}),e.jsx(y,{children:"-- of the Earth --"}),e.jsx(b,{children:"Welcome to the captivating realm of Earth's most formidable and fascinating predators. In a world where each species unveils its unique prowess."}),e.jsx(z,{})]})}),T=()=>e.jsx(w,{children:e.jsx(I,{})});export{T as default};

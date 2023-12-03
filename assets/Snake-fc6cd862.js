@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-7fd73eb9.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-5b21ffb7.js";const g="/predators/assets/snakeHero-dff56b17.png",f=e.div`
+import{N as o,r as s,j as i}from"./index-de196e75.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-b12327d1.js";const g="/predators/assets/snakeHero-dff56b17.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -13,7 +13,7 @@ import{N as o,r as s,j as i}from"./index-7fd73eb9.js";import{n as e,k as x,c as 
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 30px 0 60px;
+  padding: 30px 0 30px;
   width: 100%;
   align-items: center;
 

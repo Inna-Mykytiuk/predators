@@ -1,4 +1,4 @@
-import{N as r,r as s,j as i}from"./index-7fd73eb9.js";import{n as e,k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-5b21ffb7.js";const g="/predators/assets/wolfHero-c2200093.png",f=e.div`
+import{N as r,r as s,j as i}from"./index-de196e75.js";import{n as e,k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-b12327d1.js";const g="/predators/assets/wolfHero-c2200093.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -13,7 +13,7 @@ import{N as r,r as s,j as i}from"./index-7fd73eb9.js";import{n as e,k as d,c as 
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 30px 0 60px;
+  padding: 30px 0 30px;
   width: 100%;
   align-items: center;
 
