@@ -1,4 +1,4 @@
-import{j as e}from"./index-a636b056.js";import{n,k as s,C as a}from"./index.esm-3d5cf017.js";import{N as r,a as o,b as x,c as t,L as i,W as d,H as h,d as c,S as p,T as l,e as m,f as g,V as f}from"./Navigation.styled-81e8d708.js";const j="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
+import{j as e}from"./index-6ca3e0ee.js";import{n,k as s,C as a}from"./index.esm-33a5c0bc.js";import{N as o,a as r,b as x,c as t,L as i,W as d,H as h,d as c,S as p,T as l,e as m,f as g,V as f}from"./Navigation.styled-bec7ceb0.js";const j="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
   display: flex;
   background:
   /* linear-gradient(
@@ -19,7 +19,7 @@ import{j as e}from"./index-a636b056.js";import{n,k as s,C as a}from"./index.esm-
   /* justify-content: space-evenly; */
 
   gap: 10px;
-  overflow-y: hidden;
+  overflow-y: auto;
   width: 100%;
   /* height: 100%; */
   margin-right: auto;
@@ -113,4 +113,4 @@ import{j as e}from"./index-a636b056.js";import{n,k as s,C as a}from"./index.esm-
     font-size: 40px;
     line-height: 1.6;
   } */
-`,z=()=>e.jsx(r,{children:e.jsx(o,{children:e.jsxs(x,{children:[e.jsx(t,{children:e.jsx(i,{to:"/wasp",children:e.jsx(d,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/hawk",children:e.jsx(h,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/wolf",children:e.jsx(c,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/snake",children:e.jsx(p,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/tiger",children:e.jsx(l,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/shark",children:e.jsx(m,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/human",children:e.jsx(g,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/virus",children:e.jsx(f,{})})})]})})}),I=()=>e.jsx(a,{children:e.jsxs(u,{children:[e.jsx(k,{children:"Predators"}),e.jsx(y,{children:"-- of the Earth --"}),e.jsx(b,{children:"Welcome to the captivating realm of Earth's most formidable and fascinating predators. In a world where each species unveils its unique prowess."}),e.jsx(z,{})]})}),T=()=>e.jsx(w,{children:e.jsx(I,{})});export{T as default};
+`,z=()=>e.jsx(o,{children:e.jsx(r,{children:e.jsxs(x,{children:[e.jsx(t,{children:e.jsx(i,{to:"/wasp",children:e.jsx(d,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/hawk",children:e.jsx(h,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/wolf",children:e.jsx(c,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/snake",children:e.jsx(p,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/tiger",children:e.jsx(l,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/shark",children:e.jsx(m,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/human",children:e.jsx(g,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/virus",children:e.jsx(f,{})})})]})})}),I=()=>e.jsx(a,{children:e.jsxs(u,{children:[e.jsx(k,{children:"Predators"}),e.jsx(y,{children:"-- of the Earth --"}),e.jsx(b,{children:"Welcome to the captivating realm of Earth's most formidable and fascinating predators. In a world where each species unveils its unique prowess."}),e.jsx(z,{})]})}),T=()=>e.jsx(w,{children:e.jsx(I,{})});export{T as default};
