@@ -21,6 +21,14 @@ export const SnakeHero = styled.div`
   height: 100%;
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`;
+
 export const SnakeWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -180,7 +188,7 @@ export const RaitingList = styled.ul`
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  overflow: ${({ isVisible }) => (isVisible ? "scroll" : "hidden")};
+  /* overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")}; */
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
 
@@ -432,12 +440,4 @@ export const GoBackLink = styled(NavLink)`
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
 `;

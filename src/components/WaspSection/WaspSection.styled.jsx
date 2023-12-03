@@ -15,6 +15,14 @@ export const WaspHero = styled.div`
   height: 100%;
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`;
+
 export const WaspWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -39,6 +47,7 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: scroll;
 
   width: 100%;
   /* height: 100%; */
@@ -155,13 +164,6 @@ export const RaitingWrapperBtn = styled.div`
   align-items: center;
   padding: 10px 0 20px 0;
 `;
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
-`;
 
 export const RaitingTitle = styled.h3`
   font-size: 22px;
@@ -187,7 +189,7 @@ export const RaitingList = styled.ul`
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  overflow: ${({ isVisible }) => (isVisible ? "scroll" : "hidden")};
+  /* overflow: ${({ isVisible }) => (isVisible ? "scroll" : "hidden")}; */
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
 

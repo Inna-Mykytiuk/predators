@@ -21,6 +21,14 @@ export const HawkHero = styled.div`
   height: 100%;
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`;
+
 export const HawkWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,7 +55,7 @@ export const TextWrapper = styled.div`
   align-items: flex-start;
 
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-left: auto;
 
   overflow-y: scroll;
@@ -188,7 +196,7 @@ export const RaitingList = styled.ul`
   transform: translateY(0);
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  /* overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")}; */
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};

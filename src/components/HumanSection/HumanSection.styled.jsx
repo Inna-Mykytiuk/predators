@@ -21,6 +21,14 @@ export const HumanHero = styled.div`
   height: 100%;
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`;
+
 export const HumanWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -48,7 +56,7 @@ export const TextWrapper = styled.div`
   overflow-y: scroll;
 
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-right: auto;
 `;
 
@@ -178,7 +186,7 @@ export const RaitingList = styled.ul`
   transform: ${({ isVisible }) =>
     isVisible ? "translateY(0)" : "translateY(-20px)"};
   height: ${({ isVisible }) => (isVisible ? "100%" : "30px")};
-  overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  /* overflow: ${({ isVisible }) => (isVisible ? "visible" : "hidden")}; */
   margin-bottom: ${({ isVisible }) => (isVisible ? "20px" : "0")};
   transition: all 0.5s;
 
