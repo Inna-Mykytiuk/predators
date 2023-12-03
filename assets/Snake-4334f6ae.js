@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-de196e75.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-b12327d1.js";const g="/predators/assets/snakeHero-dff56b17.png",f=e.div`
+import{N as o,r as s,j as i}from"./index-00963897.js";import{n as e,k as x,c as d,b as p,F as l,S as c,a as h,C as m}from"./index.esm-d830adca.js";const g="/predators/assets/snakeHero-dff56b17.png",f=e.div`
   display: flex;
   background: url(${g});
 
