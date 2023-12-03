@@ -16,7 +16,7 @@ export const SnakeHero = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: left center;
+  background-position: center;
   width: 100%;
   height: 100%;
 `;
@@ -53,12 +53,9 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
-  /* overflow-y: auto; */
   overflow-y: ${({ isVisible }) => (isVisible ? "hidden" : "auto")};
 
   width: 100%;
-  /* height: 100%; */
   margin-right: auto;
 `;
 

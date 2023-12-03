@@ -33,7 +33,7 @@ const SnakeSection = () => {
       <SnakeWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper isVisible={!isOpen}>
+            {/* <TextWrapper isVisible={!isOpen}>
               <HeroTextSubtitle>
                 Masters of Stealth and Precision
               </HeroTextSubtitle>
@@ -86,7 +86,7 @@ const SnakeSection = () => {
                   </RaitingListItem>
                 </RaitingList>
               </RaitingWrapper>
-            </TextWrapper>
+            </TextWrapper> */}
             <SnakeBtnBlock>
               <GoBackLink to='/wolf'>
                 <GoBackIcon />
