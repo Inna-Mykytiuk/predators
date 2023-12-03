@@ -33,7 +33,7 @@ const WolfSection = () => {
       <WolfWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextSubtitle>
                 Nature&apos;s Architects and Stingers
               </HeroTextSubtitle>

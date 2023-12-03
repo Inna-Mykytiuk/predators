@@ -38,7 +38,7 @@ export const SharkWrapper = styled.div`
   width: 100%;
   align-items: center;
 
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 
   @media (min-width: 768px) {
     gap: 20px;
@@ -55,7 +55,8 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: scroll;
+
+  overflow-y: ${({ isVisible }) => (isVisible ? "hidden" : "auto")};
 
   width: 100%;
   /* height: 100%; */

@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
-  overflow-y: scroll;
+  overflow-y: ${({ isVisible }) => (isVisible ? "hidden" : "auto")};
 
   width: 100%;
   /* height: 100%; */

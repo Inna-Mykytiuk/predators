@@ -32,7 +32,7 @@ export const VirusSection = () => {
       <VirusWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextMain>Virus</HeroTextMain>
               <HeroTextSubtitle>Microscopic Menaces Unveiled</HeroTextSubtitle>
               <HeroTextSecondary>

@@ -35,7 +35,7 @@ export const WaspSection = () => {
       <WaspWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextMain>Wasp</HeroTextMain>
               <HeroTextSubtitle>
                 Nature&apos;s Architects and Stingers

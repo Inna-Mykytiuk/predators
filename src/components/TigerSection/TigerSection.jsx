@@ -33,7 +33,7 @@ export const TigerSection = () => {
       <TigerWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextMain>Tiger</HeroTextMain>
               <HeroTextSubtitle>
                 Striking Elegance, Formidable Power

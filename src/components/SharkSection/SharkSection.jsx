@@ -33,7 +33,7 @@ const SharkSection = () => {
       <SharkWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextSubtitle>Sovereigns of the Sea</HeroTextSubtitle>
               <HeroTextMain>Shark</HeroTextMain>
               <HeroTextSecondary>

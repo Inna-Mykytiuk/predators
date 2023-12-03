@@ -33,7 +33,7 @@ const SnakeSection = () => {
       <SnakeWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextSubtitle>
                 Masters of Stealth and Precision
               </HeroTextSubtitle>

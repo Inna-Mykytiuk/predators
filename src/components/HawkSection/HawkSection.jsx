@@ -33,7 +33,7 @@ const HawkSection = () => {
       <HawkWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextMain>Hawk</HeroTextMain>
               <HeroTextSubtitle>
                 Nature&apos;s Architects and Stingers

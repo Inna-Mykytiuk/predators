@@ -33,7 +33,7 @@ const HumanSection = () => {
       <HumanWrapper>
         <Container>
           <Wrapper>
-            <TextWrapper>
+            <TextWrapper isVisible={!isOpen}>
               <HeroTextSubtitle>The Unrivaled Dominance</HeroTextSubtitle>
               <HeroTextMain>Human</HeroTextMain>
               <HeroTextSecondary>
