@@ -1,10 +1,9 @@
-import{j as t}from"./index-1d5616a4.js";import{n as a}from"./index.esm-4db7407a.js";const n=a.div`
+import{j as t}from"./index-734f56b1.js";import{n}from"./index.esm-076da570.js";const a=n.div`
   box-sizing: border-box;
   height: 100%;
   width: 320px;
   padding: 0 10px;
   margin: 0 auto;
-  /* overflow-y: auto; */
 
   @media (min-width: 768px) {
     width: 768px;
@@ -23,4 +22,4 @@ import{j as t}from"./index-1d5616a4.js";import{n as a}from"./index.esm-4db7407a.
     margin: 0 auto;
     overflow-y: auto;
   }
-`,p=({children:i})=>t.jsx(n,{children:i});export{p as C};
+`,p=({children:i})=>t.jsx(a,{children:i});export{p as C};

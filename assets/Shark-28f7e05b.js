@@ -1,11 +1,11 @@
-import{N as o,r as s,j as e}from"./index-1d5616a4.js";import{C as d}from"./Container-3648dd90.js";import{n as t,k as p,c as x,b as l,F as h,S as c,a as m}from"./index.esm-4db7407a.js";const g="/predators/assets/sharkHero1-942c43d2.png",f=t.div`
+import{N as o,r as s,j as e}from"./index-734f56b1.js";import{C as d}from"./Container-b48efed6.js";import{n as t,k as p,c as x,b as l,F as h,S as c,a as m}from"./index.esm-076da570.js";const g="/predators/assets/sharkHero1-942c43d2.png",f=t.div`
   display: flex;
   background: url(${g});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: left center;
+  background-position: right center;
   width: 100%;
   height: 100%;
 `,b=t.div`
@@ -14,7 +14,7 @@ import{N as o,r as s,j as e}from"./index-1d5616a4.js";import{C as d}from"./Conta
   height: 100%;
   width: 100%;
   justify-content: space-between;
-`,w=t.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -22,8 +22,6 @@ import{N as o,r as s,j as e}from"./index-1d5616a4.js";import{C as d}from"./Conta
   padding: 30px 0 30px;
   width: 100%;
   align-items: center;
-
-  /* overflow-y: scroll; */
 
   @media (min-width: 768px) {
     gap: 20px;
@@ -33,16 +31,13 @@ import{N as o,r as s,j as e}from"./index-1d5616a4.js";import{C as d}from"./Conta
     gap: 30px;
     width: 100%;
   }
-`,u=t.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  overflow-y: ${({isVisible:i})=>i?"hidden":"auto"};
-
   width: 100%;
-  /* height: 100%; */
   margin-right: auto;
 `,y=t.h1`
   margin: 0;
@@ -154,17 +149,31 @@ import{N as o,r as s,j as e}from"./index-1d5616a4.js";import{C as d}from"./Conta
   transform: translateY(-20px);
   opacity: ${({isVisible:i})=>i?1:0};
   transform: ${({isVisible:i})=>i?"translateY(0)":"translateY(-20px)"};
-  height: ${({isVisible:i})=>i?"100%":"30px"};
-  /* overflow: ${({isVisible:i})=>i?"visible":"hidden"}; */
+
+  height: ${({isVisible:i})=>i?"240px":"30px"};
   margin-bottom: ${({isVisible:i})=>i?"20px":"0"};
   transition: all 0.5s;
+
+  overflow-y: scroll;
+  ::-webkit-scrollbar-thumb {
+    background-color: #76aab3;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
 
   @media (min-width: 768px) {
     max-width: 600px;
     font-size: 28px;
+    height: ${({isVisible:i})=>i?"210px":"30px"};
   }
   @media (min-width: 1420px) {
     max-width: 700px;
+    height: ${({isVisible:i})=>i?"100%":"30px"};
   }
 `,n=t.li`
   color: #76aab3;
@@ -390,4 +399,4 @@ import{N as o,r as s,j as e}from"./index-1d5616a4.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[i,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(w,{children:e.jsx(d,{children:e.jsxs(b,{children:[e.jsxs(u,{isVisible:!i,children:[e.jsx(j,{children:"Sovereigns of the Sea"}),e.jsx(y,{children:"Shark"}),e.jsx(v,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(z,{children:[e.jsxs(S,{children:[e.jsx(R,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!i),children:i?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs($,{isVisible:i,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx(D,{})})]})]})})})})},E=()=>e.jsx(e.Fragment,{children:e.jsx(G,{})});export{E as default};
+`,G=()=>{const[i,a]=s.useState(!1);return e.jsx(f,{children:e.jsx(u,{children:e.jsx(d,{children:e.jsxs(b,{children:[e.jsxs(w,{isVisible:!i,children:[e.jsx(j,{children:"Sovereigns of the Sea"}),e.jsx(y,{children:"Shark"}),e.jsx(v,{children:"Sharks embody a mysterious power that echoes through the depths, underscoring the urgent call for conservation to protect their enigmatic domain."}),e.jsxs(z,{children:[e.jsxs(S,{children:[e.jsx(R,{children:"Danger rating 8/10"}),e.jsx(A,{onClick:()=>a(!i),children:i?e.jsx(I,{}):e.jsx(T,{})})]}),e.jsxs($,{isVisible:i,children:[e.jsx(n,{children:"Sharks are a diverse group of marine predators, boasting over 500 species with varied sizes, shapes, and behaviors."}),e.jsx(n,{children:"Sharks possess an extraordinary ability to sense electrical fields, aiding them in locating prey and navigating their surroundings."}),e.jsx(n,{children:"The hammerhead shark's unique head shape provides enhanced 360-degree vision and improved hunting efficiency."}),e.jsx(n,{children:"Certain shark species, such as the great white, are renowned for their extensive migrations, covering thousands of miles in open ocean."}),e.jsx(n,{children:"Equipped with multiple rows of teeth, sharks continuously replace and shed teeth throughout their lives."}),e.jsx(n,{children:"Sharks boast a prehistoric lineage, predating the existence of dinosaurs by hundreds of millions of years."}),e.jsx(n,{children:"The decline in shark populations poses significant threats to marine ecosystems, underscoring the urgency of conservation efforts."})]})]})]}),e.jsxs(H,{children:[e.jsx(r,{to:"/tiger",children:e.jsx(B,{})}),e.jsx(r,{to:"/",children:e.jsx(F,{})}),e.jsx(r,{to:"/human",children:e.jsx(D,{})})]})]})})})})},E=()=>e.jsx(e.Fragment,{children:e.jsx(G,{})});export{E as default};

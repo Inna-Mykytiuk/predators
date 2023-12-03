@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Container-3648dd90.js";import{n as t,k as x,c as p,b as l,F as c,S as h,a as m}from"./index.esm-4db7407a.js";const g="/predators/assets/hawkHero-e1f4900b.png",f=t.div`
+import{N as o,r as s,j as i}from"./index-734f56b1.js";import{C as d}from"./Container-b48efed6.js";import{n as t,k as p,c as x,b as l,F as c,S as h,a as m}from"./index.esm-076da570.js";const g="/predators/assets/hawkHero-e1f4900b.png",f=t.div`
   display: flex;
   background: url(${g});
 
@@ -38,10 +38,7 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
   align-items: flex-start;
 
   width: 100%;
-  /* height: 100%; */
   margin-left: auto;
-
-  overflow-y: ${({isVisible:e})=>e?"hidden":"auto"};
 
   @media (min-width: 768px) {
     justify-content: flex-end;
@@ -64,7 +61,7 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
   text-shadow: 1px 1px 8px #419bcf;
 
   @media (min-width: 768px) {
-    margin: 0 0 80px 0;
+    margin: 0 0 20px 0;
     font-size: 80px;
     line-height: 1.4;
   }
@@ -75,7 +72,7 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
     font-weight: bold;
     line-height: 1.2;
   }
-`,j=x`
+`,j=p`
   0% {
     background-position: -500%;
   }
@@ -143,12 +140,12 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
   padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,$=t.h3`
+`,S=t.h3`
   font-size: 22px;
   font-weight: bold;
   color: #2da4e9;
   font-family: "Kaushan Script", cursive;
-`,S=t.ul`
+`,$=t.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:e})=>e?"10px":"0"};
@@ -162,19 +159,32 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
 
   transform: translateY(0);
   opacity: ${({isVisible:e})=>e?1:0};
-  height: ${({isVisible:e})=>e?"100%":"30px"};
-  /* overflow: ${({isVisible:e})=>e?"visible":"hidden"}; */
+
+  height: ${({isVisible:e})=>e?"200px":"30px"};
   margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
   transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
-
   transition: all 0.8s;
 
+  overflow-y: scroll;
+  ::-webkit-scrollbar-thumb {
+    background-color: #4c7e9b;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
   @media (min-width: 768px) {
-    height: ${({isVisible:e})=>e?"100%":"10px"};
-    overflow: ${({isVisible:e})=>e?"visible":"hidden"};
-    max-width: 700px;
+    height: ${({isVisible:e})=>e?"170px":"30px"};
+    max-width: 500px;
     font-size: 28px;
     text-align: end;
+  }
+  @media (min-width: 1420px) {
+    height: ${({isVisible:e})=>e?"100%":"30px"};
   }
 `,n=t.li`
   color: #4c7e9b;
@@ -204,7 +214,7 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
   @media (min-width: 768px) {
     margin-top: 30px;
   }
-`,A=t(p)`
+`,A=t(x)`
   width: 12px;
   height: 12px;
 
@@ -402,4 +412,4 @@ import{N as o,r as s,j as i}from"./index-1d5616a4.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,G=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(d,{children:i.jsxs(b,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(k,{children:"Hawk"}),i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(v,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(z,{children:[i.jsxs(H,{children:[i.jsx($,{children:"Danger rating 4/10"}),i.jsx(T,{onClick:()=>r(!e),children:e?i.jsx(A,{}):i.jsx(I,{})})]}),i.jsxs(S,{isVisible:e,children:[i.jsx(n,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(n,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(n,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(n,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(n,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(n,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(n,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]})]}),i.jsxs(R,{children:[i.jsx(a,{to:"/wasp",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})}),i.jsx(a,{to:"/wolf",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{D as default};
+`,G=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(d,{children:i.jsxs(b,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(y,{children:"Nature's Architects and Stingers"}),i.jsx(k,{children:"Hawk"}),i.jsx(v,{children:"Take flight with the majestic hawks, rulers of the skies, as we explore their keen eyesight, breathtaking aerial maneuvers, and vital role in maintaining ecological balance."}),i.jsxs(z,{children:[i.jsxs(H,{children:[i.jsx(S,{children:"Danger rating 4/10"}),i.jsx(T,{onClick:()=>r(!e),children:e?i.jsx(A,{}):i.jsx(I,{})})]}),i.jsxs($,{isVisible:e,children:[i.jsx(n,{children:"Their powerful talons and beaks are designed for capturing and consuming various prey."}),i.jsx(n,{children:"Some hawk species migrate over long distances, demonstrating remarkable navigation skills."}),i.jsx(n,{children:"Various species of hawks exhibit diverse hunting strategies, from ambush tactics to cooperative hunting."}),i.jsx(n,{children:"Courtship displays and rituals are common among hawks, emphasizing social behaviors."}),i.jsx(n,{children:"Hawks are known for their impressive aerial acrobatics and soaring flight patterns."}),i.jsx(n,{children:"Adaptability to various habitats, from forests to open fields, contributes to their widespread distribution."}),i.jsx(n,{children:"Conservation efforts are crucial to protecting certain hawk species facing habitat loss and other threats."})]})]})]}),i.jsxs(R,{children:[i.jsx(a,{to:"/wasp",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})}),i.jsx(a,{to:"/wolf",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{D as default};
