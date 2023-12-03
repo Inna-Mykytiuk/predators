@@ -1,4 +1,4 @@
-import{N as r,r as s,j as i}from"./index-126e2f9a.js";import{C as d}from"./Container-00501e37.js";import{n as t,k as p,c as x,b as l,F as c,S as h,a as m}from"./index.esm-9bb87a5c.js";const g="/predators/assets/wolfHero-c2200093.png",f=t.div`
+import{N as r,r as s,j as i}from"./index-a718c3e2.js";import{C as d}from"./Container-204d2d77.js";import{n as t,k as p,c as x,b as l,F as c,S as h,a as m}from"./index.esm-dbf9ae61.js";const g="/predators/assets/wolfHero-c2200093.png",f=t.div`
   display: flex;
   background: url(${g});
 
