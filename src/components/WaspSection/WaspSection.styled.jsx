@@ -39,7 +39,6 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: auto;
 
   width: 100%;
   height: 100%;
@@ -144,6 +143,7 @@ export const RaitingWrapper = styled.div`
 
   margin-top: 10px;
   margin-bottom: auto;
+  overflow: scroll;
 
   @media (min-width: 768px) {
     align-items: flex-end;
