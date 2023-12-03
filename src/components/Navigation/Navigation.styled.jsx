@@ -64,7 +64,7 @@ export const BtnBlock = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
+  /* margin-top: auto; */
 `;
 
 export const GoBackLink = styled(NavLink)`
@@ -356,7 +356,6 @@ export const VirusIcon = styled(RiVirusLine)`
 export const GoBackIcon = styled(FaArrowLeft)`
   width: 12px;
   height: 12px;
-  margin-left: 10px;
 
   padding: 10px;
 
@@ -381,7 +380,6 @@ export const GoBackIcon = styled(FaArrowLeft)`
 export const GoHomeIcon = styled(SiGooglehome)`
   width: 12px;
   height: 12px;
-  margin-left: 10px;
 
   padding: 10px;
 

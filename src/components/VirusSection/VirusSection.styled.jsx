@@ -172,8 +172,8 @@ export const RaitingTitle = styled.h3`
 export const RaitingList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 0 10px;
+  gap: ${({ isVisible }) => (isVisible ? "10px" : "0")};
+  padding: ${({ isVisible }) => (isVisible ? "0 10px" : "0")};
   max-width: 380px;
   opacity: 0;
 
