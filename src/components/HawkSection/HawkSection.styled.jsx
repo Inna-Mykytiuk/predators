@@ -227,7 +227,7 @@ export const HawkBtnBlock = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
+  margin-top: ${({ isVisible }) => (isVisible ? "0" : "auto")};
 
   @media (min-width: 768px) {
     margin-top: 30px;
