@@ -1,4 +1,4 @@
-import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as p,b as x,F as l,S as c,a as h,C as m}from"./index.esm-1d453c81.js";const g="/predators/assets/wolfHero-c2200093.png",f=e.div`
+import{N as o,r as s,j as i}from"./index-ca7db4bf.js";import{n as e,k as x,c as p,b as d,F as l,S as c,a as h,C as m}from"./index.esm-1bc1a0b0.js";const g="/predators/assets/snakeHero-dff56b17.png",f=e.div`
   display: flex;
   background: url(${g});
 
@@ -8,7 +8,7 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   background-position: left center;
   width: 100%;
   height: 100%;
-`,w=e.div`
+`,b=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,7 +25,7 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
     gap: 30px;
     width: 100%;
   }
-`,b=e.div`
+`,w=e.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -34,19 +34,19 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   overflow-y: scroll;
 
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-right: auto;
 `,u=e.h1`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #e1d05e;
-  font-family: "Permanent Marker", cursive;
+  color: #e5a52a;
+  font-family: "Ephesis", cursive;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #e1d05e;
+  text-shadow: 1px 1px 2px #e5a52a;
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
@@ -55,26 +55,26 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
     line-height: 1.4;
   }
   @media (min-width: 1440px) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 120px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.2;
   }
-`,k=d`
+`,k=x`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,j=e.h2`
+`,y=e.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   line-height: 1.2;
-  background: linear-gradient(90deg, #e1d05e, #50514d, #e1d05e);
+  background: linear-gradient(90deg, #e5a52a, #789146, #e5a52a);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
@@ -91,8 +91,8 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,y=e.p`
-  color: #878986;
+`,j=e.p`
+  color: #789146;
   font-weight: 400;
   font-family: "Arvo", sans-serif;
   font-size: 14px;
@@ -105,12 +105,12 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   backdrop-filter: blur(10px);
 
   @media (min-width: 768px) {
-    font-size: 16px;
     max-width: 400px;
     line-height: 1.5;
   }
   @media (min-width: 1440px) {
     font-size: 18px;
+    max-width: 400px;
   }
 `,v=e.div`
   position: relative;
@@ -128,11 +128,11 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   padding: 0 0 20px 0;
   gap: 10px;
   align-items: center;
-`,W=e.h3`
+`,S=e.h3`
   font-size: 22px;
   font-weight: bold;
-  color: #e1d05e;
-  font-family: "Permanent Marker", cursive;
+  color: #e5a52a;
+  font-family: "Dancing Script", cursive;
 `,R=e.ul`
   display: flex;
   flex-direction: column;
@@ -144,11 +144,11 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   -webkit-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transform: translateY(-20px);
+  transform: translateY(0);
   opacity: ${({isVisible:t})=>t?1:0};
   transform: ${({isVisible:t})=>t?"translateY(0)":"translateY(-20px)"};
   height: ${({isVisible:t})=>t?"100%":"30px"};
-  overflow: ${({isVisible:t})=>t?"visible":"hidden"};
+  overflow: ${({isVisible:t})=>t?"scroll":"hidden"};
   margin-bottom: ${({isVisible:t})=>t?"20px":"0"};
   transition: all 0.5s;
 
@@ -160,7 +160,7 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
     max-width: 700px;
   }
 `,n=e.li`
-  color: #878986;
+  color: #789146;
   font-family: "Arvo", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -171,10 +171,11 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   text-shadow: 2px 2px 5px #1d1e26;
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    /* font-size: 16px; */
+    /* text-align: end; */
   }
   @media (min-width: 1440px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `,$=e.div`
   display: flex;
@@ -186,20 +187,20 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   /* @media (min-width: 768px) {
     margin-top: 30px;
   } */
-`,S=e(p)`
+`,H=e(p)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e1d05e;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -210,20 +211,20 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=e(x)`
+`,I=e(d)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #e1d05e;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -243,7 +244,7 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e1d05e;
+  color: #e5a52a;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -252,20 +253,20 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e1d05e;
+  text-shadow: 2px 2px 5px #e5a52a;
 
   svg {
-    fill: #e1d05e;
+    fill: #e5a52a;
   }
 
   /* &.active, */
   &:hover {
-    color: #878986;
+    color: #536830;
 
     svg {
-      fill: #878986;
-      border: 3px solid #878986;
-      box-shadow: #878986 0px 0px 15px;
+      fill: #536830;
+      border: 3px solid #536830;
+      box-shadow: #536830 0px 0px 15px;
     }
   }
 
@@ -275,20 +276,20 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,H=e(l)`
+`,B=e(l)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e1d05e;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -298,20 +299,20 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,I=e(c)`
+`,F=e(c)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e1d05e;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -321,20 +322,20 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,B=e(h)`
+`,T=e(h)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #e1d05e;
+  color: #e5a52a;
   border-radius: 50%;
-  border: 3px solid #e1d05e;
+  border: 3px solid #e5a52a;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #e1d05e 0px 0px 15px;
+  box-shadow: #e5a52a 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -344,14 +345,14 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,o=e(r)`
+`,a=e(o)`
   display: flex;
   font-family: "Montserrat", sans-serif;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #e1d05e;
+  color: #e5a52a;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -359,21 +360,21 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #e1d05e;
+  text-shadow: 2px 2px 5px #e5a52a;
 
   svg {
-    fill: #e1d05e;
+    fill: #e5a52a;
   }
 
   /* &.active, */
   &:hover,
   &:focus {
-    color: #878986;
+    color: #536830;
 
     svg {
-      fill: #878986;
-      border: 3px solid #878986;
-      box-shadow: #878986 0px 0px 15px;
+      fill: #536830;
+      border: 3px solid #536830;
+      box-shadow: #536830 0px 0px 15px;
     }
   }
 
@@ -383,4 +384,10 @@ import{N as r,r as s,j as i}from"./index-f16b13f8.js";import{n as e,k as d,c as 
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,F=()=>{const[t,a]=s.useState(!1);return i.jsx(f,{children:i.jsx(w,{children:i.jsx(m,{children:i.jsxs(b,{children:[i.jsx(j,{children:"Nature's Architects and Stingers"}),i.jsx(u,{children:"Wolf"}),i.jsx(y,{children:"Join the packs and explore the untamed landscapes where wolves, with their intricate social structures and haunting howls, command the wilderness."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(W,{children:"Danger rating 5/10"}),i.jsx(A,{onClick:()=>a(!t),children:t?i.jsx(S,{}):i.jsx(T,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Wolves are skilled hunters, often targeting large ungulates such as deer and elk."}),i.jsx(n,{children:"Pack hierarchy is established through a combination of dominance displays and submission."}),i.jsx(n,{children:"Communication within a wolf pack involves vocalizations, body language, and scent marking."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"The iconic howl of a wolf serves various purposes, including signaling location and maintaining pack cohesion."}),i.jsx(n,{children:"Wolf territories can cover vast areas, depending on prey availability and pack size."}),i.jsx(n,{children:"The gestation period for wolf pups is around two months, with the entire pack participating in their care."}),i.jsx(n,{children:"Gray wolves, the most widespread species, exhibit a wide range of coat colors, from white to black."})]})]}),i.jsxs($,{children:[i.jsx(o,{to:"/hawk",children:i.jsx(H,{})}),i.jsx(o,{to:"/",children:i.jsx(I,{})}),i.jsx(o,{to:"/snake",children:i.jsx(B,{})})]})]})})})})},C=()=>i.jsx(i.Fragment,{children:i.jsx(F,{})});export{C as default};
+`,D=e.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+`,G=()=>{const[t,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(m,{children:i.jsxs(D,{children:[i.jsxs(w,{children:[i.jsx(y,{children:"Masters of Stealth and Precision"}),i.jsx(u,{children:"Snake"}),i.jsx(j,{children:"Slither into the enigmatic world of snakes, where limbless wonders navigate silently, employing lethal tactics and serving as guardians of ecological balance."}),i.jsxs(v,{children:[i.jsxs(z,{children:[i.jsx(S,{children:"Danger rating 6/10"}),i.jsx(A,{onClick:()=>r(!t),children:t?i.jsx(H,{}):i.jsx(I,{})})]}),i.jsxs(R,{isVisible:t,children:[i.jsx(n,{children:"Snakes lack limbs but are incredibly agile, using their bodies to navigate various environments."}),i.jsx(n,{children:"Venomous snakes have specialized fangs for injecting venom, while non-venomous snakes rely on constriction for hunting."}),i.jsx(n,{children:"Some snake species have heat-sensing pits, enabling them to detect infrared radiation and locate warm-blooded prey."}),i.jsx(n,{children:"The iconic cobra hood is formed by elongated ribs and a web of skin, creating an intimidating display."}),i.jsx(n,{children:"Snakes exhibit a wide range of colors and patterns, often serving as camouflage in their respective habitats."}),i.jsx(n,{children:"Despite their often-misunderstood reputation, most snakes are harmless to humans, and snakebites are relatively rare."}),i.jsx(n,{children:"Snakes utilize a unique jaw structure that allows them to consume prey much larger than their head."}),i.jsx(n,{children:"Snakes shed their skin regularly, a process known as ecdysis, allowing for growth and removing parasites."})]})]})]}),i.jsxs($,{children:[i.jsx(a,{to:"/wolf",children:i.jsx(B,{})}),i.jsx(a,{to:"/",children:i.jsx(F,{})}),i.jsx(a,{to:"/tiger",children:i.jsx(T,{})})]})]})})})})},C=()=>i.jsx(i.Fragment,{children:i.jsx(G,{})});export{C as default};
