@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 `;
 
 export const HawkWrapper = styled.div`
@@ -70,25 +70,25 @@ export const TextWrapper = styled.div`
 `;
 
 export const HeroTextMain = styled.h1`
-  margin: 0;
+  margin: 0 0 10px 0;
   text-align: center;
   text-transform: uppercase;
   color: #2da4e9;
   font-family: "Kaushan Script", cursive;
+  padding: 0 20px 0 0;
 
   font-weight: bold;
   font-size: 48px;
   line-height: 1.6;
   text-shadow: 1px 1px 8px #419bcf;
-  margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 80px;
+    margin: 0 0 80px 0;
     font-size: 80px;
     line-height: 1.4;
   }
   @media (min-width: 1440px) {
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
     font-size: 120px;
     text-transform: uppercase;
     font-weight: bold;

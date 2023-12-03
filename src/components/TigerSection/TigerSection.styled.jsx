@@ -74,6 +74,7 @@ export const HeroTextMain = styled.h1`
   text-transform: uppercase;
   color: #ff6000;
   font-family: "Caveat", cursive;
+  padding: 0 20px 0 0;
 
   font-weight: bold;
   font-size: 48px;

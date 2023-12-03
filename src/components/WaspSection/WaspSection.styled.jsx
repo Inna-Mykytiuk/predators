@@ -10,7 +10,7 @@ export const WaspHero = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   width: 100%;
   height: 100%;
 `;

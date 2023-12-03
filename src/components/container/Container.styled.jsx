@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
   width: 320px;
   padding: 0 10px;
   margin: 0 auto;
+  /* overflow-y: auto; */
 
   @media (min-width: 768px) {
     width: 768px;
@@ -16,5 +17,12 @@ export const MainContainer = styled.div`
     width: 1440px;
     padding: 0 20px;
     margin: 0 auto;
+  }
+
+  @media (min-hight: 450px) {
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow-y: auto;
   }
 `;

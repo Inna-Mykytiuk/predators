@@ -1,16 +1,17 @@
-import Container from "../container/Container";
+// import Container from "../container/Container";
 
 import {
   ContentWrapper,
   HeroTextSecondary,
   TextShadow,
   HeroTextMain,
+  MainContainer,
 } from "./HeroSection.styled";
 import { Navigation } from "../Navigation/Navigation";
 
 export const HeroSection = () => {
   return (
-    <Container>
+    <MainContainer>
       <ContentWrapper>
         <HeroTextMain>Predators</HeroTextMain>
         <TextShadow>-- of the Earth --</TextShadow>
@@ -21,6 +22,6 @@ export const HeroSection = () => {
         </HeroTextSecondary>
         <Navigation />
       </ContentWrapper>
-    </Container>
+    </MainContainer>
   );
 };

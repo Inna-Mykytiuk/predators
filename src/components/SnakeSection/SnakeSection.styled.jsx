@@ -16,7 +16,7 @@ export const SnakeHero = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: left center;
   width: 100%;
   height: 100%;
 `;

@@ -3,6 +3,26 @@ import { keyframes } from "@emotion/react";
 
 import hero from "../../assets/pagesImg/predatorHero.png";
 
+export const MainContainer = styled.div`
+  box-sizing: border-box;
+  height: 100%;
+  width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow-y: auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+`;
+
 export const Hero = styled.div`
   display: flex;
   background:
@@ -23,6 +43,7 @@ export const Hero = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
   /* justify-content: space-evenly; */
 
   gap: 10px;
