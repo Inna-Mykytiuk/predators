@@ -1,4 +1,4 @@
-import{j as e}from"./index-899c8067.js";import{n,k as s,C as a}from"./index.esm-d8301b48.js";import{N as r,a as o,b as x,c as t,L as i,W as d,H as h,d as c,S as p,T as l,e as m,f as g,V as f}from"./Navigation.styled-07c0208a.js";const j="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
+import{j as e}from"./index-a636b056.js";import{n,k as s,C as a}from"./index.esm-3d5cf017.js";import{N as r,a as o,b as x,c as t,L as i,W as d,H as h,d as c,S as p,T as l,e as m,f as g,V as f}from"./Navigation.styled-81e8d708.js";const j="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
   display: flex;
   background:
   /* linear-gradient(
@@ -19,6 +19,7 @@ import{j as e}from"./index-899c8067.js";import{n,k as s,C as a}from"./index.esm-
   /* justify-content: space-evenly; */
 
   gap: 10px;
+  overflow-y: hidden;
   width: 100%;
   /* height: 100%; */
   margin-right: auto;
