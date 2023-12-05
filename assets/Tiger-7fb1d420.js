@@ -1,4 +1,4 @@
-import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Container-771977e0.js";import{n as t,k as x,c as p,b as l,F as c,S as h,a as m}from"./index.esm-8319cc7d.js";const g="/predators/assets/virusHero-db7a81db.png",f=t.div`
+import{N as o,r as s,j as i}from"./index-e189bd52.js";import{C as x}from"./Container-c0f23b0e.js";import{n as t,k as p,c as d,b as l,F as c,S as h,a as f}from"./index.esm-a4f3d32b.js";const g="/predators/assets/tigerHero-5590036e.png",m=t.div`
   display: flex;
   background: url(${g});
 
@@ -8,7 +8,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   background-position: right center;
   width: 100%;
   height: 100%;
-`,u=t.div`
+`,w=t.div`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -31,7 +31,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
     gap: 30px;
     width: 100%;
   }
-`,w=t.div`
+`,u=t.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,8 +50,9 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #d3371e;
-  font-family: "Special Elite", cursive;
+  color: #ff6000;
+  font-family: "Caveat", cursive;
+  padding: 0 20px 0 0;
 
   font-weight: bold;
   font-size: 48px;
@@ -71,14 +72,14 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
     font-weight: bold;
     line-height: 1.2;
   }
-`,y=x`
+`,k=p`
   0% {
     background-position: -500%;
   }
   100% {
     background-position: 500%;
   }
-`,k=t.h2`
+`,y=t.h2`
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -90,7 +91,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: ${y} 4s linear infinite;
+  animation: ${k} 4s linear infinite;
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
@@ -100,7 +101,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 18px;
   }
-`,v=t.p`
+`,z=t.p`
   color: #99360f;
   font-weight: 400;
   font-size: 16px;
@@ -121,28 +122,29 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
     font-size: 20px;
     max-width: 500px;
   }
-`,z=t.div`
+`,v=t.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  margin-top: 20px;
+  margin-top: 10px;
 
   @media (min-width: 768px) {
     align-items: flex-end;
+    margin-top: 20px;
   }
-`,V=t.div`
+`,T=t.div`
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 0 20px 0;
 `,$=t.h3`
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bold;
-  color: #d3371e;
-  font-family: "Special Elite", cursive;
-`,B=t.ul`
+  color: #ff6000;
+  font-family: "Caveat", cursive;
+`,R=t.ul`
   display: flex;
   flex-direction: column;
   gap: ${({isVisible:e})=>e?"10px":"0"};
@@ -158,7 +160,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   opacity: ${({isVisible:e})=>e?1:0};
   transform: ${({isVisible:e})=>e?"translateY(0)":"translateY(-20px)"};
 
-  height: ${({isVisible:e})=>e?"170px":"30px"};
+  height: ${({isVisible:e})=>e?"210px":"30px"};
   margin-bottom: ${({isVisible:e})=>e?"20px":"0"};
   transition: all 0.5s;
 
@@ -181,7 +183,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   }
   @media (min-width: 1420px) {
     max-width: 500px;
-    height: ${({isVisible:e})=>e?"190px":"30px"};
+    height: ${({isVisible:e})=>e?"180px":"30px"};
   }
   @media (min-width: 1920px) {
     height: ${({isVisible:e})=>e?"100%":"30px"};
@@ -203,26 +205,26 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 16px;
   }
-`,R=t.div`
+`,S=t.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-`,S=t(p)`
+`,F=t(d)`
   width: 12px;
   height: 12px;
 
   padding: 5px;
 
-  color: #d3371e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -239,14 +241,14 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
 
   padding: 5px;
 
-  color: #d3371e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
   border-radius: 50%;
 
   @media (min-width: 768px) {
@@ -257,7 +259,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,F=t.button`
+`,I=t.button`
   display: flex;
   background-color: transparent;
   outline: 0;
@@ -266,7 +268,7 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #d3371e;
+  color: #ff6000;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -275,10 +277,10 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #d3371e;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #d3371e;
+    fill: #ff6000;
   }
 
   &:hover {
@@ -297,19 +299,19 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,I=t(c)`
+`,B=t(c)`
   width: 12px;
   height: 12px;
   padding: 10px;
 
-  color: #d3371e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -319,19 +321,19 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`,T=t(h)`
+`,A=t(h)`
   width: 12px;
   height: 12px;
   padding: 10px;
 
-  color: #d3371e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -341,20 +343,20 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`;t(m)`
+`,C=t(f)`
   width: 12px;
   height: 12px;
 
   padding: 10px;
 
-  color: #d3371e;
+  color: #ff6000;
   border-radius: 50%;
-  border: 3px solid #d3371e;
+  border: 3px solid #ff6000;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: #d3371e 0px 0px 15px;
+  box-shadow: #ff6000 0px 0px 15px;
 
   @media (min-width: 768px) {
     width: 20px;
@@ -364,13 +366,13 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     margin: 0;
   }
-`;const a=t(o)`
+`,r=t(o)`
   display: flex;
 
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color: #d3371e;
+  color: #ff6000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -378,10 +380,10 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
 
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  text-shadow: 2px 2px 5px #d3371e;
+  text-shadow: 2px 2px 5px #ff6000;
 
   svg {
-    fill: #d3371e;
+    fill: #ff6000;
   }
 
   &:hover,
@@ -401,4 +403,4 @@ import{N as o,r as s,j as i}from"./index-bb03687b.js";import{C as d}from"./Conta
   @media (min-width: 1440px) {
     font-size: 20px;
   }
-`,A=()=>{const[e,r]=s.useState(!1);return i.jsx(f,{children:i.jsx(b,{children:i.jsx(d,{children:i.jsxs(u,{children:[i.jsxs(w,{isVisible:!e,children:[i.jsx(j,{children:"Virus"}),i.jsx(k,{children:"Microscopic Menaces Unveiled"}),i.jsx(v,{children:"Delve into the unseen realm of microscopic menaces, where viruses and bacteria shape the course of life, challenging our understanding and resilience."}),i.jsxs(z,{children:[i.jsxs(V,{children:[i.jsx($,{children:"Danger rating 10/10"}),i.jsx(F,{onClick:()=>r(!e),children:e?i.jsx(S,{}):i.jsx(H,{})})]}),i.jsxs(B,{isVisible:e,children:[i.jsx(n,{children:"Viruses are not classified as living organisms but consist of genetic material encased in a protein coat."}),i.jsx(n,{children:"Bacteria are single-celled organisms playing vital roles in ecological processes, including nutrient cycling."}),i.jsx(n,{children:"Viruses hijack host cells to replicate, causing diseases in animals, plants, and bacteria."}),i.jsx(n,{children:"Bacteria can form resilient structures called endospores, allowing them to survive harsh conditions."}),i.jsx(n,{children:"Both viruses and bacteria are crucial for human health, contributing to the microbiome and immune system development."}),i.jsx(n,{children:"Bacteria can exchange genetic material through horizontal gene transfer, contributing to their adaptability."}),i.jsx(n,{children:"Viruses exhibit a wide range of shapes and structures, from simple spheres to complex helical forms."}),i.jsx(n,{children:"The study of viruses and bacteria is essential in fields such as medicine, biotechnology, and environmental science. scales."})]})]})]}),i.jsxs(R,{children:[i.jsx(a,{to:"/snake",children:i.jsx(I,{})}),i.jsx(a,{to:"/",children:i.jsx(T,{})})]})]})})})})},E=()=>i.jsx(i.Fragment,{children:i.jsx(A,{})});export{E as default};
+`,E=()=>{const[e,a]=s.useState(!1);return i.jsx(m,{children:i.jsx(b,{children:i.jsx(x,{children:i.jsxs(w,{children:[i.jsxs(u,{isVisible:!e,children:[i.jsx(j,{children:"Tiger"}),i.jsx(y,{children:"Striking Elegance, Formidable Power"}),i.jsx(z,{children:"Embark on a journey through the jungles and grasslands where tigers, with their striking beauty and unparalleled hunting prowess, reign as the kings of stealth and power."}),i.jsxs(v,{children:[i.jsxs(T,{children:[i.jsx($,{children:"Danger rating 7/10"}),i.jsx(I,{onClick:()=>a(!e),children:e?i.jsx(F,{}):i.jsx(H,{})})]}),i.jsxs(R,{isVisible:e,children:[i.jsx(n,{children:"Tigers are the largest big cats, known for their distinctive orange coat and dark stripes."}),i.jsx(n,{children:"Exceptional swimmers, tigers are uncharacteristically comfortable in water compared to other cats."}),i.jsx(n,{children:"Tigers have unique stripe patterns, allowing for individual identification, similar to human fingerprints."}),i.jsx(n,{children:"Despite their size, tigers are incredibly agile and can leap great distances."}),i.jsx(n,{children:"Tigers have a wide range of vocalizations, including roars, chuffs, and growls, used for communication."}),i.jsx(n,{children:"The whisker spots on a tiger's face help them navigate and judge distances in the dark."}),i.jsx(n,{children:"Tigers are territorial animals, marking their boundaries with scent markings and scratches."}),i.jsx(n,{children:"The tiger population has faced significant threats, primarily due to habitat loss and poaching for their body parts."})]})]})]}),i.jsxs(S,{children:[i.jsx(r,{to:"/snake",children:i.jsx(B,{})}),i.jsx(r,{to:"/",children:i.jsx(A,{})}),i.jsx(r,{to:"/shark",children:i.jsx(C,{})})]})]})})})})},D=()=>i.jsx(i.Fragment,{children:i.jsx(E,{})});export{D as default};

@@ -1,4 +1,4 @@
-import{j as e}from"./index-bb03687b.js";import{n,k as a}from"./index.esm-8319cc7d.js";import{N as s,a as o,b as r,c as t,L as i,W as x,H as d,d as h,S as p,T as c,e as l,f as m,V as g}from"./Navigation.styled-6efbaeb4.js";const f="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
+import{j as e}from"./index-e189bd52.js";import{n,k as a}from"./index.esm-a4f3d32b.js";import{N as s,a as o,b as r,c as t,L as i,W as x,H as d,d as p,S as h,T as c,e as l,f as m,V as g}from"./Navigation.styled-8f095a0e.js";const f="/predators/assets/predatorHero-b6a17c78.png",w=n.div`
   box-sizing: border-box;
   height: 100%;
   width: 320px;
@@ -35,12 +35,10 @@ import{j as e}from"./index-bb03687b.js";import{n,k as a}from"./index.esm-8319cc7
   display: flex;
   flex-direction: column;
 
-  /* justify-content: space-evenly; */
-
   gap: 10px;
   overflow-y: auto;
   width: 100%;
-  /* height: 100%; */
+
   margin-right: auto;
   align-items: center;
   padding: 30px 0;
@@ -85,7 +83,7 @@ import{j as e}from"./index-bb03687b.js";import{n,k as a}from"./index.esm-8319cc7
   line-height: 1.2;
   max-width: 450px;
   text-align: center;
-  /* margin: 0 auto; */
+
   text-shadow: 1px 1px 2px #181717;
   margin: 20px 0 40px;
 
@@ -123,13 +121,4 @@ import{j as e}from"./index-bb03687b.js";import{n,k as a}from"./index.esm-8319cc7
   &:hover {
     color: #fff;
   }
-
-  /* @media (min-width: 768px) {
-    font-size: 32px;
-    line-height: 1.6;
-  }
-  @media (min-width: 1440px) {
-    font-size: 40px;
-    line-height: 1.6;
-  } */
-`,z=()=>e.jsx(s,{children:e.jsx(o,{children:e.jsxs(r,{children:[e.jsx(t,{children:e.jsx(i,{to:"/wasp",children:e.jsx(x,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/hawk",children:e.jsx(d,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/wolf",children:e.jsx(h,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/snake",children:e.jsx(p,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/tiger",children:e.jsx(c,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/shark",children:e.jsx(l,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/human",children:e.jsx(m,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/virus",children:e.jsx(g,{})})})]})})}),I=()=>e.jsx(w,{children:e.jsxs(u,{children:[e.jsx(k,{children:"Predators"}),e.jsx(y,{children:"-- of the Earth --"}),e.jsx(b,{children:"Welcome to the captivating realm of Earth's most formidable and fascinating predators. In a world where each species unveils its unique prowess."}),e.jsx(z,{})]})}),T=()=>e.jsx(j,{children:e.jsx(I,{})});export{T as default};
+`,I=()=>e.jsx(s,{children:e.jsx(o,{children:e.jsxs(r,{children:[e.jsx(t,{children:e.jsx(i,{to:"/wasp",children:e.jsx(x,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/hawk",children:e.jsx(d,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/wolf",children:e.jsx(p,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/snake",children:e.jsx(h,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/tiger",children:e.jsx(c,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/shark",children:e.jsx(l,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/human",children:e.jsx(m,{})})}),e.jsx(t,{children:e.jsx(i,{to:"/virus",children:e.jsx(g,{})})})]})})}),z=()=>e.jsx(w,{children:e.jsxs(u,{children:[e.jsx(k,{children:"Predators"}),e.jsx(y,{children:"-- of the Earth --"}),e.jsx(b,{children:"Welcome to the captivating realm of Earth's most formidable and fascinating predators. In a world where each species unveils its unique prowess."}),e.jsx(I,{})]})}),T=()=>e.jsx(j,{children:e.jsx(z,{})});export{T as default};
