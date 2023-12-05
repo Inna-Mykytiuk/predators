@@ -44,12 +44,10 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* justify-content: space-evenly; */
-
   gap: 10px;
   overflow-y: auto;
   width: 100%;
-  /* height: 100%; */
+
   margin-right: auto;
   align-items: center;
   padding: 30px 0;
@@ -98,7 +96,7 @@ export const HeroTextSecondary = styled.h2`
   line-height: 1.2;
   max-width: 450px;
   text-align: center;
-  /* margin: 0 auto; */
+
   text-shadow: 1px 1px 2px #181717;
   margin: 20px 0 40px;
 
@@ -140,13 +138,4 @@ export const TextShadow = styled.div`
   &:hover {
     color: #fff;
   }
-
-  /* @media (min-width: 768px) {
-    font-size: 32px;
-    line-height: 1.6;
-  }
-  @media (min-width: 1440px) {
-    font-size: 40px;
-    line-height: 1.6;
-  } */
 `;

@@ -447,7 +447,6 @@ export const GoBackLink = styled(NavLink)`
     fill: #2da4e9;
   }
 
-  /* &.active, */
   &:hover,
   &:focus {
     color: #a40007;
